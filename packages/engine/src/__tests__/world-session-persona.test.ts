@@ -5,7 +5,7 @@ import {
   initializeWorldSessionWithPersona,
   type WorldDefinitionWithPersonas,
 } from "../persona/world-session-persona.js";
-import type { WorldUserPersona } from "../../../shared/src/types/world-persona.js";
+import type { WorldUserPersona } from "../persona/index.js";
 
 describe("Multi-Persona World Session", () => {
   const alicePersona: WorldUserPersona = {

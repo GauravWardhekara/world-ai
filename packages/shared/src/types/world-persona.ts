@@ -57,7 +57,8 @@ export interface NpcEntryFields {
  * 3. Optional individual opening/introduction message (openingMessage)
  * 4. Optional per-persona override for converting unchosen personas into NPCs
  */
-export interface WorldUserPersona extends NpcEntryFields {
+export interface WorldUserPersona extends Omit<NpcEntryFields, 'content'> {
+  content?: string;
   avatar?: string;
   appearance?: string;
   personality?: string;

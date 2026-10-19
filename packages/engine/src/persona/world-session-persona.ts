@@ -1,7 +1,7 @@
 import {
   NpcEntryFields,
   WorldUserPersona,
-} from '../../shared/src/types/world-persona';
+} from './types.js';
 
 export interface WorldDefinitionWithPersonas {
   id: string;
