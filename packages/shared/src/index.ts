@@ -54,6 +54,11 @@ export {
   MAX_VERSION_NOTE_LENGTH,
 } from "./types/world.js";
 export type {
+  NpcEntryFields,
+  WorldUserPersona,
+  PersonaCustomEntry,
+} from "./types/world-persona.js";
+export type {
   ApiResponse,
   ApiError,
   PaginatedResponse,

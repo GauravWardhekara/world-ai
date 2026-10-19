@@ -667,3 +667,4 @@ export type { GuardedParseResult, StateDiagnostic } from "./parser/guarded-respo
 export { StateReceiptFilter, stripStateReceipts } from "./parser/state-receipt.js";
 export { resolveHistoryLimit, applyHistoryLimit, resolveRequestedMaxContext, HISTORY_LIMIT_MAX } from "./lorebook/history-window";
 export * from "./social/simulator.js";
+export * from "./persona/index.js";
