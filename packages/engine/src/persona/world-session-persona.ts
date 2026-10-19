@@ -1,4 +1,4 @@
-import {
+import type {
   NpcEntryFields,
   WorldUserPersona,
 } from './types.js';
