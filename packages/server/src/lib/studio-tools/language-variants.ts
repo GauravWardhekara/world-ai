@@ -1,5 +1,5 @@
 import { and, asc, eq, inArray, ne } from "drizzle-orm";
-import { migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../../db/index.js";
 import { worldPendingEdits, worlds } from "../../db/schema.js";
 import type { ToolCall, ToolDefinition } from "../llm/types.js";

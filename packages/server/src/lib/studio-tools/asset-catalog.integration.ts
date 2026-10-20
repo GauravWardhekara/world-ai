@@ -4,7 +4,7 @@ import { sql } from "drizzle-orm";
 import { db } from "../../db/index.js";
 import { loadAssetCatalog, formatAssetCatalog, descendantFolderIds } from "./asset-catalog.js";
 import { mutateSocialSession } from "../social-simulator-state.js";
-import { applySocialAction, claimSocialJob, initialSocialState, renewSocialEpoch, finishSocialJob } from "@yumina/engine";
+import { applySocialAction, claimSocialJob, initialSocialState, renewSocialEpoch, finishSocialJob } from "@world-ai/engine";
 
 // Dedicated in-memory PGlite process only; never modify a configured database.
 before(async () => {

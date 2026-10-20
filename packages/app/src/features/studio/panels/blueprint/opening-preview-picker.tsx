@@ -1,6 +1,6 @@
 import { useId } from "react";
 import { useTranslation } from "react-i18next";
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 import { orderedOpenings, resolvePreviewOpening } from "@/features/editor/components/preview/preview-opening";
 
 // The pure part moved next to the renderer that needs it; the picker is the

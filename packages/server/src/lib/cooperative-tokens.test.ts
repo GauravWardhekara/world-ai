@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { estimateTokens, preloadTokenizer, PromptBuilder } from "@yumina/engine";
+import { estimateTokens, preloadTokenizer, PromptBuilder } from "@world-ai/engine";
 import { setImmediate as yieldForIO } from "node:timers/promises";
 import { countPromptTokensCooperatively, forEachCooperatively } from "./cooperative-tokens.js";
 import { estimateMessageTokens, selectCompactionWindow } from "./session-compaction-core.js";

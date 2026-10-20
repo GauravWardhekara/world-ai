@@ -10,7 +10,7 @@ import { useChatStore } from "@/stores/chat";
 import { useConfigStore } from "@/stores/config";
 import { useCreditStore } from "@/edition/slots.state";
 import { useExtensionsStore } from "@/stores/extensions";
-import { EXTENSION_REGISTRY, SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { EXTENSION_REGISTRY, SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { useAudioStore } from "@/stores/audio";
 import { haltTts } from "@/lib/tts-stop-signal";
 import { cancelVoiceRecording } from "@/lib/voice-input";
@@ -21,7 +21,7 @@ import { SceneGalleryDialog, useSceneGallery } from "./scene-gallery";
 import { type YuminaAPI } from "@/features/studio/lib/custom-component-renderer";
 import { safeParseWorldDef } from "@/lib/utils";
 import { absoluteImageUrl } from "@/lib/asset-url";
-import { expandMacros, resolveBackground } from "@yumina/engine";
+import { expandMacros, resolveBackground } from "@world-ai/engine";
 import { resolveDisplayMacros } from "@/lib/resolve-display-macros";
 import { TOP_EDGE_ALWAYS_PX, TOP_EDGE_PX } from "@/lib/top-edge-gate";
 import { useUiStore } from "@/stores/ui";
@@ -650,7 +650,7 @@ export function ChatView({
 
   const yuminaAPI = useMemo<YuminaAPI>(
     () => ({
-      sendMessage: (text: string, attachments?: import("@yumina/shared").ChatImageInput[]) => useChatStore.getState().sendMessage(text, undefined, attachments),
+      sendMessage: (text: string, attachments?: import("@world-ai/shared").ChatImageInput[]) => useChatStore.getState().sendMessage(text, undefined, attachments),
       setVariable: (id: string, value: number | string | boolean | Record<string, unknown> | unknown[]) =>
         useChatStore.getState().setVariableDirectly(resolveVariableKey(id), value),
       executeAction: (actionId: string) =>

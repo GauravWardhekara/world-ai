@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test, { before } from "node:test";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";
-import { migrateWorldDefinition, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { apiKeys, messages, playSessions, promptFolders, user, userPersonas, userPrompts, worlds, worldPendingEdits } from "../db/schema.js";
 import { encryptApiKey } from "../lib/crypto.js";

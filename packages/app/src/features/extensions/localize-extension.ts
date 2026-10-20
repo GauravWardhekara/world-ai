@@ -1,5 +1,5 @@
 import type { TFunction } from "i18next";
-import type { ExtensionDetail, ExtensionSummary } from "@yumina/shared";
+import type { ExtensionDetail, ExtensionSummary } from "@world-ai/shared";
 
 function catalogPrefix(extensionKey: string) {
   return `catalog.${extensionKey}`;

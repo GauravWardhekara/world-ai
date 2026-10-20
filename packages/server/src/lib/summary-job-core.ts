@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import type { SessionSummaryPayload } from "@yumina/shared";
+import type { SessionSummaryPayload } from "@world-ai/shared";
 
 export type SummaryJob = NonNullable<SessionSummaryPayload["job"]>;
 export interface SummaryRunControl {

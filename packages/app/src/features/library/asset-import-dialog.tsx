@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FileArchive, Folder, Loader2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { isAssetImportActive } from "@yumina/shared";
+import { isAssetImportActive } from "@world-ai/shared";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { useSession } from "@/lib/auth-client";
 import { useAssetImportStore, type AssetImportItem } from "@/stores/asset-imports";

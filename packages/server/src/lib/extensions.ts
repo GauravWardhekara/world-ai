@@ -2,7 +2,7 @@ import { eq, and } from "drizzle-orm";
 import { readOwn } from "../db/index.js";
 import { userExtensions } from "../db/schema.js";
 import { redis } from "./redis.js";
-import { getExtensionKeyForCapability } from "@yumina/shared";
+import { getExtensionKeyForCapability } from "@world-ai/shared";
 
 // ─── Extension entitlement gate ─────────────────────────────────────
 //

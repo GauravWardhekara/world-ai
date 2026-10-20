@@ -2,7 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next";
 import { History, X, RotateCcw, Trash2, Loader2, ChevronDown, AlertTriangle } from "lucide-react";
 import { FieldError } from "@/components/ui/field-error";
-import type { WorldChange, WorldDiff } from "@yumina/engine";
+import type { WorldChange, WorldDiff } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { formatTimeAgo } from "@/lib/format-time";
 import { cn } from "@/lib/utils";

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Volume2 } from "lucide-react";
-import { TTS_VOICES, readTtsCustomVoices, resolveTtsVoiceAlias, ttsCustomVoiceLabel } from "@yumina/shared";
+import { TTS_VOICES, readTtsCustomVoices, resolveTtsVoiceAlias, ttsCustomVoiceLabel } from "@world-ai/shared";
 import { useUserProfileStore } from "@/stores/user-profile";
 import { cn } from "@/lib/utils";
 import { VoicePickerPopover } from "./voice-picker-popover";

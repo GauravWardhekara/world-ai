@@ -15,7 +15,7 @@
  * across the sandbox boundary, like slim-messages.ts does.
  */
 
-import { isProviderBalanceError } from "@yumina/shared";
+import { isProviderBalanceError } from "@world-ai/shared";
 
 export type ChatErrorCode =
   | "NO_API_KEY"

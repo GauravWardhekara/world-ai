@@ -1,5 +1,5 @@
 import type { MiddlewareHandler } from "hono";
-import { MAX_REQUEST_BODY_BYTES, MAX_WORLD_SAVE_BODY_BYTES } from "@yumina/shared";
+import { MAX_REQUEST_BODY_BYTES, MAX_WORLD_SAVE_BODY_BYTES } from "@world-ai/shared";
 
 export function requestBodyLimitBytes(method: string, path: string): number {
   const worldSave = (method === "POST" && /^\/api\/worlds\/?$/.test(path))

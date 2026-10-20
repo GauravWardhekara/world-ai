@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { Variable } from '@yumina/engine';
+import type { Variable } from '@world-ai/engine';
 import { parseVariableValue } from './variable-value';
 
 export function VariableValueField({ variable, onCommit, compact }: { variable: Variable; onCommit: (value: Variable['defaultValue']) => void;

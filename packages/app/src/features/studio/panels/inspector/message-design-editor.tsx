@@ -9,7 +9,7 @@ import {
   messageTextCss,
   ruleExample,
   updateElements,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import type {
   UiBoxStyle,
   UiDoc,
@@ -21,7 +21,7 @@ import type {
   UiMessageShow,
   UiMessageStyle,
   UiTextStyle,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { contentLanguage } from "@/lib/i18n";
 import { ColorField, FontPicker, themeSwatches } from "./style-section";

@@ -1,5 +1,5 @@
-import { GameStateManager, deepEqual } from "@yumina/engine";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import { GameStateManager, deepEqual } from "@world-ai/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);

@@ -5,7 +5,7 @@
  * Zustand state and a memory router, so a design change can be looked at
  * without a database, an account, or a running API. Build it with:
  *
- *   pnpm --filter @yumina/app preview:ui
+ *   pnpm --filter @world-ai/app preview:ui
  *
  * and open the emitted index.html straight off disk.
  *

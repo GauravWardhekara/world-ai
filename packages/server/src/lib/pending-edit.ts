@@ -21,14 +21,14 @@ import {
   migrateWorldDefinition,
   type MaterialChangeReason,
   type WorldDiff,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { notify, notifyMany, notifyCoalescedByGroup } from "./notify.js";
 import { embedAndStoreWorld } from "./embeddings.js";
 import { onWorldEditPublished } from "./achievements/engine.js";
 import { resolveImageCdn } from "./cdn-url.js";
 import { nextWorldSaveTime } from "./world-save-guard.js";
 import type { RejectionReason } from "./review.js";
-import { isUserMuted, MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@yumina/shared";
+import { isUserMuted, MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@world-ai/shared";
 import {
   resolveCopyMaterialForViewer,
   type WorldCopyMaterial,

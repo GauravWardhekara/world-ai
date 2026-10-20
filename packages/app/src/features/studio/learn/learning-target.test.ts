@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { Block, GraphNode } from "@yumina/engine";
+import type { Block, GraphNode } from "@world-ai/engine";
 import { findCanvasWritingSection, resolveLearningCanvasTarget } from "./learning-target";
 import { JSDOM } from "jsdom";
 import { lessonsOf } from "./learning-catalog";

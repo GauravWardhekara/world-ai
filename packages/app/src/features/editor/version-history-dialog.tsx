@@ -21,7 +21,7 @@ import {
   MAX_VERSION_NAME_LENGTH,
   MAX_VERSION_NOTE_LENGTH,
   type WorldVersion,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { useEditorStore } from "@/stores/editor";
 import { formatTimeAgo } from "@/lib/format-time";
 

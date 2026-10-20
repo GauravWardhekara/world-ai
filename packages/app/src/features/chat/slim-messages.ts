@@ -29,7 +29,7 @@
  * the raw markup.
  */
 import { displayAudit } from "../../../sandbox/extensions/state-update-guard/audit-records";
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import { stripTurnVideos } from "./turn-video-embeds";
 type Msg = Record<string, unknown>;
 

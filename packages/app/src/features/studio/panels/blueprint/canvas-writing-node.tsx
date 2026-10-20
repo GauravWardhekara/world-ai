@@ -3,7 +3,7 @@ import { memo, useEffect, useState, type DragEvent, type KeyboardEvent, type Mou
 import { Handle, Position, type Node, type NodeProps } from "@xyflow/react";
 import { BookOpen, ChevronDown, FolderMinus, FolderOpen, GripVertical, Link2, MessageCircle, MoreHorizontal, Pencil, Plus, Volume2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { isPlaceholderCharacterName, portHandleId, rowHandleId, type WorldEntry } from "@yumina/engine";
+import { isPlaceholderCharacterName, portHandleId, rowHandleId, type WorldEntry } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { getAssetCdnUrl } from "@/lib/asset-url";

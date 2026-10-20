@@ -1,5 +1,5 @@
-import { diffWorldSchemas, type WorldChange } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { diffWorldSchemas, type WorldChange } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 export interface TimelineSnapshotInput {
   id: string;

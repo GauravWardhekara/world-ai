@@ -1,6 +1,6 @@
 import { describe, it, before, after } from "node:test";
 import assert from "node:assert/strict";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import {
   __setInstalledLookupForTests,
   collectPromptBlocks,

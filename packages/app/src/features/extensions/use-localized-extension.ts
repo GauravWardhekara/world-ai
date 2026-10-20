@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import type { ExtensionDetail, ExtensionSummary } from "@yumina/shared";
+import type { ExtensionDetail, ExtensionSummary } from "@world-ai/shared";
 import { localizeExtensionDetail, localizeExtensionSummary } from "./localize-extension";
 
 export function useLocalizedExtension(extension: ExtensionSummary) {

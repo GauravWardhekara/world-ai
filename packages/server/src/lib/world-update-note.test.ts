@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@yumina/shared";
+import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@world-ai/shared";
 import { parseWorldUpdateNoteBody } from "./world-update-note.js";
 
 test("world update notes trim authored text and default optional fields", () => {

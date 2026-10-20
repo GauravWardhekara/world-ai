@@ -481,7 +481,7 @@ describe("studio conversation world scoping", () => {
       items: [{ id: "red", label: "Red hair", prompt: "A girl with red hair" }],
     };
     // Use the supported model from the real normalizer rather than a test-only provider.
-    const { SMART_IMAGE_MODEL } = await import("@yumina/shared");
+    const { SMART_IMAGE_MODEL } = await import("@world-ai/shared");
     imageBatchProposal.model = SMART_IMAGE_MODEL;
     await db.insert(agentRuns).values({
       id: runId, userId, worldId: worldAId, conversationId: convAId,

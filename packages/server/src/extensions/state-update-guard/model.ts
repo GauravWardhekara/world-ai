@@ -3,7 +3,7 @@ import { ensureWallet, validateModelAccess } from "../../lib/credit-service.js";
 import { resolveEffectivePlanWithEventEntitlements } from "../../lib/event-plan-entitlements.js";
 import { getModelContextWindow } from "../../lib/llm/context-window.js";
 import { applyModelRedirect } from "../../lib/llm/model-redirects.js";
-import { DEFAULT_STATE_GUARD_MODEL, parseStateGuardModel, stateGuardModelSelection } from "@yumina/shared";
+import { DEFAULT_STATE_GUARD_MODEL, parseStateGuardModel, stateGuardModelSelection } from "@world-ai/shared";
 import { edition } from "../../edition/index.js";
 
 /** Imported hosted settings must not force a platform key in the BYOK edition. */

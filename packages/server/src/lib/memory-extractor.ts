@@ -6,7 +6,7 @@ import { recordUsageLog } from "./usage-log.js";
 import { createProvider, inferProvider } from "./llm/provider-factory.js";
 import type { ProviderName } from "./llm/provider-factory.js";
 import { getModelContextWindow } from "./llm/context-window.js";
-import { estimateTokens } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
 
 const EXTRACTION_MODEL = "openai/gpt-4o-mini";
 const MAX_MEMORIES_PER_WORLD = 100;

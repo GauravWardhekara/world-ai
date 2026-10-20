@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Check, MessageCircle, BookOpen } from "lucide-react";
-import { estimateTokens } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { DebouncedInput, DebouncedTextarea } from "@/features/editor/components/debounced-field";
 

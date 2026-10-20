@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { Bot, ChevronLeft, ChevronRight } from "lucide-react";
-import { computeActiveWorldbookIds, CONTINUITY_KEEP, CONTINUITY_NONE, CONTINUITY_PLAYLIST, isAlwaysSendEntry, UNPLACED_WORLDBOOK_ID, type Variable } from "@yumina/engine";
+import { computeActiveWorldbookIds, CONTINUITY_KEEP, CONTINUITY_NONE, CONTINUITY_PLAYLIST, isAlwaysSendEntry, UNPLACED_WORLDBOOK_ID, type Variable } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useChatStore } from "@/stores/chat";
 import { useEditorStore } from "@/stores/editor";

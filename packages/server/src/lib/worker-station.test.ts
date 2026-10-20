@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, WorldDefinition, Worldbook } from "@yumina/engine";
+import type { GameState, WorldDefinition, Worldbook } from "@world-ai/engine";
 import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { dueWorkers, finishSlot, loadRowsForInputs, reserveSlot } from "./worker-station.js";

@@ -12,7 +12,7 @@ import type { AppEnv } from "../lib/types.js";
 import { buildPersonaSystemMessage } from "../lib/persona-prompt.js";
 import { applyPersonaMetadataToState } from "../lib/persona-metadata.js";
 import { setSessionPersona, resolvePersonaForSession } from "../lib/resolve-persona.js";
-import { MAX_PERSONA_ENTRIES, MAX_PERSONA_ENTRY_CONTENT } from "@yumina/shared";
+import { MAX_PERSONA_ENTRIES, MAX_PERSONA_ENTRY_CONTENT } from "@world-ai/shared";
 
 test("custom persona entries round-trip through API, preserve legacy patches, and follow the selected identity", async () => {
   const id = crypto.randomUUID();

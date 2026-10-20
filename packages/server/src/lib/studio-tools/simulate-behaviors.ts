@@ -9,8 +9,8 @@ import {
   runReactionChain,
   type GameEvent,
   type WorldDefinition,
-} from "@yumina/engine";
-import type { Effect } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { Effect } from "@world-ai/engine";
 
 /**
  * A free check of a card's behaviors: the engine alone, no model call.

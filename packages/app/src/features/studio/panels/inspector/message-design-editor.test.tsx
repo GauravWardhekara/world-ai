@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
 import { createInstance } from "i18next";
 import { I18nextProvider, initReactI18next } from "react-i18next";
-import type { UiDoc, UiElement } from "@yumina/engine";
+import type { UiDoc, UiElement } from "@world-ai/engine";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div>', { pretendToBeVisual: true, url: "http://localhost" });
 const globals = {
@@ -22,7 +22,7 @@ const { createRoot } = await import("react-dom/client");
 // `import.meta.env` at module scope.
 const vite = await createServer({
   configFile: false, root: fileURLToPath(new URL("../../../../..", import.meta.url)), appType: "custom", logLevel: "silent",
-  resolve: { alias: { "@": fileURLToPath(new URL("../../../..", import.meta.url)), "@yumina/engine": fileURLToPath(new URL("../../../../../../engine/src/index.ts", import.meta.url)) } },
+  resolve: { alias: { "@": fileURLToPath(new URL("../../../..", import.meta.url)), "@world-ai/engine": fileURLToPath(new URL("../../../../../../engine/src/index.ts", import.meta.url)) } },
   esbuild: { jsx: "automatic" }, server: { middlewareMode: true },
 });
 const { MessageDesignEditor, makePresetRule } = await vite.ssrLoadModule("/src/features/studio/panels/inspector/message-design-editor.tsx") as typeof import("./message-design-editor");

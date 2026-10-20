@@ -25,7 +25,7 @@ import { StyledCheckbox } from "../components/styled-checkbox";
 import { BgmConfigPanel } from "../components/bgm-config-panel";
 import { DebouncedInput } from "../components/debounced-field";
 import { NumberInput } from "@/components/ui/number-input";
-import type { AudioTrack } from "@yumina/engine";
+import type { AudioTrack } from "@world-ai/engine";
 import { TwoTapDeleteButton } from "@/components/ui/two-tap-delete-button";
 
 const TRACK_TYPES: { value: AudioTrack["type"]; labelKey: string; badgeColor: string }[] = [

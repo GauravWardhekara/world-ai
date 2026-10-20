@@ -4,7 +4,7 @@ import { act, createElement, useState } from "react";
 import { JSDOM } from "jsdom";
 import { createInstance } from "i18next";
 import { I18nextProvider, initReactI18next } from "react-i18next";
-import type { UiElement, UiPage, Variable } from "@yumina/engine";
+import type { UiElement, UiPage, Variable } from "@world-ai/engine";
 import type { ActionContext } from "../element-behavior";
 import { idsToNames, namesToIds } from "./variable-text";
 import { moveItem, parseTags } from "./choice-editor";
@@ -24,7 +24,7 @@ const { PopupEditor } = await import("./popup-editor");
 const { ListEditor } = await import("./list-editor");
 const { RequiresEditor } = await import("./requires-editor");
 const { LookPicker } = await import("./look-picker");
-const { applyUiLook, currentUiLook } = await import("@yumina/engine");
+const { applyUiLook, currentUiLook } = await import("@world-ai/engine");
 const { MakeVariableContext } = await import("./part-kit");
 after(() => {
   dom.window.close();

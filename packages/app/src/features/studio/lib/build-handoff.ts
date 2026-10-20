@@ -1,4 +1,4 @@
-import { isStudioBuildProposal, type StudioBuildProposal } from "@yumina/shared";
+import { isStudioBuildProposal, type StudioBuildProposal } from "@world-ai/shared";
 import type { StudioChatMessage } from "./types";
 
 /** A later user turn invalidates the old offer: the advisor must save its updated scope. */

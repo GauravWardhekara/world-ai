@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
 import { resolvePreviewVariables } from "./preview-variables";
 
 const opening = (id: string, extra: Partial<WorldEntry> = {}): WorldEntry => ({

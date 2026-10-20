@@ -1,7 +1,7 @@
 import {
   migrateWorldDefinition,
-} from "@yumina/engine";
-import type { WorldDefinition, YuminaBundle } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { WorldDefinition, YuminaBundle } from "@world-ai/engine";
 import {
   isTavernCharacterCard,
   isTavernWorldbook,

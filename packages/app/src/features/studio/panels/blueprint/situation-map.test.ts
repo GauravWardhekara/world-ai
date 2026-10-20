@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import type { FrameBox } from "./board";
 import { arrangeSituations, situationGroupId } from "./situation-map";
 

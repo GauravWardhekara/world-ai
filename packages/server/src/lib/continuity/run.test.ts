@@ -1,6 +1,6 @@
 import test, { afterEach, beforeEach } from "node:test";
 import assert from "node:assert/strict";
-import { GameStateManager, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, type WorldDefinition } from "@world-ai/engine";
 import { appendJudgeImages, applyJudgeSceneImages, runContinuityTurn } from "./run.js";
 import { env } from "../env.js";
 
@@ -67,7 +67,7 @@ test("a turn on the player's OpenRouter key runs the judge on it; a lookup failu
 });
 
 test("judge-picked scene images append one [image: id] line each and expand to embeds", async () => {
-  const { resolveSceneImageDirectives } = await import("@yumina/engine");
+  const { resolveSceneImageDirectives } = await import("@world-ai/engine");
   assert.equal(appendJudgeImages("她笑了。", []), "她笑了。");
   const text = appendJudgeImages("她笑了。\n", ["cup", "cafe"]);
   assert.equal(text, "她笑了。\n\n[image: cup]\n\n[image: cafe]");
@@ -81,7 +81,7 @@ test("judge-picked scene images append one [image: id] line each and expand to e
 });
 
 test("copied scene image embeds are dropped when the judge decides, kept as directives otherwise", async () => {
-  const { sceneImageEmbed, resolveSceneImageDirectives } = await import("@yumina/engine");
+  const { sceneImageEmbed, resolveSceneImageDirectives } = await import("@world-ai/engine");
   const img = { id: "cafe", name: "Cafe", url: "https://x/cafe.png", scene: "两人在咖啡店对坐时" };
   const copied = `她笑了。\n\n${sceneImageEmbed(img)}\n\n雨还在下。`;
   const judged = { ...world([]), sceneImages: [img] } as WorldDefinition;

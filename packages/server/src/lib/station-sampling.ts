@@ -1,8 +1,8 @@
 import {
   clampToRange, resolveStorySampling, STATION_DEFAULT_TEMPERATURE, STATION_MAX_TOKENS_LIMITS, STATION_TEMPERATURE_LIMITS,
   type ModuleStation, type SamplingKey, type SamplingParams, type WorldSettings,
-} from "@yumina/engine";
-import { clampPlayerSampling, PLAYER_SAMPLING_BOUNDS } from "@yumina/shared";
+} from "@world-ai/engine";
+import { clampPlayerSampling, PLAYER_SAMPLING_BOUNDS } from "@world-ai/shared";
 
 /**
  * How a background AI (behind the scenes, steps in, custom) samples: the

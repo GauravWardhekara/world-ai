@@ -7,7 +7,7 @@ import test from "node:test";
 import { PGlite } from "@electric-sql/pglite";
 import { generateDrizzleJson, generateMigration } from "drizzle-kit/api";
 import { eq } from "drizzle-orm";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { db } from "../../db/index.js";
 import * as schema from "../../db/schema.js";
 import { apiKeys, messages, playSessions, usageLogs, user, userExtensions, worlds } from "../../db/schema.js";

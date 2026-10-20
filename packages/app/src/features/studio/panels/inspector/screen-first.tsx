@@ -1,8 +1,8 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown, ChevronUp, Plus } from "lucide-react";
-import type { WorldEntry } from "@yumina/engine";
-import { UI_RULES_ENTRY_ID } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
+import { UI_RULES_ENTRY_ID } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { IGNORE_ATTR } from "./hit-test";

@@ -1,4 +1,4 @@
-import { signupAttribution } from "@yumina/shared";
+import { signupAttribution } from "@world-ai/shared";
 
 const KEY = "yumina:arrival:v1";
 type Arrival = { source: string; medium: string; campaign: string; at: number };

@@ -28,8 +28,8 @@
  */
 
 import { createHash } from "node:crypto";
-import type { JevAnswer, JevQuestion } from "@yumina/engine";
-import { TTS_VOICES, isValidTtsVoice, resolveTtsVoiceAlias, ttsPoolForLang } from "@yumina/shared";
+import type { JevAnswer, JevQuestion } from "@world-ai/engine";
+import { TTS_VOICES, isValidTtsVoice, resolveTtsVoiceAlias, ttsPoolForLang } from "@world-ai/shared";
 import { decide, decisionModelConfigured } from "../continuity/jev-client.js";
 import type { PlayerSideKey, SideCallKeySource } from "../side-call-key.js";
 import { env } from "../env.js";

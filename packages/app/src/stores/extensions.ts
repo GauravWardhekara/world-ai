@@ -3,7 +3,7 @@ import type {
   ExtensionSummary,
   ExtensionDetail,
   ExtensionInstallStatus,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 const FRESH_MS = 30_000;

@@ -5,7 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { JSDOM } from "jsdom";
 import { createServer, type ViteDevServer } from "vite";
 import { fileURLToPath } from "node:url";
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import { diagnosticSummary, readableBatch, readableLabels, variableLabel } from "../../../sandbox/extensions/state-update-guard/readable-output";
 import { displayAudit, validationRecords } from "../../../sandbox/extensions/state-update-guard/audit-records";
 import { guardLabels } from "../../../sandbox/extensions/state-update-guard/details";

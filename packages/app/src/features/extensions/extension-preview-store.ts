@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { ExtensionSummary } from "@yumina/shared";
+import type { ExtensionSummary } from "@world-ai/shared";
 
 export type ExtensionPreviewTab = "overview" | "reviews";
 

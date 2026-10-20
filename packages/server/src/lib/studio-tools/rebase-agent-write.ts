@@ -1,4 +1,4 @@
-import { deepEqual, mergeWorldDefinition, migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { deepEqual, mergeWorldDefinition, migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 
 /**
  * Collections mergeWorldDefinition reconciles entity-by-entity (by id, or by

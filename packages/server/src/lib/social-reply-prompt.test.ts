@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { buildSocialReplyPrompt, renderSocialContext, selectSocialGuidance } from "./social-reply-prompt.js";
-import { applySocialAction, initialSocialState, socialJobContext, type SocialJob } from "@yumina/engine";
-import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, personaEntriesSchema } from "@yumina/shared";
+import { applySocialAction, initialSocialState, socialJobContext, type SocialJob } from "@world-ai/engine";
+import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, personaEntriesSchema } from "@world-ai/shared";
 
 const sheets = (prompt: string) => prompt.split("\nCharacters:\n")[1]!.split("\n\nSession scenario / player:\n")[0]!.split("\n\n## ").map((s, i) => i === 0 ? s.replace(/^## /, "") : s);
 

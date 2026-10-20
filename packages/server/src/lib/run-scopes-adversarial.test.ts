@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, Worldbook } from "@yumina/engine";
+import type { GameState, Worldbook } from "@world-ai/engine";
 import { advanceRunMemories, ensureActiveRunMemories, invalidateRunMemoryText, promptHistory, type RunMemories } from "./run-scopes.js";
 
 const at = (hour: number) => `2026-09-06T${String(hour).padStart(2, "0")}:00:00.000Z`;

@@ -1,4 +1,4 @@
-import { MAX_STORY_MEMORY, resolveStoryMemory } from "@yumina/shared";
+import { MAX_STORY_MEMORY, resolveStoryMemory } from "@world-ai/shared";
 
 /** Display metadata only: null means inherit the account's effective window.
  * Keep the rollout decision on the server, exactly as generation resolves it. */

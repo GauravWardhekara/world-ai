@@ -4,7 +4,7 @@ import { act, createElement } from "react";
 import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { JSDOM } from "jsdom";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { VariableIdEditor } from "./variable-id-editor";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div><button id="outside">Outside</button>', { pretendToBeVisual: true });

@@ -1,4 +1,4 @@
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 
 /** Enrich only the owner-facing copy. Never reconstruct an old value or mix attempts. */
 export function displayAudit(audit: StateValidationAudit, raw?: unknown, defs?: ReadonlyArray<{ id: string; name?: string }>): StateValidationAudit {

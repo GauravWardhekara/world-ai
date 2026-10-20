@@ -1,5 +1,5 @@
 import { savePreferredProvider } from "@/lib/provider-switch";
-import { estimateReplyCost, formatCostEstimate } from "@yumina/shared";
+import { estimateReplyCost, formatCostEstimate } from "@world-ai/shared";
 import { useState, useEffect, useCallback } from "react";
 import { TokenNumberInput } from "@/components/ui/token-number-input";
 import { useTranslation } from "react-i18next";
@@ -23,7 +23,7 @@ import { useCreditStore } from "@/edition/slots.state";
 import { ProfilePlanSummary } from "@/edition/slots";
 import { useFeature } from "@/edition/edition";
 import { useModelsStore } from "@/stores/models";
-import { PLAY_MODELS, formatModelId, formatAvgCost } from "@yumina/shared";
+import { PLAY_MODELS, formatModelId, formatAvgCost } from "@world-ai/shared";
 import { ModelBrowser } from "@/features/chat/model-browser";
 import { getPoolPercentages } from "@/lib/model-mix";
 import {

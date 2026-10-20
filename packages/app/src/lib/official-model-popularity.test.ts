@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { PlayModel } from "@yumina/shared";
+import type { PlayModel } from "@world-ai/shared";
 import { blendModelPopularity } from "../../../shared/src/types/model-popularity";
 import { orderOfficialModels } from "./official-model-order";
 

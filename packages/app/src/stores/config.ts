@@ -1,8 +1,8 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { PLAY_MODEL_IDS, DEFAULT_MODEL, DEFAULT_PINNED_MODELS, MAX_PINNED_MODELS, DEFAULT_POOL, DEFAULT_MIX_MODE } from "@yumina/shared";
-import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackPolicy } from "@yumina/shared";
-import { AI_GENERATION_DEFAULTS } from "@yumina/shared";
+import { PLAY_MODEL_IDS, DEFAULT_MODEL, DEFAULT_PINNED_MODELS, MAX_PINNED_MODELS, DEFAULT_POOL, DEFAULT_MIX_MODE } from "@world-ai/shared";
+import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackPolicy } from "@world-ai/shared";
+import { AI_GENERATION_DEFAULTS } from "@world-ai/shared";
 import {
   MAX_POOL_SIZE,
   DEFAULT_WEIGHT,

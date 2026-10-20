@@ -2,7 +2,7 @@ import {
   STATION_DEFAULT_TEMPERATURE, STATION_MAX_TOKENS_LIMITS, STATION_TEMPERATURE_LIMITS, UNPLACED_WORLDBOOK_ID,
   clampAuthorSampling, clampToRange, extractAiCallsFromFiles,
   type FrontendAiCall, type ModuleStation, type WorldDefinition, type Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { modelLabel, modelReachWarning, stationDefaultMaxTokens } from "@/features/editor/lib/ai-call-settings";
 import { cardTakenOverBy, stationName } from "./ai-roster";
 import { jobOf } from "./place-ais";

@@ -1,4 +1,4 @@
-import { EVENT_PROOF_ALLOWED_MIME_TYPES, EVENT_PROOF_MAX_BYTES } from "@yumina/shared";
+import { EVENT_PROOF_ALLOWED_MIME_TYPES, EVENT_PROOF_MAX_BYTES } from "@world-ai/shared";
 import { copyObject, deleteObject, generateUploadUrl, getObject, headObject, isS3Configured } from "./s3.js";
 
 export { EVENT_PROOF_ALLOWED_MIME_TYPES, EVENT_PROOF_MAX_BYTES };

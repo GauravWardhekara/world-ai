@@ -1,4 +1,4 @@
-import type { Reaction, ReactionEffect, Variable } from "@yumina/engine";
+import type { Reaction, ReactionEffect, Variable } from "@world-ai/engine";
 
 /**
  * A behaviour row's one-line story: when it fires and what it does.

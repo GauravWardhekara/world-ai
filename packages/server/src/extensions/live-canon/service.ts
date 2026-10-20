@@ -8,14 +8,14 @@ import {
   type Variable,
   type WorldDefinition,
   type WorldEntry,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import {
   LIVE_CANON_EXTENSION_KEY,
   type LiveCanonEditableEntryDTO,
   type LiveCanonPayload,
   type LiveCanonSessionEntryDTO,
   type LiveCanonVariableDTO,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { db } from "../../db/index.js";
 import { playSessions, sessionLoreEntries, worlds } from "../../db/schema.js";
 import { isExtensionInstalled } from "../../lib/extensions.js";

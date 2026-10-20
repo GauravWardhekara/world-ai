@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import type { Variable } from "@yumina/engine";
+import type { Variable } from "@world-ai/engine";
 import { PanelRight, SlidersHorizontal, RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";

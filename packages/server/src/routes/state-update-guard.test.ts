@@ -2,7 +2,7 @@ import "../test/database-fixture.js";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { Hono } from "hono";
-import { GameStateManager, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, type WorldDefinition } from "@world-ai/engine";
 import { eq } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { user, worlds, playSessions, userExtensions } from "../db/schema.js";

@@ -23,7 +23,7 @@ import {
   type Effect,
   type GameStateManager,
   type WorldDefinition,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { env } from "../env.js";
 import { recordUsageLog } from "../usage-log.js";
 import { decide, decisionModelConfigured, DecisionError } from "./jev-client.js";

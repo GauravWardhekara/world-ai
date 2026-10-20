@@ -1,5 +1,5 @@
-import type { Condition, WorldEntry } from "@yumina/engine";
-import { deriveSectionDefaults } from "@yumina/engine";
+import type { Condition, WorldEntry } from "@world-ai/engine";
+import { deriveSectionDefaults } from "@world-ai/engine";
 
 export interface EntryToolArgs {
   id?: string;

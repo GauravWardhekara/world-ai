@@ -1,4 +1,4 @@
-import { getExtensionDefinition } from "@yumina/shared";
+import { getExtensionDefinition } from "@world-ai/shared";
 
 export function validateExtensionsSearch(search: Record<string, unknown>): {
   tab?: "discover" | "manage";

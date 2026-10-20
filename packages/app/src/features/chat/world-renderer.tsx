@@ -3,8 +3,8 @@ import { readLegacyGallery } from './legacy-gallery-migration';
 import { ChatAssetPicker } from "./chat-asset-picker";
 import { readChatAsset } from "@/lib/chat-asset-input";
 import { chatImageCopy as chatInputCopy } from "@/lib/chat-image-input";
-import type { ChatImageAttachment, ChatImageInput } from "@yumina/shared";
-import { isTtsOptedIn, readTtsVoicePool } from "@yumina/shared";
+import type { ChatImageAttachment, ChatImageInput } from "@world-ai/shared";
+import { isTtsOptedIn, readTtsVoicePool } from "@world-ai/shared";
 import { toast } from "sonner";
 import { savePreferredProvider } from "@/lib/provider-switch";
 import { notePlayInteraction } from "./play-interaction";
@@ -41,7 +41,7 @@ import type { YuminaAPI } from "@/features/studio/lib/custom-component-renderer"
 import { dispatchAwaitedAction } from "./awaited-action";
 import { dispatchActorContextCall } from "./actor-context-bridge";
 import { hydrateVoiceSceneNotice } from "./voice-scene-notice";
-import type { Condition, LoreUiBinding, Worldbook, StateChannel } from "@yumina/engine";
+import type { Condition, LoreUiBinding, Worldbook, StateChannel } from "@world-ai/engine";
 import type {
   VariablesChannelData,
   MessagesChannelData,
@@ -534,7 +534,7 @@ export function WorldRenderer({
           if (mode === "session") useChatStore.getState().setLiveScene(args[0], args[1]);
           return;
         case "sendMessage":
-          currentApi.sendMessage(args[0] as string, args[1] as import("@yumina/shared").ChatImageInput[] | undefined);
+          currentApi.sendMessage(args[0] as string, args[1] as import("@world-ai/shared").ChatImageInput[] | undefined);
           return;
         case "patchVariables": {
           const sid = sessionIdRef.current;
@@ -1161,7 +1161,7 @@ export function WorldRenderer({
           const sid = sessionIdRef.current;
           if (!sid || mode !== "session") return Promise.reject(new Error("No active session"));
           return import("@/lib/state-guard-settings").then(({ requestStateGuardSettings }) =>
-            requestStateGuardSettings(sid, method === "setStateGuardSettings" ? args[0] as Partial<import("@yumina/shared").StateGuardSettings> : undefined));
+            requestStateGuardSettings(sid, method === "setStateGuardSettings" ? args[0] as Partial<import("@world-ai/shared").StateGuardSettings> : undefined));
         }
         case "getLiveCanon":
         case "updateLiveCanonState":

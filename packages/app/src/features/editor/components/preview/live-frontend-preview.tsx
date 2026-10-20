@@ -17,7 +17,7 @@ import { bundleAndCompile, type BundleInput, type CompileRuntimeScope } from "@/
 import { viewportUnitsToContainerFiles } from "@/lib/tsx/viewport-units";
 import { renderMessage } from "@/lib/markdown";
 import { absoluteImageUrl, getAssetCdnUrl } from "@/lib/asset-url";
-import { deepEqual, resolveBackground, sampleConversation, type ResolvedBackground } from "@yumina/engine";
+import { deepEqual, resolveBackground, sampleConversation, type ResolvedBackground } from "@world-ai/engine";
 import { ChatBackground } from "@/../sandbox/chat/chat-background";
 import {
   DESIGNED_MESSAGE_CSS,

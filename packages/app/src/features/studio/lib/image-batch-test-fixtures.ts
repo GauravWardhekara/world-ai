@@ -1,4 +1,4 @@
-import type { ImageBatchSnapshot } from "@yumina/shared";
+import type { ImageBatchSnapshot } from "@world-ai/shared";
 import type { StudioImageBatchProposal } from "./types";
 
 export const proposal: StudioImageBatchProposal = {

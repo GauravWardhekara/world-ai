@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { MAX_PINNED_MODELS, DEFAULT_PINNED_MODELS } from "@yumina/shared";
+import { MAX_PINNED_MODELS, DEFAULT_PINNED_MODELS } from "@world-ai/shared";
 
 /**
  * Regressions for "I pinned a model, refreshed, and the star was gone".

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
-import { UNPLACED_WORLDBOOK_ID, isAlwaysSendEntry, isContinuityOwned, isVariableBoundEntry, resolveStation, type Variable, type WorldDefinition, type WorldEntry, type Worldbook } from "@yumina/engine";
+import { UNPLACED_WORLDBOOK_ID, isAlwaysSendEntry, isContinuityOwned, isVariableBoundEntry, resolveStation, type Variable, type WorldDefinition, type WorldEntry, type Worldbook } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { aiRoster, stationName, workerReaders, type RosterAi } from "./ai-roster";
 

@@ -4,7 +4,7 @@ import {
   clampWorldTags,
   syncAudienceTags,
   type TargetAudience,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 
 function hasBothAudienceTags(tags: string[]): boolean {
   const normalized = clampWorldTags(tags);

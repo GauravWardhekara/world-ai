@@ -5,7 +5,7 @@
 // import() can't be used in the prod sandbox) and gated here by install state:
 // an uninstalled extension's contributions are present but never rendered.
 //
-// Kept dependency-free of @yumina/shared on purpose — the sandbox bundle is
+// Kept dependency-free of @world-ai/shared on purpose — the sandbox bundle is
 // size-sensitive and only needs the slot names. The canonical ContributionPoint
 // type lives in packages/shared/src/types/extension.ts; keep the two unions in
 // sync.

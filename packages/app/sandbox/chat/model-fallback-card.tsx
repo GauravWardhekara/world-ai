@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { AlertCircle, ArrowRightLeft, ChevronDown, Loader2 } from "lucide-react";
-import { PLAY_MODELS, PLAN_HIERARCHY, formatModelId, modelFallbackText, type ModelFallbackNotice } from "@yumina/shared";
+import { PLAY_MODELS, PLAN_HIERARCHY, formatModelId, modelFallbackText, type ModelFallbackNotice } from "@world-ai/shared";
 import { useYumina } from "../sandbox-context";
 import { SandboxPlatformOverlay } from "../platform-overlay-portal";
 import { ModelPickerModal } from "./model-picker-modal";
@@ -103,7 +103,7 @@ export function ModelFallbackHost() {
   return <SandboxPlatformOverlay><div className="fixed inset-x-0 bottom-0 z-[9000] mx-auto max-h-[80dvh] max-w-xl overflow-y-auto rounded-t-lg border border-border/60 bg-background/95 px-4 py-2 pb-[max(0.75rem,env(safe-area-inset-bottom))]">{card}</div></SandboxPlatformOverlay>;
 }
 
-export function ModelFallbackBadge({ record }: { record: import("@yumina/shared").ModelFallbackRecord }) {
+export function ModelFallbackBadge({ record }: { record: import("@world-ai/shared").ModelFallbackRecord }) {
   const { language } = useYumina();
   return <details className="mt-1 text-[11px] text-muted-foreground/60"><summary className="flex min-h-6 w-fit cursor-pointer items-center gap-1 py-0.5 hover:text-muted-foreground"><ArrowRightLeft className="h-3.5 w-3.5" aria-hidden="true" />{modelFallbackText(language, "badge")}</summary><p className="pb-1">{modelFallbackText(language, record.automatic ? "autoRecord" : "record", { model: formatModelId(record.requestedModel) })}</p></details>;
 }

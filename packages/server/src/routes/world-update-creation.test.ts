@@ -7,7 +7,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { and, eq } from "drizzle-orm";
 import { transform } from "sucrase";
-import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@yumina/shared";
+import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@world-ai/shared";
 import * as schema from "../db/schema.js";
 import type { AppEnv, SessionUser } from "../lib/types.js";
 import { parseWorldUpdateNoteBody } from "../lib/world-update-note.js";

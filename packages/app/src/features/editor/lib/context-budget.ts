@@ -1,4 +1,4 @@
-import { entryTrigger, type EntryTrigger, type WorldDefinition, estimateTokens, isTokenizerReady } from "@yumina/engine";
+import { entryTrigger, type EntryTrigger, type WorldDefinition, estimateTokens, isTokenizerReady } from "@world-ai/engine";
 
 /**
  * What this card spends on EVERY turn, before the model writes a word.

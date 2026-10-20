@@ -23,7 +23,7 @@ import {
   type ChangelogEntryView,
   type ChangelogKind,
   type ChangelogLang,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 
 export interface ChangelogEntry {
   id: string;

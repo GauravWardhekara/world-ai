@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, afterEach, beforeEach } from "node:test";
 import { createServer } from "vite";
-import type { GraphLayout, UiDoc, WorldDefinition, YuminaBundle } from "@yumina/engine";
+import type { GraphLayout, UiDoc, WorldDefinition, YuminaBundle } from "@world-ai/engine";
 
 const memory = new Map<string, string>();
 const originalFetch = globalThis.fetch;
@@ -16,10 +16,10 @@ const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const vite = await createServer({
   root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
   server: { middlewareMode: true, watch: null },
-  resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } },
+  resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } },
 });
 const { useEditorStore: store } = await vite.ssrLoadModule("/src/stores/editor.ts") as typeof import("./editor");
-const { compileUiDoc } = await vite.ssrLoadModule("/@fs/" + fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url))) as typeof import("@yumina/engine");
+const { compileUiDoc } = await vite.ssrLoadModule("/@fs/" + fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url))) as typeof import("@world-ai/engine");
 const { bundleTSX } = await vite.ssrLoadModule("/src/lib/tsx/tsx-bundler.ts") as typeof import("@/lib/tsx/tsx-bundler");
 const initial = structuredClone(store.getState().worldDraft);
 const layout: GraphLayout = { version: 5, nodes: { "module:test": { x: 55, y: 44, pinned: true } }, notes: [{ id: "note-a", x: 0, y: 0, w: 240, h: 150, text: "Author planning text" }] };

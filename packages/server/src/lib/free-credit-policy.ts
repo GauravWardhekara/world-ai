@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { allocateWalletSpend, walletTolerance, bonusRewardGroup, reducedFreeCycle, reducedFreeRewards, type FreeCreditRollout, type WalletBonusGroup, type WalletBreakdown, type WalletSpendAllocation } from '@yumina/shared';
+import { allocateWalletSpend, walletTolerance, bonusRewardGroup, reducedFreeCycle, reducedFreeRewards, type FreeCreditRollout, type WalletBonusGroup, type WalletBreakdown, type WalletSpendAllocation } from '@world-ai/shared';
 import { db } from '../db/index.js';
 import { insertHashedTransaction, type LedgerDatabase } from './transaction-hash.js';
 import { PLANS, type PlanId } from './plan-config.js';

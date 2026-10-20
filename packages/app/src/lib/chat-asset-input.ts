@@ -1,4 +1,4 @@
-import { MAX_CHAT_IMAGE_BYTES, type ChatImageAttachment, type ChatImageInput } from "@yumina/shared";
+import { MAX_CHAT_IMAGE_BYTES, type ChatImageAttachment, type ChatImageInput } from "@world-ai/shared";
 import { getAssetCdnUrl } from "./asset-url";
 import { readChatImages } from "./chat-image-input";
 

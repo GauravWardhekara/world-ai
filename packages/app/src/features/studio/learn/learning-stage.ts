@@ -1,4 +1,4 @@
-import type { BlockKind } from "@yumina/engine";
+import type { BlockKind } from "@world-ai/engine";
 import type { LearningStage } from "./learning-catalog";
 
 /** The kind of block a flow node draws, whatever node type draws it: a list

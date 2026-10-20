@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { Variable, WorldEntry } from "@yumina/engine";
+import type { Variable, WorldEntry } from "@world-ai/engine";
 import { gateGrouping, gateLabel } from "./gate-groups";
 
 const vol: Variable = { id: "vol", name: "卷", type: "number", defaultValue: 0, min: 0, max: 5 } as Variable;

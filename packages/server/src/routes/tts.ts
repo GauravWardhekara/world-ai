@@ -48,7 +48,7 @@ import {
   isValidTtsVoice,
   resolveTtsVoiceAlias,
   type TtsReadingMode,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import type { AppEnv } from "../lib/types.js";
 
 const ttsRoutes = new Hono<AppEnv>();

@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, beforeEach } from "node:test";
 import { createServer } from "vite";
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
 
 /**
  * Restoring a crash-recovery draft must not clobber what the server gained
@@ -24,7 +24,7 @@ const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const vite = await createServer({
   root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
   server: { middlewareMode: true, watch: null },
-  resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } },
+  resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } },
 });
 const { useEditorStore: store, resolveRecoveredDraft } = await vite.ssrLoadModule("/src/stores/editor.ts") as typeof import("./editor");
 const { feedback } = await vite.ssrLoadModule("/src/lib/feedback.tsx") as typeof import("../lib/feedback");

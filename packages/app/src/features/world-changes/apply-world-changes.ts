@@ -1,4 +1,4 @@
-import { diffWorldSchemas, migrateWorldDefinition, type WorldDefinition, type WorldDiff } from "@yumina/engine";
+import { diffWorldSchemas, migrateWorldDefinition, type WorldDefinition, type WorldDiff } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 
 const apiBase = import.meta.env.VITE_API_URL || "";

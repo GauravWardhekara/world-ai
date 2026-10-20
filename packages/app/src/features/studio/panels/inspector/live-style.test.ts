@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { JSDOM } from "jsdom";
-import type { UiElement } from "@yumina/engine";
+import type { UiElement } from "@world-ai/engine";
 import { lookChanged, paintLive } from "./live-style";
 
 const dom = new JSDOM("<div></div>");

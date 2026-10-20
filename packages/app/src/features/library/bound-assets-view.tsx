@@ -32,7 +32,7 @@ import { useFolderBindingStore } from "@/stores/folder-bindings";
 import { useUserAssetStore, type UserAsset } from "@/stores/user-assets";
 import { getAssetCdnUrl, cardImageUrl, fallbackToOriginalOnError } from "@/lib/asset-url";
 import { getUploadMetadata } from "@/lib/asset-upload";
-import { isAssetArchiveFilename } from "@yumina/shared";
+import { isAssetArchiveFilename } from "@world-ai/shared";
 import { useAssetImportStore } from "@/stores/asset-imports";
 import { MediaGuidelinesNote } from "@/components/media-guidelines-note";
 import {

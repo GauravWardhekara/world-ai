@@ -1,4 +1,4 @@
-import type { StateGuardSettings } from "@yumina/shared";
+import type { StateGuardSettings } from "@world-ai/shared";
 
 export async function requestStateGuardSettings(sessionId: string, patch?: Partial<StateGuardSettings>): Promise<StateGuardSettings> {
   if (!sessionId) throw new Error("No active session");

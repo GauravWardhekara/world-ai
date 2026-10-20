@@ -4,7 +4,7 @@ import { act, createElement, useState } from "react";
 import { JSDOM } from "jsdom";
 import { createInstance } from "i18next";
 import { I18nextProvider, initReactI18next } from "react-i18next";
-import { UI_CHAT_STARTED, type Condition, type UiAction, type UiPage, type Variable } from "@yumina/engine";
+import { UI_CHAT_STARTED, type Condition, type UiAction, type UiPage, type Variable } from "@world-ai/engine";
 import {
   ActionListEditor, ConditionEditor, defaultAction, parseValueFor, showModeOf, type ActionContext,
 } from "./element-behavior";

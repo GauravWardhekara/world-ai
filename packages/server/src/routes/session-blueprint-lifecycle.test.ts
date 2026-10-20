@@ -8,7 +8,7 @@ import { db } from "../db/index.js";
 import { checkpoints, messages, playSessions, sessionLoreEntries, sessionStorageEntries, summaryceptionSnippets, user, userLibrary, userPersonas, userWorldPersonas, worldMemories, worlds } from "../db/schema.js";
 import { branchSession, revertSession, sessionRoutes } from "./sessions.js";
 import { promptHistory, type RunMemories } from "../lib/run-scopes.js";
-import { GameStateManager, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, type WorldDefinition } from "@world-ai/engine";
 import { runTestStart, saveTestStart } from "../lib/studio-test-starts.js";
 
 // Run the real route orchestration and SQL against an isolated, ephemeral

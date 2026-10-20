@@ -9,7 +9,7 @@ import {
   appPackSummaries,
   appPackVariableId,
   type AppPackId,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { TwoTapDeleteButton } from "@/components/ui/two-tap-delete-button";
 import { cn } from "@/lib/utils";
 import { feedback } from "@/lib/feedback";

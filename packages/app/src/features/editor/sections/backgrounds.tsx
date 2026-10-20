@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowLeft, ImageIcon, Plus, Trash2, Upload } from "lucide-react";
-import { COVER_BACKGROUND_URL, DEFAULT_BACKGROUND_BLUR, DEFAULT_BACKGROUND_DIM, DEFAULT_BACKGROUND_OPACITY } from "@yumina/engine";
-import type { BackgroundImage } from "@yumina/engine";
+import { COVER_BACKGROUND_URL, DEFAULT_BACKGROUND_BLUR, DEFAULT_BACKGROUND_DIM, DEFAULT_BACKGROUND_OPACITY } from "@world-ai/engine";
+import type { BackgroundImage } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { resolveImageUrl } from "@/lib/asset-url";
 import { useEditorStore } from "@/stores/editor";

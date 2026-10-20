@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Brain } from "lucide-react";
-import { memoryPoolMembers, resolveStation, type Worldbook } from "@yumina/engine";
+import { memoryPoolMembers, resolveStation, type Worldbook } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 

@@ -26,7 +26,7 @@ import {
   clampChangelogLang,
   type ChangelogEntryView,
   type ChangelogResponse,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { cn } from "@/lib/utils";
 import { confirmAction } from "@/components/ui/global-confirm-dialog";
 import {

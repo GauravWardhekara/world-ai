@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FileCode2 } from "lucide-react";
-import type { FrontendFileFacts } from "@yumina/engine";
+import type { FrontendFileFacts } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { BLOCK_BODY_PAD, PLAIN_ROW_H } from "./board";
 

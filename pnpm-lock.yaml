@@ -100,13 +100,13 @@ importers:
       '@xyflow/react':
         specifier: ^12.11.3
         version: 12.12.0(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(immer@11.1.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@yumina/engine':
+      '@world-ai/engine':
         specifier: workspace:*
         version: link:../engine
-      '@yumina/server':
+      '@world-ai/server':
         specifier: workspace:*
         version: link:../server
-      '@yumina/shared':
+      '@world-ai/shared':
         specifier: workspace:*
         version: link:../shared
       better-auth:
@@ -309,10 +309,10 @@ importers:
       '@modelcontextprotocol/server':
         specifier: 2.3.1
         version: 2.3.1
-      '@yumina/engine':
+      '@world-ai/engine':
         specifier: workspace:*
         version: link:../engine
-      '@yumina/shared':
+      '@world-ai/shared':
         specifier: workspace:*
         version: link:../shared
       better-auth:

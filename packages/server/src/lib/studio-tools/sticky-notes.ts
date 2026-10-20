@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 /**
  * The creator's sticky notes on the canvas, each with what it is stuck to.

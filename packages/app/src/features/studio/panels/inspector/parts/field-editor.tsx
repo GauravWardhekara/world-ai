@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { UiElement, UiFieldKind, Variable } from "@yumina/engine";
-import { nameFromQuestion } from "@yumina/engine";
+import type { UiElement, UiFieldKind, Variable } from "@world-ai/engine";
+import { nameFromQuestion } from "@world-ai/engine";
 import { NamedText, Section, Toggle, VariableSelect, fieldCls, smallCls, useMakeVariable, useSyncAutoName } from "./part-kit";
 
 type Field = Extract<UiElement, { type: "field" }>;

@@ -2,7 +2,7 @@ import { mutateSocialSession } from "../lib/social-simulator-state.js";
 import { Hono } from "hono";
 import { and, eq } from "drizzle-orm";
 import { z } from "zod";
-import { applySocialAction, claimSocialJob, finishSocialJob, initialSocialState, socialConfigSchema, socialReplyBatch, type SocialState } from "@yumina/engine";
+import { applySocialAction, claimSocialJob, finishSocialJob, initialSocialState, socialConfigSchema, socialReplyBatch, type SocialState } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { playSessions, worlds } from "../db/schema.js";
 import { authMiddleware } from "../middleware/auth.js";

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Star, Download, Check } from "lucide-react";
-import type { ExtensionSummary } from "@yumina/shared";
+import type { ExtensionSummary } from "@world-ai/shared";
 import { useExtensionsStore } from "@/stores/extensions";
 import { useFeature } from "@/edition/edition";
 import { useExtensionPreview } from "./extension-preview-store";

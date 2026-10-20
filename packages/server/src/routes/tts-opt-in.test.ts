@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { Hono } from "hono";
 import { eq } from "drizzle-orm";
-import { isTtsOptedIn } from "@yumina/shared";
+import { isTtsOptedIn } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { user, worlds, playSessions, creditWallets, creditTransactions } from "../db/schema.js";
 import { ttsRoutes } from "./tts.js";

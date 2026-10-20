@@ -1,5 +1,5 @@
 {
-  "name": "yumina",
+  "name": "world-ai",
   "version": "0.0.81.1",
   "license": "AGPL-3.0-only",
   "private": true,
@@ -12,7 +12,7 @@
     "lint": "turbo lint",
     "start": "node scripts/start.mjs",
     "start:rebuild": "node scripts/start.mjs --build",
-    "db:push": "pnpm --filter @yumina/server db:push"
+    "db:push": "pnpm --filter @world-ai/server db:push"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1019.0",

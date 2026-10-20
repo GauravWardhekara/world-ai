@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { ANY_MODULE, type GameState, type WorldDefinition, type Worldbook } from "@yumina/engine";
+import { ANY_MODULE, type GameState, type WorldDefinition, type Worldbook } from "@world-ai/engine";
 import { dueWorkers } from "./worker-station.js";
 import { buildInputBlocksFor, type RunMemories, type RunRecord, type WorkerOutput } from "./run-scopes.js";
 

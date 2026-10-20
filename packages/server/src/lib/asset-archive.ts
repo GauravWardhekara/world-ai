@@ -3,7 +3,7 @@ import { pipeline } from "node:stream/promises";
 import { createGunzip } from "node:zlib";
 import { fromBuffer, type Entry, type ZipFile } from "yauzl";
 import { extract } from "tar-stream";
-import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename } from "@yumina/shared";
+import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename } from "@world-ai/shared";
 import { normalizeAssetMimeType } from "./asset-mime.js";
 
 export class AssetImportError extends Error {

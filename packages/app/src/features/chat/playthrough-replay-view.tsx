@@ -15,8 +15,8 @@ import {
   applySystemEffects,
   buildActionFiredEvent,
   processSystemEffects,
-} from "@yumina/engine";
-import type { WorldDefinition, AudioTrack } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { WorldDefinition, AudioTrack } from "@world-ai/engine";
 import { safeParseWorldDef } from "@/lib/utils";
 import { absoluteImageUrl, resolveImageUrl } from "@/lib/asset-url";
 import { useUiStore } from "@/stores/ui";

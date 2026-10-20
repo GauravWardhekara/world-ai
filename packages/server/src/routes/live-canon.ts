@@ -1,7 +1,7 @@
 import { Hono, type Context } from "hono";
 import { and, eq, sql } from "drizzle-orm";
 import { z } from "zod";
-import type { LiveCanonEntryInput } from "@yumina/shared";
+import type { LiveCanonEntryInput } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { playSessions, sessionLoreEntries } from "../db/schema.js";
 import { authMiddleware } from "../middleware/auth.js";

@@ -1,5 +1,5 @@
-import type { SocialJob } from "@yumina/engine";
-import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, MAX_PERSONA_ENTRY_CONTENT } from "@yumina/shared";
+import type { SocialJob } from "@world-ai/engine";
+import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, MAX_PERSONA_ENTRY_CONTENT } from "@world-ai/shared";
 import { buildPersonaSystemMessage, type PromptPersona } from "./persona-prompt.js";
 
 interface SocialLore { id: string; name: string; lore: string }

@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { APP_PACK_IDS, appPackSample, appPackSource, appPackSummaries, appPackVariableId, generateComposedIndex } from "@yumina/engine";
+import { APP_PACK_IDS, appPackSample, appPackSource, appPackSummaries, appPackVariableId, generateComposedIndex } from "@world-ai/engine";
 import { bundleAndCompile } from "./tsx-bundler";
 
 /**

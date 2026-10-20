@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { migrateWorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
 import { convertTavernCard, convertTavernWorldbook, guessTavernLanguage, isTavernCharacterCard } from "./convert-tavern-card";
 import { simpleArchetypeLabelOf } from "@/features/editor/lib/simple-archetype";
 import { TAVERN_V1, TAVERN_V2, TAVERN_V3 } from "./__fixtures__/tavern-cards";

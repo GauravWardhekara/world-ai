@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 
 /* Template-seeded entries carry a `template-content:<key>` tag. When the
  * entry's content is still empty, the editor shows the i18n template text as

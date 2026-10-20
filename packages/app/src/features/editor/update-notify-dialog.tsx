@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Megaphone, X } from "lucide-react";
 import { FieldError } from "@/components/ui/field-error";
-import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@yumina/shared";
+import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@world-ai/shared";
 import { postWorldUpdateNote } from "./world-update-note";
 
 interface UpdateNotifyDialogProps {

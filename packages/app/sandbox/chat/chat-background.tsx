@@ -1,4 +1,4 @@
-import type { ResolvedBackground } from "@yumina/engine";
+import type { ResolvedBackground } from "@world-ai/engine";
 
 /**
  * The picture behind the chat.

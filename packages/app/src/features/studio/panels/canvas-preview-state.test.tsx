@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { act, createElement } from "react";
 import { JSDOM } from "jsdom";
 import { createServer } from "vite";
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div>', { url: "http://localhost", pretendToBeVisual: true });
 const globals = { window: dom.window, document: dom.window.document, location: dom.window.location, navigator: dom.window.navigator, localStorage: dom.window.localStorage, HTMLElement: dom.window.HTMLElement, MutationObserver: dom.window.MutationObserver, requestAnimationFrame: dom.window.requestAnimationFrame.bind(dom.window), cancelAnimationFrame: dom.window.cancelAnimationFrame.bind(dom.window), IS_REACT_ACT_ENVIRONMENT: true };
@@ -13,7 +13,7 @@ for (const [key, value] of Object.entries(globals)) Object.defineProperty(global
 const { createRoot } = await import("react-dom/client");
 const vite = await createServer({
   configFile: false, root: fileURLToPath(new URL("../../../..", import.meta.url)), appType: "custom", logLevel: "silent",
-  resolve: { alias: { "@": fileURLToPath(new URL("../../..", import.meta.url)), "@yumina/engine": fileURLToPath(new URL("../../../../../engine/src/index.ts", import.meta.url)) } },
+  resolve: { alias: { "@": fileURLToPath(new URL("../../..", import.meta.url)), "@world-ai/engine": fileURLToPath(new URL("../../../../../engine/src/index.ts", import.meta.url)) } },
   esbuild: { jsx: "automatic" }, server: { middlewareMode: true },
 });
 const { useStudioPreviewChoices } = await vite.ssrLoadModule("/src/features/studio/panels/canvas-panel.tsx") as typeof import("./canvas-panel");

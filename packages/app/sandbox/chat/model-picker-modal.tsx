@@ -4,7 +4,7 @@ import { useModelControls as useYumina } from "./model-controls-context";
 import type { LocalBridgeChannelData } from "../protocol";
 import { SandboxPlatformOverlay } from "../platform-overlay-portal";
 import { initializeSandboxPlatformOverlay } from "../platform-overlay-root";
-import { PLAY_MODELS, PLAN_HIERARCHY as SHARED_PLAN_HIERARCHY, MAX_PINNED_MODELS, formatAvgCost, groupPlayModels } from "@yumina/shared";
+import { PLAY_MODELS, PLAN_HIERARCHY as SHARED_PLAN_HIERARCHY, MAX_PINNED_MODELS, formatAvgCost, groupPlayModels } from "@world-ai/shared";
 import {
   DeepSeekPricingInfo,
   type DeepSeekPricingCopy,

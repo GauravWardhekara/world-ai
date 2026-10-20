@@ -2,7 +2,7 @@ import { useEffect, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { Plus, X } from "lucide-react";
-import { UI_PAGE_TEMPLATES, UI_TEMPLATES, getUiTemplate, type UiPageTemplateId } from "@yumina/engine";
+import { UI_PAGE_TEMPLATES, UI_TEMPLATES, getUiTemplate, type UiPageTemplateId } from "@world-ai/engine";
 import { useOpeningCount } from "./new-page-hooks";
 import { useLearningWorkspace } from "../../learn/learning-workspace";
 

@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { moduleSceneState } from "./scene-state";
 
 /**

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { UI_PAGE_TEMPLATES, migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { UI_PAGE_TEMPLATES, migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { PAGE_TEMPLATE_NAMES, advisorPrompt, approxPromptSize, capabilitySheet, cardOutline, describeLanguage, referenceIndex, saveBrief } from "./studio-advisor.js";
 import { createBuildProposal, advisorTools } from "./studio-advisor.js";
 import { STUDIO_TOOLS } from "./studio-tools/tools.js";

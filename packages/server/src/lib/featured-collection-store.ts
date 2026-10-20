@@ -1,5 +1,5 @@
 import { and, eq, inArray } from "drizzle-orm";
-import { resolveFeaturedCollection, type FeaturedScope, type FeaturedSlot } from "@yumina/shared";
+import { resolveFeaturedCollection, type FeaturedScope, type FeaturedSlot } from "@world-ai/shared";
 import type { Database } from "../db/index.js";
 import { featuredCollections, featuredWorlds } from "../db/schema.js";
 

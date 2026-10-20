@@ -1,8 +1,8 @@
 import { useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { LayoutGrid, PanelTop, TextCursorInput, type LucideIcon } from "lucide-react";
-import { applyUiLook, nameFromQuestion, newElement, updateElements } from "@yumina/engine";
-import type { UiAddableType, UiDoc, UiElement, UiPage, Variable } from "@yumina/engine";
+import { applyUiLook, nameFromQuestion, newElement, updateElements } from "@world-ai/engine";
+import type { UiAddableType, UiDoc, UiElement, UiPage, Variable } from "@world-ai/engine";
 import type { ActionContext } from "../element-behavior";
 import { ChoiceEditor } from "./choice-editor";
 import { FieldEditor } from "./field-editor";

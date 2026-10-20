@@ -11,7 +11,7 @@ import {
   type GameState,
   type WorldDefinition,
   type Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 
 /**
  * A configuration estimate, evaluated against initial or current game state.

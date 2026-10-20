@@ -1,4 +1,4 @@
-import { fitFontWeight, type UiElement } from "@yumina/engine";
+import { fitFontWeight, type UiElement } from "@world-ai/engine";
 
 /**
  * A part's look, written straight onto the part already drawn.

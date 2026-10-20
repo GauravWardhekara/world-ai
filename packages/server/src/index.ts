@@ -7,7 +7,7 @@ import type { Context } from "hono";
 import { compress } from "hono/compress";
 import { serve } from "@hono/node-server";
 import { serveStatic } from "@hono/node-server/serve-static";
-import { preloadTokenizer } from "@yumina/engine";
+import { preloadTokenizer } from "@world-ai/engine";
 import { env } from "./lib/env.js";
 import { privateStateCache } from "./middleware/private-state-cache.js";
 import { requestBodyLimit } from "./middleware/request-body-limit.js";

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { memoryOf, poolColours, POOL_COLOURS, wayInOf } from "./situation-describe";
 
 const book = (o: Partial<Worldbook>) => ({ id: "b", name: "古墓", order: 0, activation: { mode: "always" }, ...o }) as Worldbook;

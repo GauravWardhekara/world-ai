@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { extractAssetRefs, scanAssets } from "./asset-scanner.js";
 
 const IMAGE = "5b00c2bc-4a98-4152-aaeb-e4ef51d7c75d";

@@ -1,6 +1,6 @@
 import { VariableFieldsEditor } from "./variable-fields-editor";
 import { CustomAiPanel, CustomBehaviorPanel } from "./custom-implementation";
-import type { FrontendFileFacts } from "@yumina/engine";
+import type { FrontendFileFacts } from "@world-ai/engine";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AlertTriangle, Bot, Check as CheckIcon, ChevronRight, Copy, FolderOpen, History, Images, Maximize2, MoreHorizontal, Trash2, Upload, X } from "lucide-react";
@@ -11,8 +11,8 @@ import { CONTEXT_BLOCK_ID, CardContextForm, CardNarratorForm, HistoryWindowContr
 import { StoryAiSettings } from "./story-ai-settings";
 import { resolveImageUrl } from "@/lib/asset-url";
 import { feedback } from "@/lib/feedback";
-import { ANY_MODULE, UNPLACED_WORLDBOOK_ID, deriveSectionDefaultsForEntry, isAlwaysSendEntry, isVariableBoundEntry, sceneImageEmbed, seedKeyOf, type WorkerTrigger } from "@yumina/engine";
-import type { CardGraph, Condition, GraphNode, GraphPatch, ModuleContextInput, SceneImage, Variable, WorldDefinition, WorldEntry } from "@yumina/engine";
+import { ANY_MODULE, UNPLACED_WORLDBOOK_ID, deriveSectionDefaultsForEntry, isAlwaysSendEntry, isVariableBoundEntry, sceneImageEmbed, seedKeyOf, type WorkerTrigger } from "@world-ai/engine";
+import type { CardGraph, Condition, GraphNode, GraphPatch, ModuleContextInput, SceneImage, Variable, WorldDefinition, WorldEntry } from "@world-ai/engine";
 import { AssetPicker } from "@/features/editor/asset-picker";
 import { uploadSceneImageFiles } from "@/features/editor/sections/scene-image-upload";
 import { isSceneImageAuto, useSceneImageMode } from "@/features/editor/sections/scene-image-auto";
@@ -31,7 +31,7 @@ import { VariableValueField } from "./variable-value-field";
 import { VariableActivationEditor } from "@/features/editor/components/variable-activation-editor";
 import { VariableIdEditor, VariableNameReferenceHint } from "@/features/editor/components/variable-id-editor";
 import { OptionsEditor, suggestedDelta } from "@/features/editor/components/precise-tracking";
-import { CONTINUITY_MAX_OPTIONS } from "@yumina/engine";
+import { CONTINUITY_MAX_OPTIONS } from "@world-ai/engine";
 import { getEntryDeliverySummary } from "./entry-delivery";
 import { ModuleConsole, ModuleMemorySettings, StationModelFields, type FoldRender } from "@/features/editor/components/module/module-console";
 import { stationParamsCustom } from "@/features/editor/lib/ai-call-settings";

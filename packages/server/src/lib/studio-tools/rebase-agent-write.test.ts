@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { describeAgentWriteConflicts, rebaseAgentWrite } from "./rebase-agent-write.js";
 import { executeApplyChanges } from "./tool-executor.js";
 

@@ -1,4 +1,4 @@
-import { isAssetArchiveFilename } from "@yumina/shared";
+import { isAssetArchiveFilename } from "@world-ai/shared";
 import { fetchUploadConcurrency, runUploadBatch } from "@/lib/asset-upload-policy";
 import { useAssetImportStore as useArchiveImportStore } from "@/stores/asset-imports";
 import { useEffect, useState, useRef, useMemo, useCallback } from "react";

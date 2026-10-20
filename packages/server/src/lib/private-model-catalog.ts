@@ -1,4 +1,4 @@
-import type { ApiKeyMetadata } from "@yumina/shared";
+import type { ApiKeyMetadata } from "@world-ai/shared";
 
 export const PRIVATE_MODEL_SYNC_TTL = 5 * 60 * 1000;
 

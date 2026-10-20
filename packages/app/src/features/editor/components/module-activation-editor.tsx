@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { ConditionEditor } from "./condition-editor";

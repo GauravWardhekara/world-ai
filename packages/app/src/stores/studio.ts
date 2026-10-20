@@ -5,7 +5,7 @@ import { useCreditStore } from "@/edition/slots.state";
 import { serializeStudioChatMessages } from "@/features/studio/lib/types";
 import type { StudioImageProposal, StudioImageBatchProposal } from "@/features/studio/lib/types";
 import { matchingImageBatch, proposalWithImageBatch } from "@/features/studio/lib/image-batch-state";
-import { SMART_IMAGE_MODEL, getPlatformStyle, platformStylePrice, isStudioBuildProposal, type StudioBuildProposal } from "@yumina/shared";
+import { SMART_IMAGE_MODEL, getPlatformStyle, platformStylePrice, isStudioBuildProposal, type StudioBuildProposal } from "@world-ai/shared";
 import type {
   StudioChatMessage,
   ToolCall,

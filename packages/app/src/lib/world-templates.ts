@@ -1,5 +1,5 @@
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
-import { deriveSectionDefaults, officialPresetsFor } from "@yumina/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
+import { deriveSectionDefaults, officialPresetsFor } from "@world-ai/engine";
 import { clampLanguage } from "@/lib/language-clamp";
 import i18n from "@/lib/i18n";
 

@@ -1,4 +1,4 @@
-import type { GameState } from "@yumina/engine";
+import type { GameState } from "@world-ai/engine";
 
 export interface RuntimeChange { variableId: string; oldValue: unknown; newValue: unknown }
 export type ChangeSourceKind = "setup" | "ai" | "judge" | "rule" | "settle";

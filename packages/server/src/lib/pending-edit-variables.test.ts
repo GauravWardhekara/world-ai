@@ -5,8 +5,8 @@ import { db } from "../db/index.js";
 import { worlds, worldPendingEdits, user } from "../db/schema.js";
 import { eq } from "drizzle-orm";
 import { resolveSessionVariables } from "./pending-edit.js";
-import { preserveSetupScopedVariables } from "@yumina/engine";
-import type { Variable } from "@yumina/engine";
+import { preserveSetupScopedVariables } from "@world-ai/engine";
+import type { Variable } from "@world-ai/engine";
 
 // Root-cause regression for the K-pop "选X只出X" bug on PUBLISHED cards:
 // the opening-switch (switchGreeting → swipe) adoption path resolved the

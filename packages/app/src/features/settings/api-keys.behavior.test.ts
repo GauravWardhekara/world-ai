@@ -24,8 +24,8 @@ const vite = await createServer({
   configFile: false, root: fileURLToPath(new URL("../../..", import.meta.url)), appType: "custom", logLevel: "silent",
   resolve: { alias: {
     "@": fileURLToPath(new URL("../..", import.meta.url)),
-    "@yumina/engine": fileURLToPath(new URL("../../../../engine/src/index.ts", import.meta.url)),
-    "@yumina/shared": fileURLToPath(new URL("../../../../shared/src/index.ts", import.meta.url)),
+    "@world-ai/engine": fileURLToPath(new URL("../../../../engine/src/index.ts", import.meta.url)),
+    "@world-ai/shared": fileURLToPath(new URL("../../../../shared/src/index.ts", import.meta.url)),
   } },
   esbuild: { jsx: "automatic" }, server: { middlewareMode: true },
 });

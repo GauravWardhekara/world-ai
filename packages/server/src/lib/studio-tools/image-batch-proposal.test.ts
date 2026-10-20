@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { SMART_IMAGE_MODEL } from "@yumina/shared";
+import { SMART_IMAGE_MODEL } from "@world-ai/shared";
 import { editImageBatchProposal, estimateImageBatch, normalizeImageBatchProposal } from "./image-batch-proposal.js";
 import { STUDIO_TOOLS, CONTROL_TOOL_NAMES } from "./tools.js";
 

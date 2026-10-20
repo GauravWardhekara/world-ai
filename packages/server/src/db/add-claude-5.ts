@@ -2,7 +2,7 @@
  * Idempotent migration — add the official Claude Sonnet 5 / Claude Opus 5
  * models to the `model_prices` table without disturbing existing rows.
  *
- * Run with: pnpm --filter @yumina/server exec tsx src/db/add-claude-5.ts
+ * Run with: pnpm --filter @world-ai/server exec tsx src/db/add-claude-5.ts
  *
  * Env: DATABASE_URL must point at the target Postgres instance.
  * Apply to DEV first, then PROD (railway run …), BEFORE deploying the code

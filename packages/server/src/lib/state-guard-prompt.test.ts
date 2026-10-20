@@ -1,7 +1,7 @@
 import "../test/database-fixture.js";
 import assert from "node:assert/strict";
 import test from "node:test";
-import { GameStateManager, ResponseParser, isAiWritable, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, ResponseParser, isAiWritable, type WorldDefinition } from "@world-ai/engine";
 import { registerStateUpdateGuard } from "../extensions/state-update-guard/hooks.js";
 import { STATE_GUARD_INSTRUCTIONS } from "../extensions/state-update-guard/validate.js";
 import { __setInstalledLookupForTests, registerExtensionHooks, resolveTurnHooks, validateTurnOutput, type TurnOutputContext } from "./extension-hooks.js";

@@ -6,7 +6,7 @@
  * Regex scripts, talkativeness, probability, etc. are skipped.
  */
 
-import { makeDefaultRootComponent, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { makeDefaultRootComponent, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 
 /* -------------------------------------------------------------------------- */
 /*  SillyTavern type shapes (loose — we only access what we need)             */

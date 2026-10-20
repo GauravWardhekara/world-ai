@@ -2,7 +2,7 @@ import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useReactFlow } from "@xyflow/react";
 import { Link2Off, Minus, X } from "lucide-react";
-import type { GraphLayout } from "@yumina/engine";
+import type { GraphLayout } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 
 /**

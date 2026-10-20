@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { buildQuietPrompt, calledSpeaker, dueQuietSpeaker, quietSpeakers, worldHasQuietStations } from "./quiet-station.js";
 
 const world = {

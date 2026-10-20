@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { DEFAULT_MODEL } from "@yumina/shared";
+import { DEFAULT_MODEL } from "@world-ai/shared";
 import { composeSelectedModelId } from "./model-id";
 import { resolveOfficialSelectedModel, resolvePrivateSelectedModel } from "./provider-model-selection";
 

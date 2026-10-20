@@ -1,4 +1,4 @@
-import { isAlwaysSendEntry, resolveStation, type WorldDefinition } from "@yumina/engine";
+import { isAlwaysSendEntry, resolveStation, type WorldDefinition } from "@world-ai/engine";
 
 type Translate = (key: string, opts?: Record<string, unknown>) => string;
 

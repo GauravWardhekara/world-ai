@@ -1,5 +1,5 @@
 import { and, eq, sql } from "drizzle-orm";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { playerWorldState } from "../db/schema.js";
 

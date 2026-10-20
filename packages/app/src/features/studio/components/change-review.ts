@@ -9,7 +9,7 @@
  * is summarised as parts added / changed / removed, text before → after and
  * colour swatches; the JSON stays one click away.
  */
-import type { UiDoc, UiElement } from "@yumina/engine";
+import type { UiDoc, UiElement } from "@world-ai/engine";
 import { describeSchemaChanges, schemaChangeLabel, toolLabel, type EntityNameLookup } from "./change-labels";
 import { describeUiDocOps, type PartLookup } from "./ui-doc-op-labels";
 

@@ -8,8 +8,8 @@ config({ path: "../../.env" });
 //   local  — the open-source self-hosted build: no platform services, one
 //            local account by default, embedded PGlite + on-disk assets.
 // The open-source export pins this to "local"; the private build defaults to
-// "hosted" and can be flipped with YUMINA_EDITION=local to test the OSS shape.
-const RAW_EDITION = process.env.YUMINA_EDITION === "hosted" ? "hosted" : "local";
+// "hosted" and can be flipped with WORLD_AI_EDITION=local (or YUMINA_EDITION=local) to test the OSS shape.
+const RAW_EDITION = (process.env.WORLD_AI_EDITION || process.env.YUMINA_EDITION) === "hosted" ? "hosted" : "local";
 const IS_LOCAL = RAW_EDITION === "local";
 
 /** Treat "" the same as unset so `.optional()` / `.default()` apply. */
@@ -27,14 +27,42 @@ const envSchema = z.object({
   DATABASE_POOL_MAX: z.coerce.number().int().min(1).max(100).default(100),
   IMAGE_EXECUTION_MODE: z.enum(["embedded", "external"]).default("embedded"),
   IMAGE_EVENT_MAX_CONNECTIONS: z.coerce.number().int().min(1).max(50_000).default(25_000),
-  YUMINA_EDITION: z.enum(["hosted", "local"]).default("hosted"),
+  WORLD_AI_EDITION: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_EDITION),
+    z.enum(["hosted", "local"]).default("hosted")
+  ),
+  YUMINA_EDITION: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_EDITION),
+    z.enum(["hosted", "local"]).default("hosted")
+  ),
   // single-user: one auto-signed-in local account, no login screen (local default).
   // multi-user: Better Auth email/password (+ optional social providers).
-  YUMINA_AUTH_MODE: z.preprocess(emptyToUndefined, z.enum(["single-user", "multi-user"]).optional()),
+  WORLD_AI_AUTH_MODE: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_AUTH_MODE),
+    z.enum(["single-user", "multi-user"]).optional()
+  ),
+  YUMINA_AUTH_MODE: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_AUTH_MODE),
+    z.enum(["single-user", "multi-user"]).optional()
+  ),
   // Root folder for everything a local install persists (PGlite + assets).
-  YUMINA_DATA_DIR: z.preprocess(emptyToUndefined, z.string().default(IS_LOCAL ? "./data" : "./.yumina-data")),
+  WORLD_AI_DATA_DIR: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_DATA_DIR),
+    z.string().default(IS_LOCAL ? "./data" : "./.world-ai-data")
+  ),
+  YUMINA_DATA_DIR: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_DATA_DIR),
+    z.string().default(IS_LOCAL ? "./data" : "./.world-ai-data")
+  ),
   // On-disk asset storage, used when no S3 bucket is configured. Resolved below.
-  YUMINA_STORAGE_DIR: z.preprocess(emptyToUndefined, z.string().optional()),
+  WORLD_AI_STORAGE_DIR: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_STORAGE_DIR),
+    z.string().optional()
+  ),
+  YUMINA_STORAGE_DIR: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_STORAGE_DIR),
+    z.string().optional()
+  ),
   // Public origin of this deployment (cookies, CORS, links in emails, SEO).
   // Unset = derive from BETTER_AUTH_URL.
   PUBLIC_ORIGIN: z.preprocess(emptyToUndefined, z.string().url().optional()),
@@ -112,9 +140,23 @@ const envSchema = z.object({
   RESEND_API_KEY: process.env.NODE_ENV === "production" && !IS_LOCAL
     ? z.string().min(1, "RESEND_API_KEY is required in production")
     : z.string().default(""),
-  // Official Yumina API keys (regular = self-signup users, invite = invite code users)
-  YUMINA_OPENROUTER_KEY: z.string().default(""),
-  YUMINA_INVITE_OPENROUTER_KEY: z.string().default(""),
+  // Official World AI API keys (regular = self-signup users, invite = invite code users)
+  WORLD_AI_OPENROUTER_KEY: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_OPENROUTER_KEY),
+    z.string().default("")
+  ),
+  YUMINA_OPENROUTER_KEY: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_OPENROUTER_KEY),
+    z.string().default("")
+  ),
+  WORLD_AI_INVITE_OPENROUTER_KEY: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.YUMINA_INVITE_OPENROUTER_KEY),
+    z.string().default("")
+  ),
+  YUMINA_INVITE_OPENROUTER_KEY: z.preprocess(
+    (v) => emptyToUndefined(v) ?? emptyToUndefined(process.env.WORLD_AI_INVITE_OPENROUTER_KEY),
+    z.string().default("")
+  ),
   // Continuity judge (decision model after each reply — see lib/continuity).
   // Key falls back to YUMINA_OPENROUTER_KEY; URL/model default to OpenRouter's
   // decisions endpoint. CONTINUITY_DISABLED=true is the global kill switch.

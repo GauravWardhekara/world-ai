@@ -1,6 +1,6 @@
 import { IMAGE_ASPECTS, PLATFORM_STYLES, SMART_IMAGE_ASPECTS, SMART_IMAGE_MODEL, SMART_IMAGE_MODEL_IDS, closestAspect,
   getPlatformStyle, getSmartImageModel, platformStylePrice, platformStyleRecipe,
-  resolveSmartImageAspect, resolveSmartImageResolution, type ImageAspectId } from "@yumina/shared";
+  resolveSmartImageAspect, resolveSmartImageResolution, type ImageAspectId } from "@world-ai/shared";
 import { eq } from "drizzle-orm";
 import { db } from "../../db/index.js";
 import { generationJobs } from "../../db/schema.js";

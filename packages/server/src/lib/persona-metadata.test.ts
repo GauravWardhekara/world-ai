@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import type { GameStateManager } from "@yumina/engine";
+import type { GameStateManager } from "@world-ai/engine";
 import { applyPersonaMetadata, omitPersonaMetadata, omitSummaryMetadata } from "./persona-metadata.js";
 
 function metadataRecorder(initial: Record<string, unknown> = {}) {

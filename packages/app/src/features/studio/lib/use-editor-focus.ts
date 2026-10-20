@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { useAiFocus, type AiFocusItem } from "./ai-focus";
 import { describeWritingFocus } from "./ai-focus-describe";
 

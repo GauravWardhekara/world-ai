@@ -1,4 +1,4 @@
-import { aiDropReason, resolveEffectVariable, type AiDropReason, type ContinuityDecision, type Effect, type GameState, type JevQuestion, type WorldDefinition } from "@yumina/engine";
+import { aiDropReason, resolveEffectVariable, type AiDropReason, type ContinuityDecision, type Effect, type GameState, type JevQuestion, type WorldDefinition } from "@world-ai/engine";
 import { textPrefix } from "./text-prefix.js";
 
 type Change = { variableId: string; oldValue: unknown; newValue: unknown };

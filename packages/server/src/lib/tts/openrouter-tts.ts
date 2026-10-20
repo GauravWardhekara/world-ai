@@ -11,7 +11,7 @@
  * against OpenRouter generation records, which lag by minutes).
  */
 
-import { TTS_MODEL, TTS_PRICE_USD_PER_UTF8_BYTE } from "@yumina/shared";
+import { TTS_MODEL, TTS_PRICE_USD_PER_UTF8_BYTE } from "@world-ai/shared";
 import { captureServerError } from "../posthog.js";
 
 const OPENROUTER_SPEECH_URL = "https://openrouter.ai/api/v1/audio/speech";
@@ -70,7 +70,7 @@ export function schedulePricingDriftCheck(apiKey: string): void {
       if (Math.abs(live - TTS_PRICE_USD_PER_UTF8_BYTE) > TTS_PRICE_USD_PER_UTF8_BYTE * 0.01) {
         const direction = live > TTS_PRICE_USD_PER_UTF8_BYTE ? "UNDERCHARGING (platform subsidy)" : "overcharging users";
         console.error(
-          `[TTS] price drift: billing constant $${TTS_PRICE_USD_PER_UTF8_BYTE}/byte vs live $${live}/byte — currently ${direction}. Update TTS_PRICE_USD_PER_UTF8_BYTE in @yumina/shared.`,
+          `[TTS] price drift: billing constant $${TTS_PRICE_USD_PER_UTF8_BYTE}/byte vs live $${live}/byte — currently ${direction}. Update TTS_PRICE_USD_PER_UTF8_BYTE in @world-ai/shared.`,
         );
         captureServerError("tts-price-drift", new Error(`tts price drift: live=${live}`), {
           model: TTS_MODEL,

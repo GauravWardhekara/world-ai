@@ -1,4 +1,4 @@
-import type { WorldChange } from "@yumina/engine";
+import type { WorldChange } from "@world-ai/engine";
 
 export type ChangeTone = "added" | "removed" | "modified";
 

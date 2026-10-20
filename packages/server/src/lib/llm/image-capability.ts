@@ -1,4 +1,4 @@
-import { IMAGE_MODEL_CAPABILITIES } from "@yumina/shared";
+import { IMAGE_MODEL_CAPABILITIES } from "@world-ai/shared";
 import type { LLMProvider } from "./types.js";
 import { ensureOpenRouterCatalog, getCatalogImageSupport } from "./model-catalog.js";
 

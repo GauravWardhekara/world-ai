@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { computeActiveWorldbookIds, type Worldbook } from "@yumina/engine";
+import { computeActiveWorldbookIds, type Worldbook } from "@world-ai/engine";
 import { liveRuntimeState, withRuntimeState } from "./runtime-state";
 import { appendRuntimeRecord } from "./runtime-records";
 

@@ -24,8 +24,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@yumina/engine": ["../engine/src/index.ts"],
-      "@yumina/shared": ["../shared/src/index.ts"]
+      "@world-ai/engine": ["../engine/src/index.ts"],
+      "@world-ai/shared": ["../shared/src/index.ts"]
     }
   },
   "include": ["src"]

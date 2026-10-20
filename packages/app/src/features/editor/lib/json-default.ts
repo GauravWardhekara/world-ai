@@ -1,4 +1,4 @@
-import type { Variable } from "@yumina/engine";
+import type { Variable } from "@world-ai/engine";
 
 export function parseJsonDefault(text: string): Record<string, unknown> | unknown[] {
   const value: unknown = JSON.parse(text);

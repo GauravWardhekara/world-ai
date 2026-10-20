@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { GameStateManager } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { GameStateManager } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { appendPendingContext } from "./pending-context.js";
 
 const world = { id: "w", name: "w", version: "1", variables: [], entries: [], rules: [], reactions: [], components: [], settings: {} } as unknown as WorldDefinition;

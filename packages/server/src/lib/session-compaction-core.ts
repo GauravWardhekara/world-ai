@@ -1,8 +1,8 @@
 import { stripNarrativeReasoning } from "./narrative-evidence.js";
 import { isDegenerateSessionMemoryText } from "./session-memory-core.js";
-import { estimateTokens, estimateTokensFromMetrics, preloadTokenizer } from "@yumina/engine";
+import { estimateTokens, estimateTokensFromMetrics, preloadTokenizer } from "@world-ai/engine";
 import { StorySummaryTruncatedError } from "./summary-episode-recovery.js";
-import type { SessionSummaryMode } from "@yumina/shared";
+import type { SessionSummaryMode } from "@world-ai/shared";
 
 /**
  * The minimum a row must expose to be COUNTED and TOKEN-ESTIMATED — no body.

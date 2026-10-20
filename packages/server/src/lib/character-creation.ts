@@ -1,4 +1,4 @@
-import type { GameState, Variable, WorldDefinition } from "@yumina/engine";
+import type { GameState, Variable, WorldDefinition } from "@world-ai/engine";
 import { normalizeGameState } from "./game-state.js";
 
 export interface ParsedCharacterCreationInput {

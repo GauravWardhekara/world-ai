@@ -10,7 +10,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { vector as pgliteVector } from "@electric-sql/pglite/vector";
 import pg from "pg";
 import { sql, notInArray, type SQL } from "drizzle-orm";
-import { MAX_WORLD_TAGS } from "@yumina/shared";
+import { MAX_WORLD_TAGS } from "@world-ai/shared";
 import * as schema from "./schema.js";
 import { USER_MUTES_STATEMENTS } from "./user-mutes-ddl.js";
 import { WORLD_AUDIENCE_DDL } from "./world-audience-ddl.js";
@@ -2428,7 +2428,7 @@ export async function ensureAccountDeletionForeignKeys() {
 }
 
 /**
- * Cap world tags at the DB level (MAX_WORLD_TAGS in @yumina/shared).
+ * Cap world tags at the DB level (MAX_WORLD_TAGS in @world-ai/shared).
  * The app clamps tags on every write path (clampWorldTags), but a CHECK
  * constraint is the only thing that also stops raw inserts, seed scripts and
  * bulk imports — exactly how the legacy 11–33-tag CHUB cards slipped in.

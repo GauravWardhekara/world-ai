@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { LiveFrontendPreview } from "../preview/live-frontend-preview";
 import { moduleSceneState } from "../preview/scene-state";
 

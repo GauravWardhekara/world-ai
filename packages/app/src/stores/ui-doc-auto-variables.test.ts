@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { UiDoc, UiElement, Variable, WorldDefinition } from "@yumina/engine";
+import type { UiDoc, UiElement, Variable, WorldDefinition } from "@world-ai/engine";
 import { autoRenameFor, reconcileAutoVariables, uniqueVariableName } from "./ui-doc-auto-variables";
 
 const v = (id: string, name: string): Variable => ({ id, name, type: "string", defaultValue: "" });

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { blockId, buildBoard, toGraph, type WorldDefinition } from "@yumina/engine";
+import { blockId, buildBoard, toGraph, type WorldDefinition } from "@world-ai/engine";
 import { resolveCanvasInspectorNode } from "./canvas-inspector-target";
 
 test("memory blocks route to their real module without adding or changing graph entities", () => {

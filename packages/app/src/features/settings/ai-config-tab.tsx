@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronRight, Lock } from "lucide-react";
-import { clampPlayerSampling, PLAYER_SAMPLING_BOUNDS } from "@yumina/shared";
+import { clampPlayerSampling, PLAYER_SAMPLING_BOUNDS } from "@world-ai/shared";
 import { isKimiAntiRepetitionModel } from "@/lib/kimi-repetition";
 import { useConfigStore } from "@/stores/config";
 import { useUserProfileStore } from "@/stores/user-profile";

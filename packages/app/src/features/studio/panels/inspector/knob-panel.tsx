@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import type { UiKnob, UiKnobGroup } from "@yumina/engine";
+import type { UiKnob, UiKnobGroup } from "@world-ai/engine";
 
 /**
  * One decomposed region's knobs, shown for whichever block the inspector has

@@ -1,4 +1,4 @@
-import type { AssetImportJob } from "@yumina/shared";
+import type { AssetImportJob } from "@world-ai/shared";
 
 export class AssetImportClientError extends Error {
   constructor(public code: string) { super(code); }

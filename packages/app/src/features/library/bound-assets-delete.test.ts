@@ -35,7 +35,7 @@ for (const deleted of [true, false]) {
       "@/stores/folder-bindings": { useFolderBindingStore: (select: (state: typeof bindings) => unknown) => select(bindings) },
       "@/stores/user-assets": { useUserAssetStore: (select: (state: typeof assets) => unknown) => select(assets) },
       "@/stores/asset-imports": { useAssetImportStore: (select: (state: object) => unknown) => select({ items: [], revision: 0 }) },
-      "@/lib/asset-url": {}, "@/lib/asset-upload": {}, "@yumina/shared": {},
+      "@/lib/asset-url": {}, "@/lib/asset-upload": {}, "@world-ai/shared": {},
       "@/components/media-guidelines-note": { MediaGuidelinesNote: empty },
       "@/components/ui/dialog": {
         Dialog: ({ open, children }: { open: boolean; children: ReactNode }) => open ? createElement("div", { role: "dialog" }, children) : null,

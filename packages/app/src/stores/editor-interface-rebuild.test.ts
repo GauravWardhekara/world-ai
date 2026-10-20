@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, beforeEach } from "node:test";
 import { createServer } from "vite";
-import type { UiDoc, WorldDefinition } from "@yumina/engine";
+import type { UiDoc, WorldDefinition } from "@world-ai/engine";
 
 /**
  * A card's interface is compiled from its document when it is edited and
@@ -21,10 +21,10 @@ const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const vite = await createServer({
   root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
   server: { middlewareMode: true, watch: null },
-  resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } },
+  resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } },
 });
 const editor = await vite.ssrLoadModule("/src/stores/editor.ts") as typeof import("./editor");
-const engine = await vite.ssrLoadModule("@yumina/engine") as typeof import("@yumina/engine");
+const engine = await vite.ssrLoadModule("@world-ai/engine") as typeof import("@world-ai/engine");
 const store = editor.useEditorStore;
 const initial = structuredClone(store.getState().worldDraft);
 

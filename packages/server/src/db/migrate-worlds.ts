@@ -17,8 +17,8 @@ import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
 import { eq } from "drizzle-orm";
 import { worlds } from "./schema.js";
-import { migrateWorldDefinition } from "@yumina/engine";
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
 
 const pool = new pg.Pool({
   connectionString: process.env.DATABASE_URL,

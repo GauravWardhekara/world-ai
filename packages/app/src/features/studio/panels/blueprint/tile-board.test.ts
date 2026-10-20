@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import type { Block } from "@yumina/engine";
+import type { Block } from "@world-ai/engine";
 import { BLOCK_W, FRAME_COLLAPSED_H, FRAME_COLLAPSED_W, FRAME_GAP, FRAME_HEADER_H, FRAME_RAIL_H } from "./board";
 import {
   LETTERHEAD_GAP,

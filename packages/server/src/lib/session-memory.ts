@@ -3,7 +3,7 @@ import { NARRATIVE_EVIDENCE_RULES, stripNarrativeReasoning } from "./narrative-e
 import { usageObservation } from "./usage-observation.js";
 import { createHash, randomUUID } from "node:crypto";
 import { and, asc, desc, eq, inArray, sql } from "drizzle-orm";
-import type { SessionMemory } from "@yumina/shared";
+import type { SessionMemory } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { messages, playSessions, worlds } from "../db/schema.js";
 import { recordUsageLog } from "./usage-log.js";
@@ -18,7 +18,7 @@ import { omitSummaryMetadata } from "./persona-metadata.js";
 import { canRunMemoryQa, createMemoryQaProvider, type MemoryQaScenario } from "./session-memory-qa.js";
 import type { GenerateParams } from "./llm/types.js";
 import { isExtensionInstalled } from "./extensions.js";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import type { ChatMessage } from "./llm/types.js";
 import { enqueueKeyedJob } from "./job-chain.js";
 import { memoryClaimGuard, memoryLagGuard, memorySourceGuard, pendingMemoryRange, memoryReplyFilter, memoryRepairFilter, memorySourceCountGuard, type MemoryJobSnapshot } from "./session-memory-guards.js";

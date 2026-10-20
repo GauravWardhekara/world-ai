@@ -4,7 +4,7 @@ import type {
   SocialEntryStatus,
   SocialPlatform,
 } from "@/lib/community-events";
-import { deriveEventPhase, SOCIAL_PLATFORMS } from "@yumina/shared";
+import { deriveEventPhase, SOCIAL_PLATFORMS } from "@world-ai/shared";
 
 export const SOCIAL_PLATFORM_OPTIONS: SocialPlatform[] = [...SOCIAL_PLATFORMS];
 

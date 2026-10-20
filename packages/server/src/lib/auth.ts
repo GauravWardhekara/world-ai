@@ -8,7 +8,7 @@ import { MCP_PATHS, MCP_SCOPE, mcpResourceUrl } from "./mcp-oauth.js";
 import { and, eq, like } from "drizzle-orm";
 import { env, IS_LOCAL_EDITION, PUBLIC_ORIGIN } from "./env.js";
 import * as schema from "../db/schema.js";
-import { isReservedUsername } from "@yumina/shared";
+import { isReservedUsername } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import {
   sendEmail,

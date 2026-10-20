@@ -11,7 +11,7 @@ import type {
   SideCompletionWorldbookIds,
   LiveCanonApiResult,
   LiveCanonEntryInput,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import type { SandboxCapabilities, SandboxEntry, SandboxLoreUiBinding, SandboxWorldbook, SandboxMode, SandboxState, LocalBridgeChannelData, TtsChannelData, VoiceInputChannelData, VoicePlaybackFrame } from "./protocol";
 import { wrapMessage, postToParentWindow, type ApiCallMessage } from "./protocol";
 import { renderMarkdown } from "./chat/markdown";
@@ -94,7 +94,7 @@ export interface SandboxedYuminaAPI {
    *  Null when the card has no background. A custom root component can read
    *  this to paint the same backdrop the default chat does — or ignore it and
    *  own the whole screen, which is what most of them already do. */
-  background: import("@yumina/engine").ResolvedBackground | null;
+  background: import("@world-ai/engine").ResolvedBackground | null;
   worldId: string;
   sessionId: string;
   /** The raw Yumina account (id, name, image). Use for account-level UI like
@@ -142,8 +142,8 @@ export interface SandboxedYuminaAPI {
   getEntry: (name: string) => SandboxEntry | null;
 
   // ── Game actions (fire-and-forget) ──
-  pickChatImage: () => Promise<import("@yumina/shared").ChatImageInput | null>;
-  sendMessage: (text: string, attachments?: import("@yumina/shared").ChatImageInput[]) => void;
+  pickChatImage: () => Promise<import("@world-ai/shared").ChatImageInput | null>;
+  sendMessage: (text: string, attachments?: import("@world-ai/shared").ChatImageInput[]) => void;
   /**
    * 现场 — tell the AI what the game shows right now. Read by the next AI call
    * (a reply, a regenerate, a quiet station's turn) as its own block; not
@@ -391,7 +391,7 @@ export interface SandboxedYuminaAPI {
 
   // ── Model picker ──
   selectedModel: string;
-  modelFallback: import("@yumina/shared").ModelFallbackNotice | null;
+  modelFallback: import("@world-ai/shared").ModelFallbackNotice | null;
   resolveModelFallback: (id: string, model: string, remember: boolean) => Promise<void>;
   cancelModelFallback: (id: string) => Promise<void>;
   userPlan: string;
@@ -443,8 +443,8 @@ export interface SandboxedYuminaAPI {
   togglePlayerPrompt: (promptId: string, enabled: boolean) => Promise<{ ok: boolean }>;
 
   // ─── Session memory ────────────────────────────────────────────────────
-  getStateGuardSettings: () => Promise<import("@yumina/shared").StateGuardSettings>;
-  setStateGuardSettings: (patch: Partial<import("@yumina/shared").StateGuardSettings>) => Promise<import("@yumina/shared").StateGuardSettings>;
+  getStateGuardSettings: () => Promise<import("@world-ai/shared").StateGuardSettings>;
+  setStateGuardSettings: (patch: Partial<import("@world-ai/shared").StateGuardSettings>) => Promise<import("@world-ai/shared").StateGuardSettings>;
   getSessionMemory: () => Promise<SessionMemoryPayload>;
   saveSessionMemory: (memory: SessionMemory, model?: string) => Promise<SessionMemoryPayload>;
   /** Player-pinned notes: never rewritten by the updater, always injected. `null` clears. */
@@ -492,11 +492,11 @@ export interface SandboxedYuminaAPI {
      * Uses the server's decision model. Official use is platform-funded;
      * OpenRouter BYOK may bill the player's provider. No scene/chat mutation.
      * Failure rejects; do not infer missing confidence or retry paid narration. */
-    decide: (params: import("@yumina/shared").AiDecisionRequest) => Promise<import("@yumina/shared").AiDecisionResponse>;
+    decide: (params: import("@world-ai/shared").AiDecisionRequest) => Promise<import("@world-ai/shared").AiDecisionResponse>;
     /** Assemble current world direction for a side actor; does not generate or mutate state. */
     context: (params: ActorContextRequest) => Promise<ActorContextResult>;
     complete: (params: {
-      messages: import("@yumina/shared").ImageCompletionMessage[];
+      messages: import("@world-ai/shared").ImageCompletionMessage[];
       onDelta?: (text: string) => void;
       model?: string;
       maxTokens?: number;
@@ -514,7 +514,7 @@ export interface SandboxedYuminaAPI {
       worldbookIds?: SideCompletionWorldbookIds;
       /** Request a JSON object (or a strict JSON schema) from supporting
        * providers; validate the result before use. */
-      responseFormat?: import('@yumina/shared').CompletionResponseFormat;
+      responseFormat?: import('@world-ai/shared').CompletionResponseFormat;
       /**
        * Auto-inject the world's lorebook entries as a system message before
        * `messages`. Use this when a side call (phone chat, NPC dialogue) needs

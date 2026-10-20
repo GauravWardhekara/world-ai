@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { Check, Loader2, Play, Volume2, X } from "lucide-react";
-import { TTS_VOICES, TTS_VOICE_POOL_MAX, isValidTtsVoice, readTtsCustomVoices, resolveTtsVoiceAlias, ttsCustomVoiceLabel } from "@yumina/shared";
+import { TTS_VOICES, TTS_VOICE_POOL_MAX, isValidTtsVoice, readTtsCustomVoices, resolveTtsVoiceAlias, ttsCustomVoiceLabel } from "@world-ai/shared";
 import { cn } from "@/lib/utils";
 import { previewVoice } from "@/lib/tts-playback";
 import { feedback } from "@/lib/feedback";

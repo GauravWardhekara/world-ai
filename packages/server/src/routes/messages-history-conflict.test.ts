@@ -3,7 +3,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { Hono } from "hono";
 import { eq } from "drizzle-orm";
-import { migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { user, worlds, playSessions, messages, creditWallets, modelPrices } from "../db/schema.js";
 import { messageRoutes } from "./messages.js";

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Plus, X } from "lucide-react";
-import type { VariableField } from "@yumina/engine";
+import type { VariableField } from "@world-ai/engine";
 
 const control = "rounded-md border border-white/10 bg-background px-2 py-1 text-[11.5px] outline-none focus:border-sky-400/60";
 

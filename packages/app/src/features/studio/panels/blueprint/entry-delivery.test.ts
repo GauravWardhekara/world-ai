@@ -1,7 +1,7 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import { filterEntriesByActiveLoreSlots, filterEntriesByActiveWorldbooks, LorebookMatcher, PromptBuilder, worldDefinitionSchema } from "@yumina/engine";
-import type { GameState, LoreUiBinding, Worldbook, WorldEntry } from "@yumina/engine";
+import { filterEntriesByActiveLoreSlots, filterEntriesByActiveWorldbooks, LorebookMatcher, PromptBuilder, worldDefinitionSchema } from "@world-ai/engine";
+import type { GameState, LoreUiBinding, Worldbook, WorldEntry } from "@world-ai/engine";
 import { contextPreviewCounts, getEntryDeliverySummary } from "./entry-delivery";
 
 const base: WorldEntry = {

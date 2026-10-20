@@ -4,7 +4,7 @@ import { AlertTriangle } from "lucide-react";
 import {
   ANY_MODULE, STATION_DEFAULT_TEMPERATURE, STATION_MAX_TOKENS_LIMITS, STATION_TEMPERATURE_LIMITS, diagnoseStation,
   type ModuleStation, type Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { NumberInput } from "@/features/studio/panels/blueprint/controls";
 import { answersWithPlayerSettings, modelReachWarning, stationDefaultMaxTokens, stationParamsCustom } from "../../lib/ai-call-settings";
 import { useModelsStore } from "@/stores/models";

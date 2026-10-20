@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { classifyInterface } from "../../lib/ui-doc-takeover";
 
 /** The stock chat is ready to play; an arbitrary short TSX file is not. */

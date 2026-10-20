@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { AiOutputField, GameState, WorldDefinition } from "@yumina/engine";
+import type { AiOutputField, GameState, WorldDefinition } from "@world-ai/engine";
 import { buildAiCallPrompt, extractJson, findCalledAi, randomFields, routeFields, validateFields } from "./ai-call.js";
 
 const world = {

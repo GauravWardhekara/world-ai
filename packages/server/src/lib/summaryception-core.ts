@@ -1,4 +1,4 @@
-import type { SessionSummaryImplementation } from "@yumina/shared";
+import type { SessionSummaryImplementation } from "@world-ai/shared";
 
 // Fold the oldest snippets up once a layer exceeds this. 30 meant a layer held
 // ~30 chunks before folding — unreachable for normal sessions, so the hierarchy

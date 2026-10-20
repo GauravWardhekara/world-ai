@@ -4,8 +4,8 @@ import {
   estimateTokens,
   isVariableBoundEntry,
   migrateWorldDefinition,
-} from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 /**
  * Recommended room for the conversation itself, on top of the world's static

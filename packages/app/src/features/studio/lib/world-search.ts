@@ -1,4 +1,4 @@
-import type { GraphNode, WorldDefinition } from "@yumina/engine";
+import type { GraphNode, WorldDefinition } from "@world-ai/engine";
 
 export interface WorldSearchDocument {
   id: string;

@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { toolLabel } from "../components/change-labels";
 import type { AiPresence } from "./agent-job";
 

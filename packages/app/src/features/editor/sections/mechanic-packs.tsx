@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Check, Sparkles, TriangleAlert, Zap } from "lucide-react";
-import { mechanicPack, mechanicPackSummaries, type MechanicPackId } from "@yumina/engine";
+import { mechanicPack, mechanicPackSummaries, type MechanicPackId } from "@world-ai/engine";
 import { AppPacksSection } from "./app-packs";
 import { cn } from "@/lib/utils";
 import { feedback } from "@/lib/feedback";

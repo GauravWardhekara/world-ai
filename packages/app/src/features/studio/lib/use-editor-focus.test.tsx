@@ -3,7 +3,7 @@ import test from "node:test";
 import { act } from "react";
 import { createRoot } from "react-dom/client";
 import { JSDOM } from "jsdom";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { useAiFocus } from "./ai-focus";
 import { useEditorFocus } from "./use-editor-focus";
 

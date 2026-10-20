@@ -1,4 +1,4 @@
-import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackPolicy, type ModelFallbackReason, type ModelFallbackRecord } from "@yumina/shared";
+import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackPolicy, type ModelFallbackReason, type ModelFallbackRecord } from "@world-ai/shared";
 
 export interface ModelFallbackRetry {
   requestedModel: string;

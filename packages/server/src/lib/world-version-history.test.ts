@@ -4,7 +4,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/pglite";
 import { getTableConfig } from "drizzle-orm/pg-core";
-import { MAX_AUTO_VERSIONS_PER_WORLD, MAX_VERSIONS_PER_WORLD } from "@yumina/shared";
+import { MAX_AUTO_VERSIONS_PER_WORLD, MAX_VERSIONS_PER_WORLD } from "@world-ai/shared";
 import { user, worlds, worldPendingEdits, worldReviewSubmissions, worldVersions } from "../db/schema.js";
 import {
   captureAutomaticVersion,

@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import type { UiPageTemplateId } from "@yumina/engine";
+import type { UiPageTemplateId } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { isStarterOpening } from "@/lib/world-templates";
 

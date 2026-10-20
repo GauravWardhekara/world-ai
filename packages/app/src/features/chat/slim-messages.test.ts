@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { slimMessages } from "./slim-messages";
 import { validationRecords } from "../../../sandbox/extensions/state-update-guard/audit-records";
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 
 const msg = (over: Record<string, unknown> = {}) => ({
   id: "m1",

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import type { UiBackground, UiDoc } from "@yumina/engine";
+import type { UiBackground, UiDoc } from "@world-ai/engine";
 import { AssetPicker } from "@/features/editor/asset-picker";
 import { getAssetCdnUrl } from "@/lib/asset-url";
 import { cn } from "@/lib/utils";

@@ -1,4 +1,4 @@
-import type { SocialPlatform } from "@yumina/shared";
+import type { SocialPlatform } from "@world-ai/shared";
 
 export interface NormalizedSocialPostUrl {
   canonicalUrl: string;

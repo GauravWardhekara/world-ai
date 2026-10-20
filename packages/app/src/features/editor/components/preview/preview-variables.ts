@@ -1,4 +1,4 @@
-import { GameStateManager, type GameState, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, type GameState, type WorldDefinition } from "@world-ai/engine";
 import { resolvePreviewOpening } from "./preview-opening";
 
 export type PreviewVariables = GameState["variables"];

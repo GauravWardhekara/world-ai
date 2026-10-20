@@ -1,4 +1,4 @@
-import { evaluateCondition, type Condition, type GameState, type Variable, type WorldEntry } from "@yumina/engine";
+import { evaluateCondition, type Condition, type GameState, type Variable, type WorldEntry } from "@world-ai/engine";
 
 /**
  * A long 条件触发 block as the chapters it is written in.

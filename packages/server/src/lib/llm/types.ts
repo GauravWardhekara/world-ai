@@ -67,7 +67,7 @@ export interface GenerateParams {
   minP?: number;
   stream?: boolean;
   /** Request JSON structured output from the model */
-  responseFormat?: import("@yumina/shared").CompletionResponseFormat;
+  responseFormat?: import("@world-ai/shared").CompletionResponseFormat;
   /** Tool definitions for function calling */
   tools?: ToolDefinition[];
   /** Controls how the model uses tools */
@@ -140,7 +140,7 @@ export interface StreamChunk {
    *  it on the next attempt instead of re-rolling the same broken provider. */
   failedProviderSlug?: string;
   /** The selected model cannot serve this turn. No different paid model was called. */
-  fallbackReason?: import("@yumina/shared").ModelFallbackReason;
+  fallbackReason?: import("@world-ai/shared").ModelFallbackReason;
   /** On a 429 error chunk: the provider's Retry-After, in milliseconds. */
   retryAfterMs?: number;
   /** On done chunks: routing slug of the upstream provider that actually served

@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Check, ImagePlus, Loader2, RotateCcw, Sparkles, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { SMART_IMAGE_MODELS, SMART_IMAGE_4K_COST_FACTOR, getSmartImageCapabilities, getSmartImageModel,
-  resolveSmartImageAspect, resolveSmartImageResolution } from "@yumina/shared";
-import type { ImageBatchItem, ImageBatchProposalItem } from "@yumina/shared";
+  resolveSmartImageAspect, resolveSmartImageResolution } from "@world-ai/shared";
+import type { ImageBatchItem, ImageBatchProposalItem } from "@world-ai/shared";
 import { cn } from "@/lib/utils";
 import { resolveImageUrl } from "@/lib/asset-url";
 import type { StudioImageBatchEdits, StudioImageBatchProposal } from "../lib/types";

@@ -9,7 +9,7 @@ import { guardLabels, StateGuardHistory, validationRecords } from "./details";
 import { StateGuardSettingsPanel, guardSettingsLabels } from "./settings";
 import { ModelPickerModal, ModelTrigger } from "../../chat/model-picker-modal";
 import { activeGuardElement, focusGuardDialog, installGuardFocusScope } from "./focus";
-import { parseStateGuardModel, stateGuardModelSelection } from "@yumina/shared";
+import { parseStateGuardModel, stateGuardModelSelection } from "@world-ai/shared";
 
 export function StateGuardModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const api = useYumina();

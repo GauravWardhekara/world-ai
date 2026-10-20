@@ -1,4 +1,4 @@
-import { resolveStation, type Worldbook } from "@yumina/engine";
+import { resolveStation, type Worldbook } from "@world-ai/engine";
 import type { ContextBadge } from "@/features/editor/lib/module-context";
 import type { ContextRowView } from "./block-node";
 

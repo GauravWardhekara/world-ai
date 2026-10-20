@@ -19,7 +19,7 @@ import { confirmAction } from "@/components/ui/global-confirm-dialog";
 import { useEditorStore } from "@/stores/editor";
 import { useWorldsStore } from "@/stores/worlds";
 import { useUserProfileStore } from "@/stores/user-profile";
-import type { MaterialChangeReason } from "@yumina/shared";
+import type { MaterialChangeReason } from "@world-ai/shared";
 import {
   DropdownMenu,
   DropdownMenuContent,

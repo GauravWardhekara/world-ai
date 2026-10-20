@@ -1,4 +1,4 @@
-import type { Variable } from '@yumina/engine';
+import type { Variable } from '@world-ai/engine';
 
 export function parseVariableValue(type: Variable['type'], raw: string):
   { ok: true; value: Variable['defaultValue'] } | { ok: false; error: 'number' | 'boolean' | 'json' } {

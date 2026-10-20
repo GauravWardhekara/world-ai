@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { fitFontWeight, fontWeightsOf } from "@yumina/engine";
+import { fitFontWeight, fontWeightsOf } from "@world-ai/engine";
 import { idsToNames, namesToIds } from "./parts/variable-text";
 
 import { colorWord } from "./color-words";

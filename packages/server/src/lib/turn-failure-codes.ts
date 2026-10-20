@@ -3,7 +3,7 @@
  * env import so it stays a pure unit (see turn-failure.ts for the writes).
  */
 
-import { isProviderBalanceError } from "@yumina/shared";
+import { isProviderBalanceError } from "@world-ai/shared";
 
 /** Emitted to the client so the UI can offer the one action that actually helps. */
 export const FAILURE_CODE = {

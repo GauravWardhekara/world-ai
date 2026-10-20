@@ -17,9 +17,11 @@ require("dotenv").config = () => ({ parsed: {} });
 const databaseUrl = new URL("../src/db/index.ts", import.meta.url).href;
 let databaseLoaded = typeof nodeModule.registerHooks !== "function";
 nodeModule.registerHooks?.({
-  load(url, context, nextLoad) {
-    if (url === databaseUrl) databaseLoaded = true;
-    return nextLoad(url, context);
+  resolve(specifier, context, nextResolve) {
+    if (specifier === databaseUrl || specifier.endsWith("/db/index.ts") || specifier.endsWith("/db/index.js")) {
+      databaseLoaded = true;
+    }
+    return nextResolve(specifier, context);
   },
 });
 

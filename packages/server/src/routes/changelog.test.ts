@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { Hono } from "hono";
-import type { ChangelogResponse } from "@yumina/shared";
+import type { ChangelogResponse } from "@world-ai/shared";
 import { parseChangelogEntry } from "../lib/changelog.js";
 import { createChangelogRoutes } from "./changelog.js";
 

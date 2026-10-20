@@ -1,5 +1,5 @@
 import type { ChatMessage, MessageContent } from "./types.js";
-import type { PromptPostProcessing } from "@yumina/shared";
+import type { PromptPostProcessing } from "@world-ai/shared";
 
 /**
  * Apply a SillyTavern-style prompt post-processing strategy to a message list.

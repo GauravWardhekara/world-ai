@@ -1,7 +1,7 @@
 import { isDeepStrictEqual } from "node:util";
 import { and, desc, eq, inArray, ne, sql } from "drizzle-orm";
-import { detectMaterialChange, migrateWorldDefinition } from "@yumina/engine";
-import { MAX_AUTO_VERSIONS_PER_WORLD } from "@yumina/shared";
+import { detectMaterialChange, migrateWorldDefinition } from "@world-ai/engine";
+import { MAX_AUTO_VERSIONS_PER_WORLD } from "@world-ai/shared";
 import type { db } from "../db/index.js";
 import { user, worlds, worldPendingEdits, worldReviewSubmissions, worldVersions } from "../db/schema.js";
 import { estimateWorldCopyTokens } from "./world-copy-material.js";

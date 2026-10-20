@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { useTranslation } from "react-i18next";
-import { currentUiLook, uiLookPartOf, uiLooksFor } from "@yumina/engine";
-import type { UiElement, UiLook, UiLookPart } from "@yumina/engine";
+import { currentUiLook, uiLookPartOf, uiLooksFor } from "@world-ai/engine";
+import type { UiElement, UiLook, UiLookPart } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { Section } from "./part-kit";
 

@@ -5,7 +5,7 @@ import { feedback } from "@/lib/feedback";
 import i18n from "@/lib/i18n";
 import { X, Star, Download, Trash2, RotateCcw, Loader2 } from "lucide-react";
 import { useAuthGuard } from "@/hooks/use-auth-guard";
-import { SESSION_MEMORY_EXTENSION_KEY, type ExtensionSummary, type ExtensionInstallStatus } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY, type ExtensionSummary, type ExtensionInstallStatus } from "@world-ai/shared";
 import { useExtensionPreview, type ExtensionPreviewTab } from "./extension-preview-store";
 import { useExtensionsStore } from "@/stores/extensions";
 import { useExtensionReviews, ExtensionReviewList } from "@/edition/slots";

@@ -1,4 +1,4 @@
-import { aiDecisionRequestSchema, MAX_DECISION_REQUEST_CHARS, parseAiDecisionResponse, type AiDecisionResponse } from "@yumina/shared";
+import { aiDecisionRequestSchema, MAX_DECISION_REQUEST_CHARS, parseAiDecisionResponse, type AiDecisionResponse } from "@world-ai/shared";
 
 /** Host-only transport: the card cannot supply a key, model or account settings.
  * The selected narrative model is used by the server solely for BYOK policy. */

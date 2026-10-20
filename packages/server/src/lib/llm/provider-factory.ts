@@ -1,5 +1,5 @@
 import type { LLMProvider } from "./types.js";
-import type { ApiKeyMetadata } from "@yumina/shared";
+import type { ApiKeyMetadata } from "@world-ai/shared";
 import { OpenRouterProvider } from "./openrouter.js";
 import { AnthropicProvider } from "./anthropic.js";
 import { OpenAIProvider } from "./openai.js";

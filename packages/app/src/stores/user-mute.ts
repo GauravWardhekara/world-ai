@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { isUserMuted } from "@yumina/shared";
+import { isUserMuted } from "@world-ai/shared";
 
 interface MuteState {
   userId: string | null;

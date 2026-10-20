@@ -15,7 +15,7 @@ test("recovery uses current provider evidence, refreshes without sending and ign
   const appRoot = fileURLToPath(new URL("../../../..", import.meta.url));
   const vite = await createServer({ root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
     server: { middlewareMode: true, watch: null }, esbuild: { jsx: "automatic" },
-    resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } } });
+    resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } } });
   const root = createRoot(document.getElementById("root")!);
   try {
     const { default: i18n } = await vite.ssrLoadModule("/src/lib/i18n.ts");

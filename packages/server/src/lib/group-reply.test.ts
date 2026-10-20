@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { computeActiveWorldbookIds, replyRoom, type GameState, type WorldDefinition } from "@yumina/engine";
+import { computeActiveWorldbookIds, replyRoom, type GameState, type WorldDefinition } from "@world-ai/engine";
 import { buildGroupReplyPrompt, nextVoice, readVoiceAnswer, stripOwnName, voiceTag } from "./group-reply.js";
 
 // A bookshop card: the narrator, a cat living on the card, and a dungeon in

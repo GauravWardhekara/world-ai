@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test, { before } from 'node:test';
 import { Hono } from 'hono';
-import { migrateWorldDefinition, type WorldDefinition } from '@yumina/engine';
+import { migrateWorldDefinition, type WorldDefinition } from '@world-ai/engine';
 import { db } from '../db/index.js';
 import { apiKeys, playSessions, user, worlds } from '../db/schema.js';
 import { encryptApiKey } from '../lib/crypto.js';

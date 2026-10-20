@@ -19,7 +19,7 @@ import {
   INTERNAL_PRIMARY_MODEL as TRANSLATION_PRIMARY_MODEL,
 } from "./llm/internal-models.js";
 import { env } from "./env.js";
-import { hasTranslatableProse } from "@yumina/shared";
+import { hasTranslatableProse } from "@world-ai/shared";
 
 const OPENROUTER_BASE = "https://openrouter.ai/api/v1";
 
@@ -252,7 +252,7 @@ export function shouldRetryAttempt(
 }
 
 /**
- * Re-exported from @yumina/shared, where the client can reach it too.
+ * Re-exported from @world-ai/shared, where the client can reach it too.
  *
  * The client needs the same verdict to know whether "translating..." is a true
  * statement: a source with no prose never gets a translation row, so without

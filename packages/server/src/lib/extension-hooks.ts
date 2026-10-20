@@ -17,16 +17,16 @@
 import {
   getExtensionDefinition,
   isExtensionApiCompatible,
-} from "@yumina/shared";
-import { GameStateManager, type GameState, type WorldDefinition } from "@yumina/engine";
+} from "@world-ai/shared";
+import { GameStateManager, type GameState, type WorldDefinition } from "@world-ai/engine";
 import { randomUUID } from "node:crypto";
 import { asc, eq, type SQL } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { messages, playSessions } from "../db/schema.js";
 import { getInstalledExtensions, getUninstalledExtensions } from "./extensions.js";
 import { invalidateRunMemoryText, rebuildRunMemories, type RunMemories } from "./run-scopes.js";
-import type { StateValidationAudit } from "@yumina/shared";
-import type { ParseResult } from "@yumina/engine";
+import type { StateValidationAudit } from "@world-ai/shared";
+import type { ParseResult } from "@world-ai/engine";
 import type { LLMProvider } from "./llm/types.js";
 
 export interface TurnOutputContext {

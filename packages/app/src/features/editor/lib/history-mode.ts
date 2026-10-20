@@ -1,4 +1,4 @@
-import { HISTORY_LIMIT_MAX, type WorldSettings } from "@yumina/engine";
+import { HISTORY_LIMIT_MAX, type WorldSettings } from "@world-ai/engine";
 
 /**
  * How much of the past the story AI reads, as three choices: everything the

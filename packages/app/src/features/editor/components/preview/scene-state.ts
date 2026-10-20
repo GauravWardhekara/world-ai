@@ -1,4 +1,4 @@
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 
 export type SceneVarValue = number | string | boolean | Record<string, unknown> | unknown[];
 

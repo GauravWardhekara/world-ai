@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { MAX_CHAT_IMAGE_BYTES, type ChatImageAttachment } from "@yumina/shared";
+import { MAX_CHAT_IMAGE_BYTES, type ChatImageAttachment } from "@world-ai/shared";
 import { readChatAsset } from "./chat-asset-input";
 import { readChatImages } from "./chat-image-input";
 

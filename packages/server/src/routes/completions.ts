@@ -4,7 +4,7 @@ import { decisionRoutes } from "./decisions.js";
 import { normalizeImageCompletion, imagePromptChars } from "../lib/chat-images.js";
 import { assertImageModel } from "../lib/llm/image-capability.js";
 import { turnNeedsVision } from "../lib/llm/fallback-models.js";
-import type { ImageCompletionMessage } from "@yumina/shared";
+import type { ImageCompletionMessage } from "@world-ai/shared";
 import { recordWallHit } from "../lib/wall-events.js";
 import { usageObservation } from "../lib/usage-observation.js";
 import { buildSessionCompletionMessages, resolveSessionCompletionSettings, sessionCompletionSettingsSchema } from "../lib/completion-session-context.js";
@@ -18,7 +18,7 @@ import { buildSessionCompletionMessages, resolveSessionCompletionSettings, sessi
  * POST /api/sessions/:sessionId/completions
  */
 
-import { RETIRED_PLAY_MODEL_IDS, parseCompletionResponseFormat, type CompletionResponseFormat } from "@yumina/shared";
+import { RETIRED_PLAY_MODEL_IDS, parseCompletionResponseFormat, type CompletionResponseFormat } from "@world-ai/shared";
 import { Hono } from "hono";
 import { streamSSE } from "hono/streaming";
 import { eq, and } from "drizzle-orm";
@@ -62,8 +62,8 @@ import {
   migrateWorldDefinition,
   type WorldDefinition,
   type WorldEntry,
-} from "@yumina/engine";
-import { DEFAULT_MODEL } from "@yumina/shared";
+} from "@world-ai/engine";
+import { DEFAULT_MODEL } from "@world-ai/shared";
 import { actorContextRoutes } from "./actor-context.js";
 
 const completionRoutes = new Hono<AppEnv>();
@@ -101,9 +101,9 @@ completionRoutes.post("/sessions/:sessionId/completions", bodyLimit({ maxSize: 2
     maxTokens?: number;
     temperature?: number;
     includeLorebook?: IncludeLorebookMode;
-    worldbookIds?: import('@yumina/shared').SideCompletionWorldbookIds;
+    worldbookIds?: import('@world-ai/shared').SideCompletionWorldbookIds;
     context?: 'session';
-    overrides?: import('@yumina/shared').AiGenerationConfig;
+    overrides?: import('@world-ai/shared').AiGenerationConfig;
     responseFormat?: unknown;
     /** "card": the card's code named this model (the parent tells it apart
      *  from the player's own pick). Only then does a plan miss fall back. */

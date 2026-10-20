@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { ModelFallbackRecord } from "@yumina/shared";
+import type { ModelFallbackRecord } from "@world-ai/shared";
 import type { StreamChunk } from "./llm/types.js";
 
 const recordSchema = z.object({

@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { and, asc, desc, eq, like, sql } from "drizzle-orm";
-import { deepEqual, migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { deepEqual, migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { checkpoints, messages, playSessions, worlds } from "../db/schema.js";
 import { normalizeGameState } from "./game-state.js";

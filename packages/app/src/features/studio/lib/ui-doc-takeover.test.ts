@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { RootComponent, UiDoc } from "@yumina/engine";
+import type { RootComponent, UiDoc } from "@world-ai/engine";
 import {
   REPLACED_FILE,
   checkPlayability,

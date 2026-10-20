@@ -1,5 +1,5 @@
 import { setTimeout as delay } from "node:timers/promises";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { refreshSessionGreeting } from "./refresh-session-greeting.js";
 // Regression tests for the production persona/memory lifecycle investigation.
 import assert from "node:assert/strict";
@@ -8,8 +8,8 @@ import test from "node:test";
 import type { PGlite } from "@electric-sql/pglite";
 import { eq } from "drizzle-orm";
 import { generateDrizzleJson, generateMigration } from "drizzle-kit/api";
-import { PromptBuilder } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { PromptBuilder } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import * as schema from "../db/schema.js";
 import { creditWallets, messages, modelPrices, playSessions, summaryceptionSnippets, user, userPersonas, userExtensions, worlds } from "../db/schema.js";

@@ -1,4 +1,4 @@
-import type { Reaction, Worldbook } from "@yumina/engine";
+import type { Reaction, Worldbook } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { addAiTo } from "../blueprint/add-ai";
 

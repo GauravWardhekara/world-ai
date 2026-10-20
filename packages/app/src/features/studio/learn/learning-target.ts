@@ -1,4 +1,4 @@
-import type { Block } from "@yumina/engine";
+import type { Block } from "@world-ai/engine";
 
 export type LearningCanvasTarget = "opening" | "setting" | "memory";
 

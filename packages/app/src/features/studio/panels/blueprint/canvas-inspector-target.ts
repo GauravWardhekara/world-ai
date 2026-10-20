@@ -1,4 +1,4 @@
-import { blockId, type GraphNode } from "@yumina/engine";
+import { blockId, type GraphNode } from "@world-ai/engine";
 
 const AI_PREFIX = "ai:";
 const AI_NARRATOR_ID = "ai:narrator";

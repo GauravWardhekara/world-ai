@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { isTokenizerReady, preloadTokenizer } from "@yumina/engine";
+import { isTokenizerReady, preloadTokenizer } from "@world-ai/engine";
 
 /** Flips to true when exact token counts become available, so a memo that
  *  counted with the pre-load heuristic (chars/3 — Chinese comes out ~2.7x too

@@ -8,7 +8,7 @@
  * All communication happens via structured postMessage calls.
  */
 
-import type { Condition, LoreUiBinding, Worldbook, StateChannel } from "@yumina/engine";
+import type { Condition, LoreUiBinding, Worldbook, StateChannel } from "@world-ai/engine";
 import type { TranscriptPosition } from "./chat/transcript-position-types";
 import type { VoicePlaybackFrame } from "../src/lib/voice-playback-performance";
 export type { VoicePlaybackFrame } from "../src/lib/voice-playback-performance";
@@ -125,7 +125,7 @@ export interface LocalBridgeChannelData {
 // expose a flat shape to creator code.
 
 export interface SandboxState {
-  modelFallback?: import("@yumina/shared").ModelFallbackNotice | null;
+  modelFallback?: import("@world-ai/shared").ModelFallbackNotice | null;
   variables: Record<string, unknown>;
   globalVariables: Record<string, unknown>;
   worldName: string;
@@ -134,7 +134,7 @@ export interface SandboxState {
    *  @asset just to render it (avatars, headers, splash art). */
   worldCover: string | null;
   /** Resolved background for this turn, or null. See UIChannelData.background. */
-  background: import("@yumina/engine").ResolvedBackground | null;
+  background: import("@world-ai/engine").ResolvedBackground | null;
   worldId: string;
   sessionId: string;
   /** The raw Yumina account that's logged in. Rarely used by creators — prefer
@@ -281,8 +281,8 @@ export interface UIChannelData {
    *  Null when the card has no background, or its only one is cover-backed on
    *  a card with no cover. The host resolves rather than shipping the list
    *  because only it knows the cover and the active opening. */
-  background?: import("@yumina/engine").ResolvedBackground | null;
-  modelFallback?: import("@yumina/shared").ModelFallbackNotice | null;
+  background?: import("@world-ai/engine").ResolvedBackground | null;
+  modelFallback?: import("@world-ai/shared").ModelFallbackNotice | null;
   pendingChoices: string[];
   error: string | null;
   readOnly: boolean;

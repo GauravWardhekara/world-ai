@@ -1,4 +1,4 @@
-import { IMAGE_MODEL_CAPABILITIES } from "@yumina/shared";
+import { IMAGE_MODEL_CAPABILITIES } from "@world-ai/shared";
 import { randomUUID } from "node:crypto";
 import type { ReadableStreamReadResult } from "node:stream/web";
 import type { LLMProvider, GenerateParams, StreamChunk, Model, ChatMessage, ToolCall } from "./types.js";

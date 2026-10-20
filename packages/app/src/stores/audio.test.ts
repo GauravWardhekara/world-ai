@@ -1,6 +1,6 @@
 import test, { mock } from "node:test";
 import assert from "node:assert/strict";
-import { filterAiAudioEffects } from "@yumina/engine";
+import { filterAiAudioEffects } from "@world-ai/engine";
 
 // ── Browser globals the audio store touches at runtime ──
 // Minimal HTMLAudioElement stand-in: enough surface for playTrack/stopTrack.

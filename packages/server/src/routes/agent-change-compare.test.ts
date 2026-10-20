@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { buildChangeCompareFromRun } from "./agent.js";
 
 // Run through scripts/test-local.mjs (importing the route module boots the

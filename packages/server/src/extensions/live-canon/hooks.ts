@@ -1,5 +1,5 @@
 import { and, eq } from "drizzle-orm";
-import { LIVE_CANON_EXTENSION_KEY } from "@yumina/shared";
+import { LIVE_CANON_EXTENSION_KEY } from "@world-ai/shared";
 import { db } from "../../db/index.js";
 import { playSessions, worlds } from "../../db/schema.js";
 import { registerExtensionHooks } from "../../lib/extension-hooks.js";

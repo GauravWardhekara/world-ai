@@ -15,7 +15,7 @@ const vite = await createServer({
   configFile: false, appType: "custom", logLevel: "silent",
   resolve: { alias: {
     "@": fileURLToPath(new URL("..", import.meta.url)),
-    "@yumina/engine": fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url)),
+    "@world-ai/engine": fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url)),
   } },
   server: { middlewareMode: true, watch: null },
 });

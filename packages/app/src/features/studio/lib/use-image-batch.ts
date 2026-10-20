@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { ImageBatchSnapshot } from "@yumina/shared";
+import type { ImageBatchSnapshot } from "@world-ai/shared";
 import { useSession } from "@/lib/auth-client";
 import { useCreditStore } from "@/edition/slots.state";
 import { GenerationRequestScope } from "@/lib/generation-request-scope";

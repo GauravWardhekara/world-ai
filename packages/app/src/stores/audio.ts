@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import type { AudioTrack, AudioEffect, BGMPlaylist, ConditionalBGM, Condition } from "@yumina/engine";
-import { filterResumableAudioEffects } from "@yumina/engine";
+import type { AudioTrack, AudioEffect, BGMPlaylist, ConditionalBGM, Condition } from "@world-ai/engine";
+import { filterResumableAudioEffects } from "@world-ai/engine";
 // Relative (not "@/") so the store is importable under the Node test runner,
 // which resolves modules without Vite's path-alias config.
 import { resolveAssetUrl } from "../lib/asset-url";

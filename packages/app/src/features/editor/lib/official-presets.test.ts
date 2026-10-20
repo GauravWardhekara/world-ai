@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { deriveSectionDefaults, OFFICIAL_PRESET_LANGUAGES, OFFICIAL_PRESETS, officialPresetsFor, type WorldEntry } from "@yumina/engine";
+import { deriveSectionDefaults, OFFICIAL_PRESET_LANGUAGES, OFFICIAL_PRESETS, officialPresetsFor, type WorldEntry } from "@world-ai/engine";
 import { getUnmodifiedOfficialPresetIds, officialPresetsForCard } from "./official-presets";
 
 const preset = OFFICIAL_PRESETS[0]!;

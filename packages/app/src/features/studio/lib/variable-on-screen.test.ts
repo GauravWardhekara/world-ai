@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { UiDoc } from "@yumina/engine";
+import type { UiDoc } from "@world-ai/engine";
 import { isVariableOnScreen, removeVariableFromScreen } from "./variable-on-screen";
 
 const doc = (elements: unknown[]) => ({ pages: [{ id: "p", elements }] }) as unknown as UiDoc;

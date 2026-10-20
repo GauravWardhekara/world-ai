@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { Check, Loader2, Play, Volume2, X } from "lucide-react";
-import { TTS_VOICES } from "@yumina/shared";
+import { TTS_VOICES } from "@world-ai/shared";
 import { cn } from "@/lib/utils";
 import { previewVoice } from "@/lib/tts-playback";
 

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Boxes, ExternalLink, PanelLeftClose, PanelLeftOpen, Plus, Trash2 } from "lucide-react";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { ModuleConsole } from "../components/module/module-console";

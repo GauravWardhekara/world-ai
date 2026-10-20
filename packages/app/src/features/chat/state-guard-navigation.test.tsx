@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { JSDOM } from "jsdom";
 import { createServer } from "vite";
 import { fileURLToPath } from "node:url";
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import type { ExtensionClientContext, SlotContribution } from "../../../sandbox/extensions/registry";
 
 async function harness() {

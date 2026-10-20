@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { normalizeGameState } from "./game-state.js";
 import { generationBaseline, messageGenerationState, regenerationState, reconcileRegenerationState } from "./regeneration-state.js";
 

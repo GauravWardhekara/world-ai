@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { Block, GraphNode } from "@yumina/engine";
+import type { Block, GraphNode } from "@world-ai/engine";
 import { STARTER_IDS, withStarterSlots, type CanvasBlock } from "./starter-board";
 
 const block = (id: string, kind: Block["kind"], total = 1): Block => ({

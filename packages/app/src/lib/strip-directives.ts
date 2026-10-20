@@ -2,7 +2,7 @@
  * Strips state-change directives from streaming text so they are never visible to the user.
  * Uses the same patterns as the engine's ResponseParser.
  */
-import { isPartialLeadingSpeakerTag, parseLeadingSpeakerTag } from "@yumina/engine";
+import { isPartialLeadingSpeakerTag, parseLeadingSpeakerTag } from "@world-ai/engine";
 
 // [variableId: operation value]
 // Ids may carry a middle dot (艾丝·华伦斯坦), and spaces after a dot

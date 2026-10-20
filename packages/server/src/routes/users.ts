@@ -1,6 +1,6 @@
 import { worldAudienceCondition } from "../lib/world-publication-access.js";
 import { requireUnmuted } from "../middleware/user-mute.js";
-import { isUserMuted } from "@yumina/shared";
+import { isUserMuted } from "@world-ai/shared";
 import { Hono } from "hono";
 import { env } from "../lib/env.js";
 import { profileStoryMemoryDefault } from "../lib/profile-story-memory.js";
@@ -13,8 +13,8 @@ import { authMiddleware, optionalAuthMiddleware } from "../middleware/auth.js";
 import { optionalAccountBinding } from "../middleware/account-binding.js";
 import { invalidateSessionUser } from "../lib/session-user-cache.js";
 import { rateLimitMiddleware } from "../middleware/rate-limit.js";
-import { isReservedUsername } from "@yumina/shared";
-import { updateProfileSchema, getAgeFromBirthYear, aiConfigSchema, MAX_PROFILE_POST_LENGTH, PROFILE_POSTS_PAGE_SIZE, normalizeProfileWorldSort, normalizeProfileWorldOrder, sanitizeTtsVoicePool, sanitizeTtsCustomVoices } from "@yumina/shared";
+import { isReservedUsername } from "@world-ai/shared";
+import { updateProfileSchema, getAgeFromBirthYear, aiConfigSchema, MAX_PROFILE_POST_LENGTH, PROFILE_POSTS_PAGE_SIZE, normalizeProfileWorldSort, normalizeProfileWorldOrder, sanitizeTtsVoicePool, sanitizeTtsCustomVoices } from "@world-ai/shared";
 import { resolveImageCdn } from "../lib/cdn-url.js";
 import { sanitizeDisplayName } from "../lib/sanitize.js";
 import { aggregatedCounters } from "../lib/world-aggregates.js";

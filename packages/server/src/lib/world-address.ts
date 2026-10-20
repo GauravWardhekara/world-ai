@@ -7,7 +7,7 @@ import { worldAudienceCondition } from "./world-publication-access.js";
  * stale address can be forwarded to the current one.
  */
 import { and, eq, sql } from "drizzle-orm";
-import { profileAddressPath, worldAddressPath } from "@yumina/shared";
+import { profileAddressPath, worldAddressPath } from "@world-ai/shared";
 import { readPublic } from "../db/index.js";
 import { user, worlds } from "../db/schema.js";
 

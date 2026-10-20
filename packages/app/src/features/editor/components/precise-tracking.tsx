@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { CONTINUITY_MAX_OPTIONS, suggestedContinuityDelta } from "@yumina/engine";
-import type { Variable } from "@yumina/engine";
+import { CONTINUITY_MAX_OPTIONS, suggestedContinuityDelta } from "@world-ai/engine";
+import type { Variable } from "@world-ai/engine";
 import { NumberInput } from "@/components/ui/number-input";
 import { StyledCheckbox } from "./styled-checkbox";
 

@@ -4,7 +4,7 @@ import {
   type SessionMemorySystemRow,
 } from "./memory-systems-core.js";
 import { isExtensionInstalled } from "./extensions.js";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { and, eq, sql } from "drizzle-orm";
 import { readOwn } from "../db/index.js";
 import { playSessions, worlds } from "../db/schema.js";

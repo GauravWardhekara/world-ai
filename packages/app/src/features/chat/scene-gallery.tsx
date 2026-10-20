@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Images, Lock } from "lucide-react";
-import type { SceneImage } from "@yumina/engine";
+import type { SceneImage } from "@world-ai/engine";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { resolveImageUrl } from "@/lib/asset-url";
 import { useChatStore } from "@/stores/chat";

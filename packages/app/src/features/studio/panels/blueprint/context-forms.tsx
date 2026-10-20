@@ -14,7 +14,7 @@
  */
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { HISTORY_LIMIT_MAX, blockId, extractAiCallsFromFiles } from "@yumina/engine";
+import { HISTORY_LIMIT_MAX, blockId, extractAiCallsFromFiles } from "@world-ai/engine";
 import { Check, Field, Group, More, Row, Segmented, Stepper, inputClass } from "./controls";
 import { CustomContextPanel } from "./custom-implementation";
 import { DebouncedTextarea } from "@/features/editor/components/debounced-field";

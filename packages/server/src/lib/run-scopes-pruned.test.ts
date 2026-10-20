@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, Worldbook } from "@yumina/engine";
+import type { GameState, Worldbook } from "@world-ai/engine";
 import { advanceRunMemories, ensureActiveRunMemories, promptHistory, rebuildRunMemories } from "./run-scopes.js";
 
 const state = (scene: string) => ({ variables: { scene }, turnCount: 1 }) as unknown as GameState;

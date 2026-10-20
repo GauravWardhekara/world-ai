@@ -1,4 +1,4 @@
-import type { AudioTrack, GraphNode, SceneImage, Variable } from "@yumina/engine";
+import type { AudioTrack, GraphNode, SceneImage, Variable } from "@world-ai/engine";
 
 /** The board's rows say what they are, so a beginner reading the canvas
  *  learns what a variable, a track or a scene image can be without opening

@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import {
   AlignCenter, AlignLeft, AlignRight, ChevronDown, Italic, Plus, Upload, X,
 } from "lucide-react";
-import { UI_THEME_FONTS, UI_WEB_FONTS, fitFontWeight, fitTextsOnPage, textStyleAffectsHeight, fontWeightsOf, getUiThemePreset, primaryFamily, webFontOf } from "@yumina/engine";
+import { UI_THEME_FONTS, UI_WEB_FONTS, fitFontWeight, fitTextsOnPage, textStyleAffectsHeight, fontWeightsOf, getUiThemePreset, primaryFamily, webFontOf } from "@world-ai/engine";
 import type {
   UiBoxStyle, UiButtonStyle, UiDoc, UiElement, UiFill, UiGradientStop, UiShadow, UiTextStyle,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { colorWord } from "./color-words";

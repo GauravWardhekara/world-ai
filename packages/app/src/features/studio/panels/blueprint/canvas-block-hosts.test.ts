@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { blockHostMap, blockHostsMap, buildBoard, toGraph, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { blockHostMap, blockHostsMap, buildBoard, toGraph, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 import { canvasBlockHostMap, canvasBlockHostsMap, resolveCanvasBlockId, resolveSourceBlockId } from "./canvas-block-hosts";
 import { STARTER_IDS, withStarterSlots } from "./starter-board";
 

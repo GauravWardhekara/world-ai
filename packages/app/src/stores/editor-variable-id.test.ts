@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, afterEach } from "node:test";
 import { createServer } from "vite";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 const memory = new Map<string, string>();
 (globalThis as unknown as { localStorage: Storage }).localStorage = {

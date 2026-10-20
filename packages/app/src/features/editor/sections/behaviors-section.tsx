@@ -32,7 +32,7 @@ import { StyledCheckbox } from "../components/styled-checkbox";
 import { DraftNumberInput } from "../components/condition-editor";
 import { Select } from "@/components/ui/select";
 import { NumberInput } from "@/components/ui/number-input";
-import { sampleRandomSpec } from "@yumina/engine";
+import { sampleRandomSpec } from "@world-ai/engine";
 import { editableBehaviors, preserveLegacyEffect } from "../lib/editable-behaviors";
 import type {
   Reaction,
@@ -41,7 +41,7 @@ import type {
   WorldEntry,
   AudioTrack,
   TriggerConfig,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { TwoTapDeleteButton } from "@/components/ui/two-tap-delete-button";
 import { resolveWhenPreset, buildWhenForPreset, describeWhenValues } from "../lib/when-preset-logic";
 

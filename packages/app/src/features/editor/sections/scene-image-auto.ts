@@ -1,4 +1,4 @@
-import { isContinuityEnabled, isSceneImageJudgeOn, type SceneImage, type WorldDefinition } from "@yumina/engine";
+import { isContinuityEnabled, isSceneImageJudgeOn, type SceneImage, type WorldDefinition } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 
 /**

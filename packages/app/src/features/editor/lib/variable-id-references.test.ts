@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { Variable, WorldDefinition } from "@yumina/engine";
+import type { Variable, WorldDefinition } from "@world-ai/engine";
 import { getVariableIdUsage, VARIABLE_USAGE_WORLD_KEYS, variableUsageInputs } from "./variable-id-references";
 
 const hp: Variable = { id: "hp", name: "Health", type: "number", defaultValue: 10 };

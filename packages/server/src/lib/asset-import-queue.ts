@@ -1,6 +1,6 @@
 import { randomUUID } from "node:crypto";
 import { sql } from "drizzle-orm";
-import type { AssetImportStatus } from "@yumina/shared";
+import type { AssetImportStatus } from "@world-ai/shared";
 import type { DrizzleDB } from "../db/index.js";
 import { AssetImportError } from "./asset-archive.js";
 import { mediaRows } from "./session-media-service.js";

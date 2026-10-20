@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, FileText } from "lucide-react";
-import type { StudioBuildProposal } from "@yumina/shared";
+import type { StudioBuildProposal } from "@world-ai/shared";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { handoffKey, hasSeenBuildOffer, markBuildOfferSeen } from "../lib/build-handoff";
 

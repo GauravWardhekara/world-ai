@@ -1,4 +1,4 @@
-import { removeGroup, type UiDoc, type UiElement } from "@yumina/engine";
+import { removeGroup, type UiDoc, type UiElement } from "@world-ai/engine";
 
 /** Whether some part of the interface document already shows the variable —
  *  a meter or list bound to it, or a line that prints `{{id}}`. The button

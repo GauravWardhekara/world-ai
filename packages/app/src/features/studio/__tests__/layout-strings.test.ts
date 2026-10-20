@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
-import { boxOn, UI_TEMPLATES } from "@yumina/engine";
-import type { UiElement } from "@yumina/engine";
+import { boxOn, UI_TEMPLATES } from "@world-ai/engine";
+import type { UiElement } from "@world-ai/engine";
 
 /**
  * The layouts are laid out in numbers; the words arrive later, from five

@@ -1,4 +1,4 @@
-import type { ImageBatchProposalItem, ImageBatchSnapshot } from "@yumina/shared";
+import type { ImageBatchProposalItem, ImageBatchSnapshot } from "@world-ai/shared";
 import type { StudioImageBatchProposal } from "./types";
 
 export function defaultImageBatchSelection(items: ImageBatchProposalItem[]): Set<string> {

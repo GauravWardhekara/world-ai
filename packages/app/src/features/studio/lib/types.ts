@@ -1,4 +1,4 @@
-import type { ImageBatchProposal, ImageBatchSnapshot, StudioBuildProposal } from "@yumina/shared";
+import type { ImageBatchProposal, ImageBatchSnapshot, StudioBuildProposal } from "@world-ai/shared";
 
 /** A tool call returned by the LLM */
 export interface ToolCall {

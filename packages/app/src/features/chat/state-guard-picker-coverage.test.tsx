@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { JSDOM } from "jsdom";
 import { createServer } from "vite";
 import { fileURLToPath } from "node:url";
-import type { StateGuardSettings } from "@yumina/shared";
+import type { StateGuardSettings } from "@world-ai/shared";
 import type { StateGuardSettingsProps } from "../../../sandbox/extensions/state-update-guard/settings";
 
 test("guard picker callback saves independently, blocks overlapping writes, and ignores a prior chat's save", async () => {

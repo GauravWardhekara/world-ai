@@ -1,4 +1,4 @@
-import { IMAGE_MODEL_CAPABILITIES } from "@yumina/shared";
+import { IMAGE_MODEL_CAPABILITIES } from "@world-ai/shared";
 /**
  * Server-wide OpenRouter model catalog — the authoritative source for each
  * model's real context window.

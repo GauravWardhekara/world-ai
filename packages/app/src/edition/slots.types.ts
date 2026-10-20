@@ -7,7 +7,7 @@
  * added here is a field the local edition has to fake.
  */
 import type { StoreApi, UseBoundStore } from "zustand";
-import type { YuminaBundle } from "@yumina/engine";
+import type { YuminaBundle } from "@world-ai/engine";
 
 export type ProviderKind = "official" | "private";
 

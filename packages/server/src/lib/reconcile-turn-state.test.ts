@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { mergeGameStatePatch, normalizeGameState, reconcileTurnState } from "./game-state.js";
 
 // 问道, 2026-09-01: the card's creation screen commits ~60 variables through

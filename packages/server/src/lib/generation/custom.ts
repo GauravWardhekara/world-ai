@@ -3,7 +3,7 @@ import {
   ADVANCED_LIMITS, DENOISE_MAX, DENOISE_MIN, IMAGE_ASPECTS, IMAGE_SAMPLERS,
   MAX_GENERATION_PROMPT_LENGTH, VIDEO_ADVANCED_LIMITS, VIDEO_DURATIONS,
   type PlatformStyleInfo,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 
 // Preserve the shared Studio proposal validation contract while keeping
 // hosted generation and billing unavailable in the open-source edition.

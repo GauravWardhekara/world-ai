@@ -1,4 +1,4 @@
-import { createWorldSchema, updateWorldSchema, MAX_WORLD_SAVE_BODY_BYTES } from "@yumina/shared";
+import { createWorldSchema, updateWorldSchema, MAX_WORLD_SAVE_BODY_BYTES } from "@world-ai/shared";
 
 export interface WorldSaveErrorOptions {
   /** The submitted snapshot, not a draft that may have changed during the request. */

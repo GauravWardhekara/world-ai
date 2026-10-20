@@ -14,7 +14,7 @@
 
 import { createHash, randomUUID } from "node:crypto";
 import sharp from "sharp";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { env } from "../env.js";
 import { createProvider } from "../llm/provider-factory.js";
 import { getFallbackGenerationProvider, getTurnImagePoolProvider, type GenerationProvider } from "../generation/provider.js";

@@ -1,7 +1,7 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { migrateWorldDefinition } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));

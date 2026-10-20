@@ -1,7 +1,7 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import type { WorldDefinition, Worldbook } from "@yumina/engine";
-import { PLAY_MODELS } from "@yumina/shared";
+import type { WorldDefinition, Worldbook } from "@world-ai/engine";
+import { PLAY_MODELS } from "@world-ai/shared";
 import { aiCallRows } from "./ai-calls";
 import { modelReach, stationDefaultMaxTokens } from "@/features/editor/lib/ai-call-settings";
 

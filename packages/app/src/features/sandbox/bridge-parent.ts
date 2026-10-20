@@ -9,7 +9,7 @@ import {
   type VoicePlaybackFrame,
   type VoiceEvent,
 } from "../../../sandbox/protocol";
-import type { StateChannel } from "@yumina/engine";
+import type { StateChannel } from "@world-ai/engine";
 import { loadTranscriptPosition, saveTranscriptPosition } from "../../lib/transcript-position-storage";
 import { isTranscriptPosition } from "../../../sandbox/chat/transcript-position-types";
 

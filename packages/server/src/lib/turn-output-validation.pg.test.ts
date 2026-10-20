@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
 import pg from "pg";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { eq, sql } from "drizzle-orm";
-import { GameStateManager, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, type WorldDefinition } from "@world-ai/engine";
 import * as schema from "../db/schema.js";
 
 // Explicit opt-in only. Every fixture and its mutations are rolled back;

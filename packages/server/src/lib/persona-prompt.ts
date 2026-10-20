@@ -1,4 +1,4 @@
-import { formatPersonaEntries, type PersonaEntry } from "@yumina/shared";
+import { formatPersonaEntries, type PersonaEntry } from "@world-ai/shared";
 
 export interface PromptPersona {
   name: string;

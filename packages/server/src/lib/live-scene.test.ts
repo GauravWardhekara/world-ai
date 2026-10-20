@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { Effect, WorldDefinition } from "@yumina/engine";
+import type { Effect, WorldDefinition } from "@world-ai/engine";
 import { liveSceneMessage, normalizeLiveScene, takeStoryEvents } from "./live-scene.js";
 
 const world = { variables: [{ id: "suspicion", name: "怀疑度", type: "number", defaultValue: 0 }] } as unknown as WorldDefinition;

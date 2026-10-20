@@ -1,4 +1,4 @@
-import { parseGuardedResponse, estimateTokens, stripStateReceipts, isAiReadable, isAiWritable, ThinkingTagFilter, type GuardedParseResult } from "@yumina/engine";
+import { parseGuardedResponse, estimateTokens, stripStateReceipts, isAiReadable, isAiWritable, ThinkingTagFilter, type GuardedParseResult } from "@world-ai/engine";
 import type { TurnOutputContext, ValidatedTurnOutput } from "../../lib/extension-hooks.js";
 import { isJsonModeUnsupported, normalizeCorrectionJson, omitReadOnlyCorrectionWrites } from "./correction-format.js";
 

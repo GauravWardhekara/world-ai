@@ -1,4 +1,4 @@
-import { ANY_MODULE, extractAiCallsFromFiles, memoryPoolMembers, resolveStation, type FrontendAiCall, type ModuleStation, type WorldDefinition, type Worldbook } from "@yumina/engine";
+import { ANY_MODULE, extractAiCallsFromFiles, memoryPoolMembers, resolveStation, type FrontendAiCall, type ModuleStation, type WorldDefinition, type Worldbook } from "@world-ai/engine";
 import { stationName, voiceOf, workerReaders } from "./ai-roster";
 import type { AiType } from "./add-ai";
 

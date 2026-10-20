@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, afterEach, beforeEach } from "node:test";
 import { createServer } from "vite";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 const memory = new Map<string, string>();
 const originalStorage = Object.getOwnPropertyDescriptor(globalThis, "localStorage");
@@ -15,7 +15,7 @@ const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const vite = await createServer({
   root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
   server: { middlewareMode: true, watch: null },
-  resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } },
+  resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } },
 });
 const { useEditorStore: store } = await vite.ssrLoadModule("/src/stores/editor.ts") as typeof import("./editor");
 const initial = structuredClone(store.getState().worldDraft);
@@ -89,7 +89,7 @@ test("an unknown theme changes nothing at all", () => {
 });
 
 // Built the way the picker builds them: from what the layout itself declares.
-const engine = await vite.ssrLoadModule("/../engine/src/index.ts") as typeof import("@yumina/engine");
+const engine = await vite.ssrLoadModule("/../engine/src/index.ts") as typeof import("@world-ai/engine");
 const template = engine.getUiTemplate("portrait-scene")!;
 const layoutStrings: Record<string, string> = { title: "Lin Zhou" };
 for (const key of template.stringKeys) layoutStrings[key] = `word:${key}`;

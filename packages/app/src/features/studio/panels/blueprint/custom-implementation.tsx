@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { FileCode2, StickyNote } from "lucide-react";
-import { extractAiCallsFromFiles, type FrontendAiCall, type Worldbook } from "@yumina/engine";
+import { extractAiCallsFromFiles, type FrontendAiCall, type Worldbook } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { CodeAiCallCard, codeCallFacts } from "./code-ai-call-card";
 import { CustomizationHints, requestOpenCode } from "./customization-hints";

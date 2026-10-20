@@ -56,9 +56,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { adoptOwnWriteToken, useEditorStore } from "@/stores/editor";
-import { MAX_WORLD_DESCRIPTION, isDefaultWorldName } from "@yumina/shared";
-import type { WorldEntry } from "@yumina/engine";
-import { isPlaceholderCharacterName } from "@yumina/engine";
+import { MAX_WORLD_DESCRIPTION, isDefaultWorldName } from "@world-ai/shared";
+import type { WorldEntry } from "@world-ai/engine";
+import { isPlaceholderCharacterName } from "@world-ai/engine";
 import { isTemplateDescription } from "@/lib/world-templates";
 import { useUiStore } from "@/stores/ui";
 import {
@@ -108,7 +108,7 @@ const EditorTour = lazy(() =>
   importWithChunkRecovery(() => import("./tour/editor-tour")).then((m) => ({ default: m.EditorTour }))
 );
 import { isEditorTourDone } from "./tour/tour-state";
-import type { YuminaBundle } from "@yumina/engine";
+import type { YuminaBundle } from "@world-ai/engine";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 
@@ -236,7 +236,7 @@ function useIsMobileSimpleEditor() {
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 /** A stable empty list: `?? []` inside a selector is a new array every call. */
-const NO_AUDIO_TRACKS: NonNullable<import("@yumina/engine").WorldDefinition["audioTracks"]> = [];
+const NO_AUDIO_TRACKS: NonNullable<import("@world-ai/engine").WorldDefinition["audioTracks"]> = [];
 
 export function QuickCreateEditor({
   onOpenFullEditor,

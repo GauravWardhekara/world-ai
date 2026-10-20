@@ -7,6 +7,7 @@
     "DATABASE_URL",
     "DATABASE_READ_URL",
     "PGLITE_DATA_DIR",
+    "WORLD_AI_*",
     "YUMINA_*",
     "VITE_*",
     "PUBLIC_ORIGIN",

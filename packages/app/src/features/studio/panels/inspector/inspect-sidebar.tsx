@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Code2, MousePointerSquareDashed, Sparkles, Check, Wand2 } from "lucide-react";
-import type { UiKnobGroup } from "@yumina/engine";
+import type { UiKnobGroup } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { describeElement, nearestKnobGroup, nearestSourceRef, ownSourceRef } from "./hit-test";
 import { describeSliceForAgent, sliceSource } from "./source-slice";

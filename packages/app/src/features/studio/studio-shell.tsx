@@ -53,7 +53,7 @@ import { useEdition } from "@/edition/edition";
 import { ExportCardMenu } from "../editor/export-card-menu";
 import { ChangeHistoryDialog } from "./change-history-dialog";
 import { ReviewStateControl } from "../editor/review-state-control";
-import type { YuminaBundle } from "@yumina/engine";
+import type { YuminaBundle } from "@world-ai/engine";
 import type { ToolCall } from "./lib/types";
 
 import "dockview-react/dist/styles/dockview.css";

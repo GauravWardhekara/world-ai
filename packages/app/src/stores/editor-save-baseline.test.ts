@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { fileURLToPath } from "node:url";
 import test, { after, afterEach, beforeEach } from "node:test";
 import { createServer } from "vite";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 const memory = new Map<string, string>();
 Object.defineProperty(globalThis, "localStorage", { configurable: true, value: {
@@ -16,7 +16,7 @@ const vite = await createServer({
   configFile: false, appType: "custom", logLevel: "silent",
   resolve: { alias: {
     "@": fileURLToPath(new URL("..", import.meta.url)),
-    "@yumina/engine": fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url)),
+    "@world-ai/engine": fileURLToPath(new URL("../../../engine/src/index.ts", import.meta.url)),
   } },
   server: { middlewareMode: true },
 });

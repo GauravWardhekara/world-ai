@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getUiStarter } from "@yumina/engine";
-import type { UiDoc } from "@yumina/engine";
+import { getUiStarter } from "@world-ai/engine";
+import type { UiDoc } from "@world-ai/engine";
 import { phoneFitFor } from "./phone-fit";
 import { offCanvasCount, presenceBadgeKey, selectAllOnPage } from "./selection-units";
 import { gripSizes } from "./drag-handles";

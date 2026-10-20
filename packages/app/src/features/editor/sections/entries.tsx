@@ -55,7 +55,7 @@ import {
   estimateTokens,
   deriveSectionDefaults,
   deriveSectionDefaultsForEntry,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { getUnmodifiedOfficialPresetIds, officialPresetsForCard } from "../lib/official-presets";
 import {
   formatConditionLabel,
@@ -72,8 +72,8 @@ import {
   serializeTurns,
   type ExampleTurn,
 } from "../lib/example-turns";
-import { getUiBoundEntryIds, isVariableBoundEntry } from "@yumina/engine";
-import type { Worldbook, Variable } from "@yumina/engine";
+import { getUiBoundEntryIds, isVariableBoundEntry } from "@world-ai/engine";
+import type { Worldbook, Variable } from "@world-ai/engine";
 
 // Stable empty-array reference — never inline `?? []` inside a Zustand selector
 // (allocates a new array each render → useSyncExternalStore infinite loop).
@@ -98,7 +98,7 @@ import {
   DialogDescription,
   DialogFooter,
 } from "@/components/ui/dialog";
-import type { WorldEntry, EntryFolder, Condition } from "@yumina/engine";
+import type { WorldEntry, EntryFolder, Condition } from "@world-ai/engine";
 import {
   DndContext,
   closestCenter,

@@ -1,4 +1,4 @@
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 
 /**
  * How the board groups and colours a card's situations: by how the player

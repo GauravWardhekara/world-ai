@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Plus, X } from "lucide-react";
-import type { AiOutputField, AiPromptPiece, Condition, ModuleStation, Variable } from "@yumina/engine";
+import type { AiOutputField, AiPromptPiece, Condition, ModuleStation, Variable } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { DraftInput, Group, More, NumberInput, Row } from "./controls";

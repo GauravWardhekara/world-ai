@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MessageSquareOff } from "lucide-react";
-import { isUserMuted, type UserMuteState } from "@yumina/shared";
+import { isUserMuted, type UserMuteState } from "@world-ai/shared";
 import { useUserMuteStore } from "@/stores/user-mute";
 
 export function useMuteActive(state: UserMuteState) {

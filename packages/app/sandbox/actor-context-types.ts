@@ -1,4 +1,4 @@
-import type { ActorContextReceipt } from "@yumina/engine";
+import type { ActorContextReceipt } from "@world-ai/engine";
 
 /** Public actor input; this never imports a persona profile or private variables. */
 export interface ActorContextRequest {

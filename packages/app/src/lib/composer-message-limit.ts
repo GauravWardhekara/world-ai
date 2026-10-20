@@ -1,4 +1,4 @@
-import { MAX_USER_MESSAGE_CHARS } from "@yumina/shared";
+import { MAX_USER_MESSAGE_CHARS } from "@world-ai/shared";
 
 export { MAX_USER_MESSAGE_CHARS };
 

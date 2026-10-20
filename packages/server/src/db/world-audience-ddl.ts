@@ -1,4 +1,4 @@
-import { MAX_WORLD_TAGS } from "@yumina/shared";
+import { MAX_WORLD_TAGS } from "@world-ai/shared";
 
 // Keep the CHECK in schema.ts in sync. Both representations are public API:
 // publish settings use target_audience, while discovery uses the tags.

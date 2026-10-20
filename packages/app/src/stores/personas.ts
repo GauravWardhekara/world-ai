@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { PersonaEntry } from "@yumina/shared";
+import type { PersonaEntry } from "@world-ai/shared";
 
 const apiBase = import.meta.env?.VITE_API_URL || "";
 let personaRevision = 0;

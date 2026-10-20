@@ -1,7 +1,7 @@
 import { useId } from "react";
 import { useTranslation } from "react-i18next";
-import { AUTHOR_SAMPLING_LIMITS, clampToRange } from "@yumina/engine";
-import { PLAY_MODELS } from "@yumina/shared";
+import { AUTHOR_SAMPLING_LIMITS, clampToRange } from "@world-ai/engine";
+import { PLAY_MODELS } from "@world-ai/shared";
 import { useEditorStore } from "@/stores/editor";
 import { DraftInput, NumberInput } from "@/features/studio/panels/blueprint/controls";
 import { modelReach } from "../lib/ai-call-settings";

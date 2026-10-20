@@ -17,7 +17,7 @@ import {
   type WorldDefinition,
   type Worldbook,
   sendsEveryTurn,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { messages, playSessions } from "../db/schema.js";
 import { normalizeGameState } from "./game-state.js";

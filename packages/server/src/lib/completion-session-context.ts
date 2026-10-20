@@ -1,5 +1,5 @@
-import { AUTHOR_SAMPLING_LIMITS, clampToRange, expandMacros, isAiReadable, PromptBuilder, type GameState, type WorldDefinition } from "@yumina/engine";
-import { aiGenerationConfigSchema, clampPlayerSampling, PLAYER_SAMPLING_BOUNDS, resolveLorebookBudget, sideCompletionWorldbookIdsSchema } from "@yumina/shared";
+import { AUTHOR_SAMPLING_LIMITS, clampToRange, expandMacros, isAiReadable, PromptBuilder, type GameState, type WorldDefinition } from "@world-ai/engine";
+import { aiGenerationConfigSchema, clampPlayerSampling, PLAYER_SAMPLING_BOUNDS, resolveLorebookBudget, sideCompletionWorldbookIdsSchema } from "@world-ai/shared";
 import { z } from "zod";
 import type { playSessions } from "../db/schema.js";
 import type { ChatMessage, GenerateParams } from "./llm/types.js";

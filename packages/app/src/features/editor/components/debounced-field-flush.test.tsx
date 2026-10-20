@@ -22,7 +22,7 @@ for (const [key, value] of Object.entries(globals)) Object.defineProperty(global
 const { createRoot } = await import("react-dom/client");
 const vite = await createServer({
   configFile: false, root: fileURLToPath(new URL("../../../..", import.meta.url)), appType: "custom", logLevel: "silent",
-  resolve: { alias: { "@": fileURLToPath(new URL("../../..", import.meta.url)), "@yumina/engine": fileURLToPath(new URL("../../../../../engine/src/index.ts", import.meta.url)) } },
+  resolve: { alias: { "@": fileURLToPath(new URL("../../..", import.meta.url)), "@world-ai/engine": fileURLToPath(new URL("../../../../../engine/src/index.ts", import.meta.url)) } },
   esbuild: { jsx: "automatic" }, server: { middlewareMode: true },
 });
 const { DebouncedTextarea, flushPendingEditorFields } = await vite.ssrLoadModule("/src/features/editor/components/debounced-field.tsx") as typeof import("./debounced-field");

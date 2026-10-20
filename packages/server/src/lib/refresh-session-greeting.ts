@@ -1,6 +1,6 @@
 import { and, asc, eq } from "drizzle-orm";
-import { GameStateManager, PromptBuilder } from "@yumina/engine";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import { GameStateManager, PromptBuilder } from "@world-ai/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { messages, playSessions, user } from "../db/schema.js";
 import { applyPersonaMetadataToState } from "./persona-metadata.js";

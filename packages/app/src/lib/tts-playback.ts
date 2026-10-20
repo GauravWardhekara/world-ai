@@ -26,12 +26,12 @@ import {
   readTtsVoicePool,
   sanitizeTtsVoicePool,
   ttsPoolForLang,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { consumeTtsUserStop, registerTtsHalt } from "@/lib/tts-stop-signal";
 import { useAudioStore } from "@/stores/audio";
 import { useUserProfileStore } from "@/stores/user-profile";
 import { resolveCardVoice, type CardVoiceWorld } from "@/lib/tts-card-voice";
-import { isPartialLeadingSpeakerTag } from "@yumina/engine";
+import { isPartialLeadingSpeakerTag } from "@world-ai/engine";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 
@@ -579,7 +579,7 @@ export async function previewVoice(
 // of playback) and plays them strictly in order. The first line is usually
 // audible within a couple of seconds of generation starting.
 //
-// Slicing is quote-aware (shared scanner in @yumina/shared): a cut never
+// Slicing is quote-aware (shared scanner in @world-ai/shared): a cut never
 // lands inside an open quote, so dialogue-only mode can't lose a line to a
 // slice boundary; a runaway quote is force-cut with its open-quote state
 // carried into the next slice, and both halves still extract as dialogue.

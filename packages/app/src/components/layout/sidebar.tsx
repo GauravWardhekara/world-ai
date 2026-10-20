@@ -282,15 +282,15 @@ export function Sidebar() {
         <aside className="sidebar-shell">
           <div className="sidebar-logo-wrap">
             <div className="group flex flex-col items-center">
-              <div className="sidebar-logo-mark" aria-label="Yumina">
+              <div className="sidebar-logo-mark" aria-label="World AI">
                 <span className="sidebar-logo-mark__glow" aria-hidden />
-                <img src="/logo.png" alt="Yumina" />
+                <img src="/logo.png" alt="World AI" />
               </div>
               <span
                 aria-hidden="true"
-                className="-mt-0.5 select-none text-[10px] font-medium lowercase tracking-[0.18em] text-[#C9A25E]/70 transition-colors duration-300 group-hover:text-[#F5E6B8]"
+                className="-mt-0.5 select-none text-[10px] font-medium uppercase tracking-[0.18em] text-[#C9A25E]/70 transition-colors duration-300 group-hover:text-[#F5E6B8]"
               >
-                yumina
+                world ai
               </span>
             </div>
           </div>
@@ -384,7 +384,7 @@ export function Sidebar() {
                 {showsYuminaBrandMark ? (
                   <img
                     src={isAuthenticated && profile?.image ? profile.image : "/logo.png"}
-                    alt="Yumina"
+                    alt="World AI"
                     className="mobile-nav-drawer__brand-logo"
                   />
                 ) : (
@@ -404,7 +404,7 @@ export function Sidebar() {
                       <span className="tabular-nums">{compactBalance}</span>
                     </p>
                   ) : (
-                    <p className="mobile-nav-drawer__identity-meta">Yumina</p>
+                    <p className="mobile-nav-drawer__identity-meta">World AI</p>
                   )}
                 </div>
               </div>

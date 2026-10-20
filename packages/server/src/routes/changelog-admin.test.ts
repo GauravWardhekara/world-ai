@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { before, test } from "node:test";
 import { Hono } from "hono";
 import { eq } from "drizzle-orm";
-import type { ChangelogResponse } from "@yumina/shared";
+import type { ChangelogResponse } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { auth } from "../lib/auth.js";
 import { changelogEntries, changelogEntryRevisions, user } from "../db/schema.js";

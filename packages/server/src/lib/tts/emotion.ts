@@ -18,7 +18,7 @@
  * player who is listening). Kill switch: TTS_EMOTION=off.
  */
 
-import type { JevAnswer, JevQuestion } from "@yumina/engine";
+import type { JevAnswer, JevQuestion } from "@world-ai/engine";
 import { decide, decisionModelConfigured } from "../continuity/jev-client.js";
 import type { PlayerSideKey, SideCallKeySource } from "../side-call-key.js";
 import { env } from "../env.js";

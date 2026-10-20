@@ -27,7 +27,7 @@ import {
   type JevQuestion,
   type Variable,
   type WorldDefinition,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { jsonrepair } from "jsonrepair";
 import { env } from "../env.js";
 import { recordUsageLog } from "../usage-log.js";

@@ -1,4 +1,4 @@
-import { socialJobContext, socialResponseSchema, type SocialJob, type SocialState } from "@yumina/engine";
+import { socialJobContext, socialResponseSchema, type SocialJob, type SocialState } from "@world-ai/engine";
 import { buildSocialReplyPrompt, renderSocialContext } from "./social-reply-prompt.js";
 
 type PromptArgs = Parameters<typeof buildSocialReplyPrompt>;

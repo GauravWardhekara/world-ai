@@ -34,7 +34,7 @@ test("guard failures cannot trigger another Mix narrative attempt", () => {
 });
 
 test("the SSE dispatcher routes state-validation audits to the typed callback", () => {
-  assert.match(sseSource, /onStateValidation\?\s*:\s*\(audit:\s*import\(["']@yumina\/shared["']\)\.StateValidationAudit\)/);
+  assert.match(sseSource, /onStateValidation\?\s*:\s*\(audit:\s*import\(["']@(world-ai|yumina)\/shared["']\)\.StateValidationAudit\)/);
   assert.match(sseSource, /case ["']state-validation["']:\s*(?:options\.callbacks|cb)\.onStateValidation\?\.\(parsed\);\s*break;/);
 });
 

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { PromptBuilder } from "@yumina/engine";
+import { PromptBuilder } from "@world-ai/engine";
 import { createHash } from "node:crypto";
 import { buildWorldEmbeddingInput, buildWorldEmbeddingText } from "./embedding-content.js";
 

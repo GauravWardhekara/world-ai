@@ -1,6 +1,6 @@
 import { APIError, createAuthMiddleware } from "better-auth/api";
 import { username, USERNAME_ERROR_CODES } from "better-auth/plugins/username";
-import { isReservedUsername, USERNAME_RE } from "@yumina/shared";
+import { isReservedUsername, USERNAME_RE } from "@world-ai/shared";
 
 export function usernameAuthPlugin() {
   const plugin = username({

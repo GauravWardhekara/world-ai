@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { applySocialAction, initialSocialState, type SocialState } from "@yumina/engine";
+import { applySocialAction, initialSocialState, type SocialState } from "@world-ai/engine";
 import { generateSocialReplies, readSocialCompletion, type SocialCompletionMessages } from "./social-generation.js";
 
 const config = { profiles: ['a', 'b', 'c'].map(id => ({ id, name: id.toUpperCase(), handle: id, avatar: '', loreEntryId: id })) };

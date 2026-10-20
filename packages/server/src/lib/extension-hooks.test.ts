@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import type { WorldDefinition } from "@yumina/engine";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import type { WorldDefinition } from "@world-ai/engine";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import {
   PromptBlockController,
   __setInstalledLookupForTests,

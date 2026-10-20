@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronRight } from "lucide-react";
-import { pageBehaviorRefs, pageVariableRefs, remapDocVariable, type UiDoc, type UiPage, type Variable } from "@yumina/engine";
+import { pageBehaviorRefs, pageVariableRefs, remapDocVariable, type UiDoc, type UiPage, type Variable } from "@world-ai/engine";
 import { getVariableIdUsage } from "@/features/editor/lib/variable-id-references";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";

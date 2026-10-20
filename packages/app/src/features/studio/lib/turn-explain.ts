@@ -1,4 +1,4 @@
-import { checkConditions, evaluateCondition, isMemberActive, type Condition, type GameState, type Reaction, type Rule, type Variable, type WorldDefinition } from "@yumina/engine";
+import { checkConditions, evaluateCondition, isMemberActive, type Condition, type GameState, type Reaction, type Rule, type Variable, type WorldDefinition } from "@world-ai/engine";
 import type { RuntimeRecord, RuntimeTrace } from "./runtime-records";
 
 /** One playtest result turned into "what moved, who moved it, what held the

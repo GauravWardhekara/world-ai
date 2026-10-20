@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Monitor } from "lucide-react";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { scopeForModule, type ModuleScope } from "../lib/module-scope";
 

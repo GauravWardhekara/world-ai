@@ -5,7 +5,7 @@ import { createMiddleware } from "hono/factory";
 import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { eq } from "drizzle-orm";
-import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@yumina/shared";
+import { MAX_WORLD_UPDATE_CONTENT, MAX_WORLD_UPDATE_TITLE } from "@world-ai/shared";
 import * as schema from "../db/schema.js";
 import type { AppEnv, SessionUser } from "../lib/types.js";
 import { createWorldUpdateEditRoutes } from "./world-update-edits.js";

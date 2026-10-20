@@ -1,8 +1,8 @@
 // Voice readout is opt-in (Settings › Display): a player who never turned it
-// on gets no synthesis and no charge. See isTtsOptedIn in @yumina/shared.
+// on gets no synthesis and no charge. See isTtsOptedIn in @world-ai/shared.
 
 import { eq } from "drizzle-orm";
-import { isTtsOptedIn, readTtsVoicePool } from "@yumina/shared";
+import { isTtsOptedIn, readTtsVoicePool } from "@world-ai/shared";
 import { readOwn } from "../../db/index.js";
 import { user } from "../../db/schema.js";
 

@@ -1,5 +1,5 @@
-import type { SessionMemory } from "@yumina/shared";
-import { estimateTokens } from "@yumina/engine";
+import type { SessionMemory } from "@world-ai/shared";
+import { estimateTokens } from "@world-ai/engine";
 
 /**
  * Session memory is a single free-form text block. The legacy format (pre

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getUiTemplate, type UiDoc, type Variable, type WorldDefinition } from "@yumina/engine";
+import { getUiTemplate, type UiDoc, type Variable, type WorldDefinition } from "@world-ai/engine";
 import { collectBoundVariableIds, findTemplateLeftovers, isTemplateShaped } from "./template-leftovers";
 
 const template = getUiTemplate("portrait-scene")!;

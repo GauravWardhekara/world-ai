@@ -1,5 +1,5 @@
 import { setImmediate } from "node:timers/promises";
-import { estimateTokens } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
 
 /** Let sockets/timers run between CPU batches; promises alone only yield to
  * microtasks and still starve HTTP. Individual tokenizer pieces are bounded

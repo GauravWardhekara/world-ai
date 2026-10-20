@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowUp, Plus, X } from "lucide-react";
-import type { UiElement, UiListCard, Variable } from "@yumina/engine";
+import type { UiElement, UiListCard, Variable } from "@world-ai/engine";
 import { ActionListEditor, type ActionContext } from "../element-behavior";
 import { moveItem } from "./choice-editor";
 import { idsToNames, namesToIds } from "./variable-text";

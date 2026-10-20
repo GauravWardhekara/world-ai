@@ -25,8 +25,8 @@ import { resolveImageUrl } from "@/lib/asset-url";
 import { useCreditStore, syncCreditsFromMessageResponse, handleStreamCreditError } from "@/edition/slots.state";
 import { useUserProfileStore } from "./user-profile";
 import { fallbackDecision, fallbackRecord, parseFallbackError, type ModelFallbackRetry } from "../lib/model-fallback";
-import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackNotice, type ModelFallbackRecord } from "@yumina/shared";
-import type { WorldDefinition, Effect, GameState, Worldbook } from "@yumina/engine";
+import { DEFAULT_MODEL_FALLBACK_POLICY, type ModelFallbackNotice, type ModelFallbackRecord } from "@world-ai/shared";
+import type { WorldDefinition, Effect, GameState, Worldbook } from "@world-ai/engine";
 import { safeParseWorldDef } from "@/lib/utils";
 import { hasGroupVoices, nextGroupVoice } from "@/features/chat/group-voices";
 import { withRuntimeState } from "@/features/studio/lib/runtime-state";
@@ -114,7 +114,7 @@ export interface Attachment {
 }
 
 export interface Message {
-  stateValidation?: import("@yumina/shared").StateValidationAudit | null;
+  stateValidation?: import("@world-ai/shared").StateValidationAudit | null;
   id: string;
   sessionId: string;
   role: "user" | "assistant" | "system";
@@ -130,7 +130,7 @@ export interface Message {
      *  parsing eats narrative or directives. Optional for backwards-compat
      *  with messages persisted before 2026-05. */
     rawContent?: string;
-    stateValidation?: import("@yumina/shared").StateValidationAudit;
+    stateValidation?: import("@world-ai/shared").StateValidationAudit;
     stateChanges?: Record<string, unknown>;
     stateSnapshot?: Record<string, unknown>;
     createdAt: string;
@@ -1003,7 +1003,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
       if (audioScope === getAudioScope()) {
         useAudioStore.getState().setTracks(
           Array.isArray(worldDef?.audioTracks)
-            ? worldDef.audioTracks as import("@yumina/engine").AudioTrack[]
+            ? worldDef.audioTracks as import("@world-ai/engine").AudioTrack[]
             : [],
         );
       }
@@ -1045,10 +1045,10 @@ export const useChatStore = create<ChatState>((set, get) => ({
 
         // Set playlist and conditional rules
         if (worldDef.bgmPlaylist) {
-          audioStore.setPlaylist(worldDef.bgmPlaylist as import("@yumina/engine").BGMPlaylist);
+          audioStore.setPlaylist(worldDef.bgmPlaylist as import("@world-ai/engine").BGMPlaylist);
         }
         if (worldDef.conditionalBGM && Array.isArray(worldDef.conditionalBGM)) {
-          audioStore.setConditionalRules(worldDef.conditionalBGM as import("@yumina/engine").ConditionalBGM[]);
+          audioStore.setConditionalRules(worldDef.conditionalBGM as import("@world-ai/engine").ConditionalBGM[]);
         }
 
         // Resume audio from persisted state or start playlist
@@ -1062,7 +1062,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
           audioStore.resumeFromState(metadata.activeAudio);
         } else {
           // Start default playlist if autoPlay and no active audio to resume
-          const pl = worldDef.bgmPlaylist as import("@yumina/engine").BGMPlaylist | undefined;
+          const pl = worldDef.bgmPlaylist as import("@world-ai/engine").BGMPlaylist | undefined;
           if (pl?.autoPlay && !pl.waitForFirstMessage && pl.tracks.length > 0) {
             audioStore.startPlaylist();
           }
@@ -1392,7 +1392,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
 
             // Process audio effects (after message is safely saved)
             try {
-              const audioEffects = data.audioEffects as import("@yumina/engine").AudioEffect[] | undefined;
+              const audioEffects = data.audioEffects as import("@world-ai/engine").AudioEffect[] | undefined;
               if (audioEffects && Array.isArray(audioEffects) && audioEffects.length > 0) {
                 useAudioStore.getState().processAudioEffects(audioEffects);
               }
@@ -1813,7 +1813,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
 
             // Process audio effects (wrapped in try-catch for safety)
             try {
-              const regenAudioEffects = data.audioEffects as import("@yumina/engine").AudioEffect[] | undefined;
+              const regenAudioEffects = data.audioEffects as import("@world-ai/engine").AudioEffect[] | undefined;
               if (regenAudioEffects && Array.isArray(regenAudioEffects) && regenAudioEffects.length > 0) {
                 useAudioStore.getState().processAudioEffects(regenAudioEffects);
               }
@@ -2037,7 +2037,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
             syncCreditBalance(credits);
 
             try {
-              const audioEffects = data.audioEffects as import("@yumina/engine").AudioEffect[] | undefined;
+              const audioEffects = data.audioEffects as import("@world-ai/engine").AudioEffect[] | undefined;
               if (audioEffects && Array.isArray(audioEffects) && audioEffects.length > 0) {
                 useAudioStore.getState().processAudioEffects(audioEffects);
               }
@@ -2603,7 +2603,7 @@ export const useChatStore = create<ChatState>((set, get) => ({
 
         // Audio emitted by fired reactions.
         try {
-          const audioEffects = data.audio as import("@yumina/engine").AudioEffect[] | undefined;
+          const audioEffects = data.audio as import("@world-ai/engine").AudioEffect[] | undefined;
           if (audioEffects && Array.isArray(audioEffects) && audioEffects.length > 0) {
             useAudioStore.getState().processAudioEffects(audioEffects);
           }

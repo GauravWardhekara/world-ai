@@ -1,4 +1,4 @@
-import { personaEntriesSchema, type PersonaEntry } from "@yumina/shared";
+import { personaEntriesSchema, type PersonaEntry } from "@world-ai/shared";
 
 /** Only role-play fields may cross into a world's sandbox. Private notes and
  * account identity stay in the host app. */

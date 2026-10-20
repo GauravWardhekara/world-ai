@@ -3,10 +3,10 @@ import type {
   WorldEntry,
   Rule,
   CustomUIComponent,
-} from "@yumina/engine";
-import { extractAiCallsFromFiles, frontendFileFacts, resolveStation } from "@yumina/engine";
-import type { Reaction } from "@yumina/engine";
-import { isContinuityEnabled, isContinuityOwned, isSceneImageJudgeOn } from "@yumina/engine";
+} from "@world-ai/engine";
+import { extractAiCallsFromFiles, frontendFileFacts, resolveStation } from "@world-ai/engine";
+import type { Reaction } from "@world-ai/engine";
+import { isContinuityEnabled, isContinuityOwned, isSceneImageJudgeOn } from "@world-ai/engine";
 import { loadAssetCatalog, formatAssetCatalog } from "./asset-catalog.js";
 import { uiDocOwnedFiles } from "./ui-doc-tools.js";
 import { stickyNotes } from "./sticky-notes.js";

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { AssetImportJob } from "@yumina/shared";
+import type { AssetImportJob } from "@world-ai/shared";
 import { createAssetImportStore } from "./asset-imports";
 import { AssetImportClientError, type AssetImportClient } from "@/lib/asset-import-client";
 

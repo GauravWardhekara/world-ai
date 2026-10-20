@@ -2,7 +2,7 @@ import test, { after } from "node:test";
 import assert from "node:assert/strict";
 import { act, createElement } from "react";
 import { JSDOM } from "jsdom";
-import type { UiMessageRule } from "@yumina/engine";
+import type { UiMessageRule } from "@world-ai/engine";
 
 // The message layer's renderer lives in the sandbox (sandbox/chat/
 // designed-message.tsx) and is imported by the Studio preview too; this drives
@@ -174,7 +174,7 @@ test("message style paints the side it is for, and a plain message keeps the sto
 
 test("each message style preset draws both sides its own way", async () => {
   __resetRevealMemory();
-  const { MESSAGE_STYLE_PRESETS } = await import("@yumina/engine");
+  const { MESSAGE_STYLE_PRESETS } = await import("@world-ai/engine");
   const { host } = makeHost();
   const seen = new Set<string>();
   for (const [id, style] of Object.entries(MESSAGE_STYLE_PRESETS)) {

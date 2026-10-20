@@ -1,7 +1,7 @@
 import { createHash, randomUUID } from "node:crypto";
 import { and, desc, eq, sql } from "drizzle-orm";
-import { GameStateManager, estimateTokens, preserveSetupScopedVariables, stripStateReceipts, type GameState, type WorldDefinition } from "@yumina/engine";
-import { parseStateGuardModel, type StateValidationAudit } from "@yumina/shared";
+import { GameStateManager, estimateTokens, preserveSetupScopedVariables, stripStateReceipts, type GameState, type WorldDefinition } from "@world-ai/engine";
+import { parseStateGuardModel, type StateValidationAudit } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { messages, playSessions, worlds, worldPendingEdits } from "../db/schema.js";
 import { turnOutputInstructions, validateTurnOutput, type TurnHookDispatch, type TurnOutputContext, type ValidatedTurnOutput } from "./extension-hooks.js";

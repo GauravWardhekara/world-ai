@@ -30,7 +30,7 @@ const appRoot = fileURLToPath(new URL("../..", import.meta.url));
 const vite = await createServer({
   root: appRoot, configFile: false, envFile: false, appType: "custom", logLevel: "silent",
   server: { middlewareMode: true, watch: null },
-  resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } },
+  resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } },
 });
 const { useEditorStore: store } = await vite.ssrLoadModule("/src/stores/editor.ts") as typeof import("./editor");
 const { FLUSH_PENDING_EDITS_EVENT } = await vite.ssrLoadModule("/src/features/editor/components/flush-pending-edits.ts") as typeof import("../features/editor/components/flush-pending-edits");

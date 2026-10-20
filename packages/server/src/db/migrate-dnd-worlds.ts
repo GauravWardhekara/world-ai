@@ -17,8 +17,8 @@ import { fileURLToPath } from "node:url";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/node-postgres";
 import pg from "pg";
-import { migrateWorldDefinition } from "@yumina/engine";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { playSessions, worlds } from "./schema.js";
 
 type JsonRecord = Record<string, unknown>;

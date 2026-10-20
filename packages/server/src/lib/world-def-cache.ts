@@ -1,5 +1,5 @@
 import { eq } from "drizzle-orm";
-import { migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { worlds } from "../db/schema.js";
 import { getPendingEdit } from "./pending-edit.js";

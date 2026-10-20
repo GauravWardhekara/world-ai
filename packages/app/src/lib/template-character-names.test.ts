@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { isPlaceholderCharacterName } from "@yumina/engine";
+import { isPlaceholderCharacterName } from "@world-ai/engine";
 
 // The engine's list of "not named yet" character names has to cover every
 // name the stock templates hand out, or a renamed-never card's replies go back

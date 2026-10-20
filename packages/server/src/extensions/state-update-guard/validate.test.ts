@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { GameStateManager, ResponseParser, estimateTokens, preloadTokenizer, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, ResponseParser, estimateTokens, preloadTokenizer, type WorldDefinition } from "@world-ai/engine";
 import type { TurnOutputContext, ValidatedTurnOutput } from "../../lib/extension-hooks.js";
 import type { GenerateParams, StreamChunk } from "../../lib/llm/types.js";
 import { guardTurnOutput, StateGuardError, boundedCorrectionInputTokens, estimateCorrectionUsageTokens } from "./validate.js";

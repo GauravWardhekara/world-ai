@@ -7,7 +7,7 @@ import { isLocalModelId } from "@/features/local-model/enabled-flag";
 import { useConfigStore } from "@/stores/config";
 import { useCreditStore } from "@/edition/slots.state";
 import { useModelsStore } from "@/stores/models";
-import { PLAY_MODELS, formatModelId } from "@yumina/shared";
+import { PLAY_MODELS, formatModelId } from "@world-ai/shared";
 import { ModelBrowser } from "@/features/chat/model-browser";
 
 /** Model picker trigger + BYOK key management (the Settings "AI config" tab). */

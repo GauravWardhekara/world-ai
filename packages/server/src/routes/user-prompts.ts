@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { eq, and } from "drizzle-orm";
-import { isModelFamily } from "@yumina/engine";
+import { isModelFamily } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { userPrompts, promptFolders } from "../db/schema.js";
 import { authMiddleware } from "../middleware/auth.js";

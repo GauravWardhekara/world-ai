@@ -8,8 +8,8 @@
 // touches this file or routes/messages.ts.
 
 import { eq, and, lte, desc, sql } from "drizzle-orm";
-import { estimateTokens } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { messages } from "../db/schema.js";
 import { buildTurnHistoryFilter } from "./turn-history-filter.js";

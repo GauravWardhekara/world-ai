@@ -18,13 +18,13 @@ import { eq, or, and, asc, desc, ilike, sql, inArray, notInArray, isNotNull } fr
 import { db, readDb, readOwn, readPublic, flagWrite } from "../db/index.js";
 import { canonicalWorldPath, findWorldById, isPubliclyVisible } from "../lib/world-address.js";
 import { worlds, user, assetReferences, userLibrary, worldPendingEdits, worldUpdates, follows, reviews, worldRatings, contentTranslations, worldReviewSubmissions } from "../db/schema.js";
-import { estimateTokens } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
 import { generateUploadUrl } from "../lib/s3.js";
 import { discardDirectImageUpload, publishStoredImage } from "../lib/image-resize.js";
 import { validateImageUploadSize } from "../lib/image-upload-policy.js";
 import { resolveImageCdn } from "../lib/cdn-url.js";
-import { MAX_REVIEW_CONTENT, clampWorldTags, OFFICIAL_WORLD_TAGS, PLAYED_TAG_FILTER_THRESHOLD, MAX_DYNAMIC_FILTER_TAGS } from "@yumina/shared";
-import { canonicalizeTag } from "@yumina/shared";
+import { MAX_REVIEW_CONTENT, clampWorldTags, OFFICIAL_WORLD_TAGS, PLAYED_TAG_FILTER_THRESHOLD, MAX_DYNAMIC_FILTER_TAGS } from "@world-ai/shared";
+import { canonicalizeTag } from "@world-ai/shared";
 import { buildHubTagQuery, parseContentLevelParam } from "../lib/hub-tags.js";
 import { resolveWorldAudience, resolveWorldAudienceEdit } from "../lib/world-audience.js";
 import {
@@ -54,8 +54,8 @@ import { env } from "../lib/env.js";
 import { serveDiscoveryFeed, DISCOVERY_POLICY_VERSION, DiscoveryCursorError, DiscoveryAdmissionError, discoveryMeasurementEnabled, recordDiscoveryServe } from "../lib/discovery-feed.js";
 import { edition } from "../edition/index.js";
 import { sanitizeContent } from "../lib/sanitize.js";
-import { createWorldSchema, updateWorldSchema } from "@yumina/shared";
-import { hasPublishableCover, getDiscoverCoverArtIssues, isDefaultWorldName } from "@yumina/shared";
+import { createWorldSchema, updateWorldSchema } from "@world-ai/shared";
+import { hasPublishableCover, getDiscoverCoverArtIssues, isDefaultWorldName } from "@world-ai/shared";
 import { scanWorldSchemaForInlineAssets } from "../lib/asset-validation.js";
 import {
   notify,
@@ -78,8 +78,8 @@ import { loadPublishedRankerModel } from "../lib/ranker-model.js";
 import { logFeedServe } from "../lib/feed-log.js";
 import { loadFeaturedHeroSlots } from "../lib/editorial.js";
 import { activeFeaturedSlots, readFeaturedCollection } from "../lib/featured-collection-store.js";
-import { featuredScopeSchema, getAgeFromBirthYear, normalizeProfileWorldOrder } from "@yumina/shared";
-import { DEFAULT_EDITORIAL_CATEGORIES, resolveEditorialCollection, resolveActiveEditorialHero, editorialHeroCopy, type EditorialSlot } from "@yumina/shared";
+import { featuredScopeSchema, getAgeFromBirthYear, normalizeProfileWorldOrder } from "@world-ai/shared";
+import { DEFAULT_EDITORIAL_CATEGORIES, resolveEditorialCollection, resolveActiveEditorialHero, editorialHeroCopy, type EditorialSlot } from "@world-ai/shared";
 import { publishedEditorial, activeEditorialSlots } from "../lib/discover-editorial.js";
 import { resolveProfileContentLevel } from "../lib/profile-content-level.js";
 import { resolveHeroWorlds, type HeroSlot } from "../lib/hero-worlds.js";
@@ -119,7 +119,7 @@ const VALID_LANGUAGE_CODES = new Set(["en", "zh", "ja", "ko", "es", "fr", "de", 
  * Fold typed tags onto their stored form. The alias table used to live here as
  * a hand-kept mirror of the app's copy — fine at ten entries, unmaintainable at
  * ~280, and a divergence between the two forks a tag in storage. Both sides now
- * read the same table from @yumina/shared.
+ * read the same table from @world-ai/shared.
  */
 function normalizeTagsForStorage(tags: string[]): string[] {
   const mapped = tags.map((tag) => canonicalizeTag(tag));

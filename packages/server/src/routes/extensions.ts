@@ -21,7 +21,7 @@ import {
   type ExtensionInstallState,
   type ExtensionSummary,
   type ExtensionDetail,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import type { AppEnv } from "../lib/types.js";
 
 const extensionRoutes = new Hono<AppEnv>();

@@ -5,7 +5,7 @@
 // a rewrite of the systems themselves.
 
 import { and, eq, gt, isNotNull, isNull } from "drizzle-orm";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { db } from "../../db/index.js";
 import { playSessions, messages } from "../../db/schema.js";
 import {

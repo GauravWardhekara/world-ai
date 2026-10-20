@@ -4,9 +4,9 @@ import type {
   WorldSettings,
   LoreUiBinding,
   Worldbook,
-} from "@yumina/engine";
-import { LorebookMatcher, filterEntriesByActiveWorldbooks } from "@yumina/engine";
-import type { LorebookMatchResult } from "@yumina/engine";
+} from "@world-ai/engine";
+import { LorebookMatcher, filterEntriesByActiveWorldbooks } from "@world-ai/engine";
+import type { LorebookMatchResult } from "@world-ai/engine";
 
 const matcher = new LorebookMatcher();
 

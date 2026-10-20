@@ -1,4 +1,4 @@
-import { blockHostMap, blockHostsMap, type Block, type BlockHost, type CardGraph } from "@yumina/engine";
+import { blockHostMap, blockHostsMap, type Block, type BlockHost, type CardGraph } from "@world-ai/engine";
 import type { CanvasBlock } from "./starter-board";
 
 /** Editing and folding still address the engine's original block ids. */

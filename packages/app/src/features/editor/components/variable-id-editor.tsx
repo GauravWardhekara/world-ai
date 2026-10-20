@@ -1,6 +1,6 @@
 import { useEffect, useId, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { Variable, WorldDefinition } from "@yumina/engine";
+import type { Variable, WorldDefinition } from "@world-ai/engine";
 import { getVariableIdUsage, variableUsageInputs } from "../lib/variable-id-references";
 
 /** A technical identifier needs an explicit commit boundary. A rejected edit

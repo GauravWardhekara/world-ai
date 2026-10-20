@@ -2,8 +2,8 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { DoorClosed, Home, PanelLeftClose, PanelLeftOpen, Plus } from "lucide-react";
-import { UI_CANVAS_W, UI_DESKTOP_H, UI_DESKTOP_W, duplicatePage, elementActions, movePage, removePage, renamePage, setEntryPage } from "@yumina/engine";
-import type { UiDoc, UiElement, UiPage } from "@yumina/engine";
+import { UI_CANVAS_W, UI_DESKTOP_H, UI_DESKTOP_W, duplicatePage, elementActions, movePage, removePage, renamePage, setEntryPage } from "@world-ai/engine";
+import type { UiDoc, UiElement, UiPage } from "@world-ai/engine";
 import { getAssetCdnUrl } from "@/lib/asset-url";
 import { cn } from "@/lib/utils";
 

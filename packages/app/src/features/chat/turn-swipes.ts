@@ -24,7 +24,7 @@ export interface TurnSwipe {
   stateSnapshot?: Record<string, unknown>;
   createdAt: string;
   model?: string;
-  modelFallback?: import("@yumina/shared").ModelFallbackRecord;
+  modelFallback?: import("@world-ai/shared").ModelFallbackRecord;
   tokenCount?: number;
   creditCost?: number;
   creditBalanceAfter?: number;

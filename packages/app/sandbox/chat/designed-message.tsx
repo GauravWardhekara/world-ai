@@ -25,7 +25,7 @@ import {
   type UiMessageRoleStyle,
   type UiMessageRule,
   type UiMessageStyle,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 
 export interface MessageDesign {
   style?: UiMessageStyle;

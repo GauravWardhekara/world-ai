@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { CustomProvider } from "./custom.js";
 import { clampMaxContextToModel } from "./context-window.js";
-import { PromptBuilder, estimateTokens, preloadTokenizer } from "@yumina/engine";
+import { PromptBuilder, estimateTokens, preloadTokenizer } from "@world-ai/engine";
 
 test("Featherless plan limits are cached per credential and constrain long chat history", async t => {
   let calls = 0;

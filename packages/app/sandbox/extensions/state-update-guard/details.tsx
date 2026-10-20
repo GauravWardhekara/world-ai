@@ -1,4 +1,4 @@
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ArrowLeft, ChevronRight, History } from "lucide-react";
 import { diagnosticSummary, OutputComparison, readableLabels, variableLabel } from "./readable-output";

@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { GameStateManager, ReactionEvaluator, runReactionChain, buildTurnCompleteEvent } from "@yumina/engine";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import { GameStateManager, ReactionEvaluator, runReactionChain, buildTurnCompleteEvent } from "@world-ai/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { normalizeGameState, reconcileTurnState } from "./game-state.js";
 import { generationBaseline, regenerationState, reconcileRegenerationState } from "./regeneration-state.js";
 

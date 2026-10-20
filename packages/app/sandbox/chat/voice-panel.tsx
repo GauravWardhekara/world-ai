@@ -17,7 +17,7 @@
 
 import { useState, useRef, useEffect, useMemo } from "react";
 import { Volume2, Play, Square, Loader2, Check, Captions } from "lucide-react";
-import { TTS_VOICES } from "@yumina/shared";
+import { TTS_VOICES } from "@world-ai/shared";
 import { useYumina } from "../sandbox-context";
 import { makeChatT } from "./i18n";
 import { ComposerPopover } from "./composer-popover";

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { isTokenizerReady, preloadTokenizer, type WorldDefinition } from "@yumina/engine";
+import { isTokenizerReady, preloadTokenizer, type WorldDefinition } from "@world-ai/engine";
 import { computeContextBudget } from "./context-budget";
 
 // A blank card is five Chinese presets. Counted before the tokenizer loads,

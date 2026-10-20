@@ -1,7 +1,7 @@
 import {
   METER_ROW_H, UI_CANVAS_W, UI_DESKTOP_W, addElement, addMeterRow, addStackedRow, canReflow, newElement, updateElements,
   type UiDoc, type UiElement,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { chatPageDoc, classifyInterface } from "./ui-doc-takeover";
 import { isVariableOnScreen, removeVariableFromScreen } from "./variable-on-screen";

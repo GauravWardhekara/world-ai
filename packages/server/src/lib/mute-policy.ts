@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { createMiddleware } from "hono/factory";
-import { isUserMuted, type UserMuteState } from "@yumina/shared";
+import { isUserMuted, type UserMuteState } from "@world-ai/shared";
 import type { AppEnv } from "./types.js";
 
 export const muteInputSchema = z.object({

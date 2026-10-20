@@ -1,4 +1,4 @@
-import { compileRulesToReactions, type Reaction, type ReactionEffect, type WorldDefinition } from "@yumina/engine";
+import { compileRulesToReactions, type Reaction, type ReactionEffect, type WorldDefinition } from "@world-ai/engine";
 
 /** The editor and runtime see both formats. Conversion happens only on a behavior edit. */
 export function editableBehaviors(world: Pick<WorldDefinition, "rules" | "reactions">): Reaction[] {

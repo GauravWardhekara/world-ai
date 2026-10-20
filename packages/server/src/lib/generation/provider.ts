@@ -1,4 +1,4 @@
-import type { GenerationErrorCode } from "@yumina/shared";
+import type { GenerationErrorCode } from "@world-ai/shared";
 
 interface ProviderProgress {
   nodeClass?: string;

@@ -11,7 +11,7 @@ export interface SandboxMessageAttachment {
 }
 
 export interface SandboxSwipe {
-  modelFallback?: import("@yumina/shared").ModelFallbackRecord;
+  modelFallback?: import("@world-ai/shared").ModelFallbackRecord;
   content: string;
   /** Full pre-parse LLM output (segments + directives + JSON wrappers).
    *  Optional for backwards-compat with messages persisted before 2026-05.
@@ -39,7 +39,7 @@ export interface SandboxMessage {
   swipes?: SandboxSwipe[];
   activeSwipeIndex?: number;
   model?: string | null;
-  modelFallback?: import("@yumina/shared").ModelFallbackRecord;
+  modelFallback?: import("@world-ai/shared").ModelFallbackRecord;
   tokenCount?: number | null;
   generationTimeMs?: number | null;
   creditCost?: number | null;

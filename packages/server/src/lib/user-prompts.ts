@@ -1,5 +1,5 @@
 import { eq } from 'drizzle-orm';
-import { familyOf, type UserPrompt } from '@yumina/engine';
+import { familyOf, type UserPrompt } from '@world-ai/engine';
 import { db, type DrizzleDB } from '../db/index.js';
 import { userPrompts, promptFolders } from '../db/schema.js';
 import { UNRESTRICT_KIND, getUnrestrictEligibility } from './unrestrict.js';

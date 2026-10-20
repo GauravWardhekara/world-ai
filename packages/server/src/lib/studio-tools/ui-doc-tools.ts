@@ -12,8 +12,8 @@
  * editor's own save-time compile finds nothing to change afterwards.
  */
 
-import type { RootComponent, UiDoc, UiElement, UiPage, WorldDefinition, Variable } from "@yumina/engine";
-import { compileUiDoc, uiDocDrawsChat, uiDocSchema, validateUiDoc, buildUiTheme, getUiThemePreset, UI_THEMES, UI_CHAT_STARTED, PromptBuilder, syncMessageRulesEntry, UI_RULES_ENTRY_ID, UI_LOOKS, applyUiLook, currentUiLook, getUiLook, uiLookPartOf, fitTextBox, pushBelowGrown, textStyleAffectsHeight, readableThemeTokens, USER_ROOT_PATH, COMPOSED_MARKER, BUNDLE_NS_RE, generateComposedIndex, syncGreetingActions } from "@yumina/engine";
+import type { RootComponent, UiDoc, UiElement, UiPage, WorldDefinition, Variable } from "@world-ai/engine";
+import { compileUiDoc, uiDocDrawsChat, uiDocSchema, validateUiDoc, buildUiTheme, getUiThemePreset, UI_THEMES, UI_CHAT_STARTED, PromptBuilder, syncMessageRulesEntry, UI_RULES_ENTRY_ID, UI_LOOKS, applyUiLook, currentUiLook, getUiLook, uiLookPartOf, fitTextBox, pushBelowGrown, textStyleAffectsHeight, readableThemeTokens, USER_ROOT_PATH, COMPOSED_MARKER, BUNDLE_NS_RE, generateComposedIndex, syncGreetingActions } from "@world-ai/engine";
 import crypto from "crypto";
 import { validateTsx, formatTsxIssue } from "./tsx-validate.js";
 import { assertNoInlineDataUris } from "../asset-validation.js";

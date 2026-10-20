@@ -284,7 +284,7 @@ test("hasSessionMemory reflects text presence for old and new shapes", async () 
 
 test("the memory output cap fits a target-length CJK memory", async () => {
   const { MEMORY_TARGET_CHARS, MAX_MEMORY_OUTPUT_TOKENS } = await loadModule();
-  const { estimateTokens } = await import("@yumina/engine");
+  const { estimateTokens } = await import("@world-ai/engine");
   const cjk = "记".repeat(MEMORY_TARGET_CHARS);
   assert.ok(estimateTokens(cjk, "google/gemini-2.5-flash-lite") <= MAX_MEMORY_OUTPUT_TOKENS);
   assert.ok(estimateTokens(cjk, "deepseek/deepseek-v3.2") <= MAX_MEMORY_OUTPUT_TOKENS);

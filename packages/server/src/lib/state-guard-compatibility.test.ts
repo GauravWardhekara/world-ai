@@ -1,7 +1,7 @@
 import "../test/database-fixture.js";
 import assert from "node:assert/strict";
 import test from "node:test";
-import { GameStateManager, ResponseParser, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, ResponseParser, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { creditTransactions, creditWallets, usageLogs } from "../db/schema.js";
 import { registerStateUpdateGuard } from "../extensions/state-update-guard/hooks.js";

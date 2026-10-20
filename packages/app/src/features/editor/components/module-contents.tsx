@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { BookOpen, Clapperboard, MessageCircle, Pencil, Plus, Variable as VariableIcon, Zap } from "lucide-react";
-import { ENTRY_TRIGGER_ORDER, entryTrigger, type EntryTrigger, type Worldbook, type WorldEntry } from "@yumina/engine";
+import { ENTRY_TRIGGER_ORDER, entryTrigger, type EntryTrigger, type Worldbook, type WorldEntry } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { setPendingCodeJump } from "@/lib/code-jump";

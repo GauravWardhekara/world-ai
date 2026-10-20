@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useChatStore } from "@/stores/chat";
-import type { TurnResult, CombatLogEntry } from "@yumina/engine";
+import type { TurnResult, CombatLogEntry } from "@world-ai/engine";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 

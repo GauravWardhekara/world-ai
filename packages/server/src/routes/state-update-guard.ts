@@ -10,7 +10,7 @@ import { loadSessionWorldDef } from "../lib/world-def-cache.js";
 import { STATE_GUARD_KEY, stateGuardDefaultApplies } from "../extensions/state-update-guard/activation.js";
 import { MODEL_ID_PATTERN, applyModelRedirect } from "../lib/llm/model-redirects.js";
 import { resolveGuardModel } from "../extensions/state-update-guard/model.js";
-import { parseStateGuardModel, stateGuardModelSelection } from "@yumina/shared";
+import { parseStateGuardModel, stateGuardModelSelection } from "@world-ai/shared";
 import { edition } from "../edition/index.js";
 
 export const stateGuardSettingsSchema = z.object({

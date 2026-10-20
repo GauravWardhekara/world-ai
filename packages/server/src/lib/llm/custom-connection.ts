@@ -1,4 +1,4 @@
-import type { ApiKeyMetadata } from "@yumina/shared";
+import type { ApiKeyMetadata } from "@world-ai/shared";
 import type { CustomProvider } from "./custom.js";
 
 /** Discovery and generation are independent capabilities on compatible APIs. */

@@ -1,4 +1,4 @@
-import type { GameState } from "@yumina/engine";
+import type { GameState } from "@world-ai/engine";
 
 const record = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);

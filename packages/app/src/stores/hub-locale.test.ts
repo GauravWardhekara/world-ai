@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import i18n from "@/lib/i18n";
 import { currentTagLocale } from "@/lib/hub-tag-locale";
-import { TAG_VOCABULARY, tagLabel } from "@yumina/shared";
+import { TAG_VOCABULARY, tagLabel } from "@world-ai/shared";
 
 test("Discover renders tags before the asynchronous language initialization finishes", () => {
   const original = i18n.language;

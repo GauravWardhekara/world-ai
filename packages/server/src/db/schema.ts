@@ -30,7 +30,7 @@ import type {
   SessionSummaryStatus,
   SocialEventRulesConfig,
   SocialPlatformSettlement,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import type { ToolCall } from "../lib/llm/types.js";
 
 // ─── Better Auth tables ─────────────────────────────────────────────
@@ -501,7 +501,7 @@ export const worlds = pgTable("worlds", {
   index("worlds_status_idx").on(t.status),
   index("worlds_language_group_id_idx").on(t.languageGroupId),
   index("worlds_review_status_idx").on(t.reviewStatus, t.submittedForReviewAt),
-  // Hard backstop for MAX_WORLD_TAGS (@yumina/shared). The app clamps tags on
+  // Hard backstop for MAX_WORLD_TAGS (@world-ai/shared). The app clamps tags on
   // every write path, but this guards against raw inserts / seed scripts /
   // future tools that skip it — no row can ever carry more than 50 tags.
   // (Keep in sync with MAX_WORLD_TAGS + ensureWorldTagsConstraint in db/index.ts.)
@@ -704,7 +704,7 @@ export const messages = pgTable("messages", {
     .default("complete"),
   errorMessage: text("error_message"),
   stateChanges: jsonb("state_changes").$type<Record<string, unknown>>(),
-  stateValidation: jsonb("state_validation").$type<import("@yumina/shared").StateValidationAudit>(),
+  stateValidation: jsonb("state_validation").$type<import("@world-ai/shared").StateValidationAudit>(),
   swipes: jsonb("swipes")
     .$type<
       Array<{
@@ -713,7 +713,7 @@ export const messages = pgTable("messages", {
          *  swipes leave this undefined and the UI hides the "view raw"
          *  toggle when it equals `content`. */
         rawContent?: string;
-        stateValidation?: import("@yumina/shared").StateValidationAudit;
+        stateValidation?: import("@world-ai/shared").StateValidationAudit;
         /** Private per-generation evidence; omitted from bulk transport and public replays. */
         variableAudit?: import("./variable-audit-types.js").StoredVariableAudit;
         stateChanges?: Record<string, unknown>;
@@ -725,7 +725,7 @@ export const messages = pgTable("messages", {
         voice?: string;
         createdAt: string;
         model?: string;
-        modelFallback?: import("@yumina/shared").ModelFallbackRecord;
+        modelFallback?: import("@world-ai/shared").ModelFallbackRecord;
         tokenCount?: number;
         creditCost?: number;
         creditBalanceAfter?: number;
@@ -954,7 +954,7 @@ export const userPrompts = pgTable("user_prompts", {
   sourceId: text("source_id"),
   sourceVersion: integer("source_version"),
   apiRole: text("api_role", { enum: ["system", "user", "assistant"] }),
-  // Per-model binding: the model families (see @yumina/engine MODEL_FAMILIES) this
+  // Per-model binding: the model families (see @world-ai/engine MODEL_FAMILIES) this
   // prompt auto-applies for. null/empty = no binding = always-on (防抢话, 字数…).
   autoModels: jsonb("auto_models").$type<string[]>(),
   createdAt: timestamp("created_at").defaultNow(),
@@ -1312,7 +1312,7 @@ export const imageBatches = pgTable("image_batches", {
   runId: text("run_id").notNull(),
   toolCallId: text("tool_call_id").notNull(),
   requestHash: text("request_hash").notNull(),
-  proposal: jsonb("proposal").$type<import("@yumina/shared").ImageBatchProposal>().notNull(),
+  proposal: jsonb("proposal").$type<import("@world-ai/shared").ImageBatchProposal>().notNull(),
   folderId: text("folder_id").references(() => assetFolders.id, { onDelete: "set null" }),
   status: text("status").notNull().default("running"),
   pauseReason: text("pause_reason"),
@@ -1332,7 +1332,7 @@ export const imageBatchItems = pgTable("image_batch_items", {
   position: integer("position").notNull(),
   label: text("label").notNull(),
   prompt: text("prompt").notNull(),
-  target: jsonb("target").$type<import("@yumina/shared").ImageBatchTarget>(),
+  target: jsonb("target").$type<import("@world-ai/shared").ImageBatchTarget>(),
   expectedImage: text("expected_image"),
   status: text("status").notNull().default("pending"),
   attempt: integer("attempt").notNull().default(1),
@@ -1643,7 +1643,7 @@ export const reviewReplies = pgTable("review_replies", {
 
 // ─── Extensions ─────────────────────────────────────────────────────
 // First-party feature marketplace. The catalog of WHICH extensions exist lives
-// in code (EXTENSION_REGISTRY in @yumina/shared); these tables hold only
+// in code (EXTENSION_REGISTRY in @world-ai/shared); these tables hold only
 // per-user install state, reviews, and denormalized counters — all keyed by the
 // stable string `extension_key` so the system can grow toward third-party
 // extensions later without reshaping the schema.
@@ -1818,7 +1818,7 @@ export const agentRuns = pgTable("agent_runs", {
     createdAt: string;
     commitId: string;
     writeToolCalls?: ToolCall[];
-    buildProposal?: import("@yumina/shared").StudioBuildProposal;
+    buildProposal?: import("@world-ai/shared").StudioBuildProposal;
     /** Identity of this committed turn, decided from structural facts at commit
      *  time (NOT inferred from text later). Cross-run agent history keeps ONLY
      *  `answer`; `step` (tool preamble or mid-task stall) and `notice`
@@ -2647,7 +2647,7 @@ export const userPersonas = pgTable(
     appearance: text("appearance"),
     personality: text("personality"),
     backstory: text("backstory"),
-    entries: jsonb("entries").$type<import("@yumina/shared").PersonaEntry[]>().notNull().default([]),
+    entries: jsonb("entries").$type<import("@world-ai/shared").PersonaEntry[]>().notNull().default([]),
     // Private, user-only label to tell same-named personas apart.
     // NEVER injected into prompts — keep out of buildPersonaSystemMessage
     // (messages.ts) and applyPersonaMetadata (persona-metadata.ts).
@@ -3603,7 +3603,7 @@ export const worldEngagementStats = pgTable("world_engagement_stats", {
 
 export const discoverEditorial = pgTable("discover_editorial", {
   id: text("id").primaryKey().default("published"),
-  config: jsonb("config").$type<import("@yumina/shared").DiscoverEditorialConfig>().notNull(),
+  config: jsonb("config").$type<import("@world-ai/shared").DiscoverEditorialConfig>().notNull(),
   revision: uuid("revision").notNull().defaultRandom(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 }, t => [check("discover_editorial_singleton", sql`${t.id} = 'published'`)]);
@@ -3612,7 +3612,7 @@ export const featuredCollections = pgTable("featured_collections", {
   channel: text("channel").notNull(),
   language: text("language").notNull(),
   contentMode: text("content_mode").notNull(),
-  slots: jsonb("slots").$type<import("@yumina/shared").FeaturedSlot[]>().notNull().default([]),
+  slots: jsonb("slots").$type<import("@world-ai/shared").FeaturedSlot[]>().notNull().default([]),
   revision: uuid("revision").notNull().defaultRandom(),
   updatedAt: timestamp("updated_at").notNull().defaultNow(),
 }, t => [

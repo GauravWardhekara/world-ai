@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { before, describe, it } from "node:test";
 import { and, eq } from "drizzle-orm";
 import { Hono } from "hono";
-import { migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { agentRuns, studioConversations, user, worldPendingEdits, worldSnapshots, worlds } from "../db/schema.js";
 import { streamAgentLoop, type AgentLoopParams } from "./agent.js";

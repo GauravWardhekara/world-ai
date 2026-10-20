@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { deriveSectionDefaults, OFFICIAL_PRESETS, worldEntrySchema, type RootComponent, type WorldEntry } from "@yumina/engine";
+import { deriveSectionDefaults, OFFICIAL_PRESETS, worldEntrySchema, type RootComponent, type WorldEntry } from "@world-ai/engine";
 import { getUnmodifiedOfficialPresetIds } from "@/features/editor/lib/official-presets";
 import { isDefaultChatInterface } from "./starter-state";
 

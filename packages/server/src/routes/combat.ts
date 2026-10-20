@@ -12,12 +12,12 @@ import {
   runReactionChain,
   resolveCombatTurn,
   migrateWorldDefinition,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import type {
   WorldDefinition,
   Effect,
   EnemyStats,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import type { AppEnv } from "../lib/types.js";
 
 const reactionEvaluator = new ReactionEvaluator();

@@ -1,4 +1,4 @@
-import type { ImageBatchProposal, ImageBatchSnapshot } from '@yumina/shared';
+import type { ImageBatchProposal, ImageBatchSnapshot } from '@world-ai/shared';
 
 // Hosted image generation is unavailable in the local edition. Keep the
 // shared Studio routes importable without importing billing or job workers.

@@ -6,8 +6,8 @@ import {
   addElement, addMeterRow, addPage, addStackedRow, boundVariableOf, followResized, buttonActionsOf, canReflow, duplicateGroup,
   coveredOn, findElementPage, groupOf, movePage, newElement, rebindVariable, removeGroup, removePage, renamePage, setEntryPage, updateElements,
   METER_ROW_H,
-} from "@yumina/engine";
-import { remapUiVariable, type AudioTrack, type UiAddableType, type UiDoc, type UiElement, type Variable } from "@yumina/engine";
+} from "@world-ai/engine";
+import { remapUiVariable, type AudioTrack, type UiAddableType, type UiDoc, type UiElement, type Variable } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { feedback } from "@/lib/feedback";
 import { AssetPicker } from "@/features/editor/asset-picker";

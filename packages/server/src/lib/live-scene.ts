@@ -1,4 +1,4 @@
-import type { Effect, WorldDefinition } from "@yumina/engine";
+import type { Effect, WorldDefinition } from "@world-ai/engine";
 
 /**
  * 现场 — what the game shows right now, told by the card's own interface.

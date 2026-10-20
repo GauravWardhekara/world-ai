@@ -1,14 +1,14 @@
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { AlertCircle, Brain, Check, FileText, Layers3, Loader2, Pencil, Pin, RefreshCw, Save, Settings2, Trash2, X } from "lucide-react";
-import type { SessionMemoryPayload, SessionMemoryUsageSummary, SessionSummaryCompactionMetadata, SessionSummaryImplementation, SessionSummaryLanguage, SessionSummaryPayload } from "@yumina/shared";
-import { SESSION_SUMMARY_LANGUAGES, SESSION_SUMMARY_LANGUAGE_ENDONYMS } from "@yumina/shared";
+import type { SessionMemoryPayload, SessionMemoryUsageSummary, SessionSummaryCompactionMetadata, SessionSummaryImplementation, SessionSummaryLanguage, SessionSummaryPayload } from "@world-ai/shared";
+import { SESSION_SUMMARY_LANGUAGES, SESSION_SUMMARY_LANGUAGE_ENDONYMS } from "@world-ai/shared";
 import { useYumina } from "../../sandbox-context";
 import { pickLang } from "../../chat/i18n";
 import { ModelPickerModal, ModelTrigger } from "../../chat/model-picker-modal";
 import { SandboxPlatformOverlay } from "../../platform-overlay-portal";
 
 const DEFAULT_CONTEXT_MODEL = "google/gemini-2.5-flash-lite";
-// The zero-cost play model (see @yumina/shared YUMINA_MODELS "Yumina Free").
+// The zero-cost play model (see @world-ai/shared YUMINA_MODELS "Yumina Free").
 // Kept as a literal: the sandbox bundle avoids importing the full registry here.
 const FREE_CONTEXT_MODEL = "openrouter/free";
 const DEFAULT_SUMMARY_TRIGGER_TOKENS = 32_000;

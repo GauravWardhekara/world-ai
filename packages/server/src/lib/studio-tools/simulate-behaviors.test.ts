@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { executeSimulateBehaviors } from "./simulate-behaviors.js";
 
 function world(): WorldDefinition {

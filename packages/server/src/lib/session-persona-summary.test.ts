@@ -5,7 +5,7 @@ import { setTimeout as delay } from "node:timers/promises";
 import type { PGlite } from "@electric-sql/pglite";
 import { eq } from "drizzle-orm";
 import { generateDrizzleJson, generateMigration } from "drizzle-kit/api";
-import { SESSION_MEMORY_EXTENSION_KEY } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import * as schema from "../db/schema.js";
 import { creditWallets, messages, modelPrices, playSessions, user, userExtensions, userPersonas, worlds } from "../db/schema.js";

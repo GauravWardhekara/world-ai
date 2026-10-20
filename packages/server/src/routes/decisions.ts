@@ -5,7 +5,7 @@ import { Hono } from "hono";
 import { bodyLimit } from "hono/body-limit";
 import { and, eq } from "drizzle-orm";
 import { z } from "zod";
-import { aiDecisionRequestSchema, MAX_DECISION_REQUEST_CHARS, parseAiDecisionResponse } from "@yumina/shared";
+import { aiDecisionRequestSchema, MAX_DECISION_REQUEST_CHARS, parseAiDecisionResponse } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { playSessions, worlds } from "../db/schema.js";
 import { env } from "../lib/env.js";

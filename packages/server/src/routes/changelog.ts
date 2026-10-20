@@ -15,7 +15,7 @@
 import { Hono, type Context } from "hono";
 import { eq } from "drizzle-orm";
 import { z } from "zod";
-import type { ChangelogEditable, ChangelogLatestResponse, ChangelogResponse, ChangelogRevisionView } from "@yumina/shared";
+import type { ChangelogEditable, ChangelogLatestResponse, ChangelogResponse, ChangelogRevisionView } from "@world-ai/shared";
 import type { AppEnv } from "../lib/types.js";
 import { authMiddleware, optionalAuthMiddleware } from "../middleware/auth.js";
 import { adminMiddleware } from "../middleware/admin.js";

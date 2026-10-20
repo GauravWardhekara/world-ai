@@ -1,4 +1,4 @@
-import type { Block } from "@yumina/engine";
+import type { Block } from "@world-ai/engine";
 import {
   BLOCK_W,
   FRAME_COLLAPSED_H,

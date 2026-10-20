@@ -1,4 +1,4 @@
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 
 export const API_ROLES: { value: NonNullable<WorldEntry["apiRole"]>; label: string; hint: string }[] = [
   { value: "system", label: "System", hint: "Instructions for the AI. Most entries use this." },

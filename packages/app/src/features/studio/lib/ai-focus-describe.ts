@@ -1,4 +1,4 @@
-import type { Block, GraphNode, WorldDefinition } from "@yumina/engine";
+import type { Block, GraphNode, WorldDefinition } from "@world-ai/engine";
 import type { AiFocusItem, AiFocusKind } from "./ai-focus";
 
 type Translate = (key: string) => string;

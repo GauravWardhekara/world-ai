@@ -17,12 +17,12 @@
 import {
   APP_PACK_IDS, UI_PAGE_TEMPLATES, appPackSummaries, mechanicPackSummaries,
   type WorldDefinition,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import type { ToolDefinition } from "./llm/types.js";
 import { getObjectBuffer, putObject } from "./s3.js";
 import type { SourceMeta } from "./studio-sources.js";
 import { createHash } from "node:crypto";
-import { isStudioBuildProposal, type StudioBuildProposal } from "@yumina/shared";
+import { isStudioBuildProposal, type StudioBuildProposal } from "@world-ai/shared";
 
 export const BRIEF_MAX_CHARS = 6_000;
 

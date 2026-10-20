@@ -1,4 +1,4 @@
-import { estimateTokens, isAlwaysSendEntry, isTokenizerReady, type WorldEntry } from "@yumina/engine";
+import { estimateTokens, isAlwaysSendEntry, isTokenizerReady, type WorldEntry } from "@world-ai/engine";
 
 // PERF: cache token estimates keyed by the entry OBJECT. updateEntry replaces
 // only the edited entry's object (others keep identity), so on each keystroke

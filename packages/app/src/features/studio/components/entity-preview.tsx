@@ -24,7 +24,7 @@ import { audioTypeLabel, describeSchemaChanges, fieldLabel, toolLabel, type Enti
 import type { ToolCall } from "../lib/types";
 import { toneBorder, toneText, toolKind } from "../lib/kind-tone";
 import { cn } from "@/lib/utils";
-import type { Reaction } from "@yumina/engine";
+import type { Reaction } from "@world-ai/engine";
 import { whenLabel } from "../lib/reaction-summary";
 
 /** Compact inline preview of what a single tool call will do, with before/after diff for updates.

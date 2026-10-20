@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Monitor, ArrowRight, FileText } from "lucide-react";
-import { deriveSectionDefaults, estimateTokens, extractLoreSlotsFromFiles, type WorldEntry } from "@yumina/engine";
+import { deriveSectionDefaults, estimateTokens, extractLoreSlotsFromFiles, type WorldEntry } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { DebouncedInput, DebouncedTextarea } from "./debounced-field";
 import { ConditionEditor } from "./condition-editor";

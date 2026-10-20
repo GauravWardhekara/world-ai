@@ -7,7 +7,7 @@
  * disagree with the prompt the server actually applies.
  */
 
-import { familyOf as engineFamilyOf } from "@yumina/engine";
+import { familyOf as engineFamilyOf } from "@world-ai/engine";
 
 /** Every family key `familyOf` can return. Includes `minimax`, which has no
  *  binding slot in settings but is still reported so the chat status line never

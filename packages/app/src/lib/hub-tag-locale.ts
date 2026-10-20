@@ -1,4 +1,4 @@
-import type { TagLocale } from "@yumina/shared";
+import type { TagLocale } from "@world-ai/shared";
 import i18n from "./i18n";
 
 export function currentTagLocale(): TagLocale {

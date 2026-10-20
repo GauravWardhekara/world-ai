@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { toGraph, type Reaction, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { toGraph, type Reaction, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 import { getObjectRelationships } from "./object-relationships";
 
 const entry = (id: string, extra: Partial<WorldEntry> = {}): WorldEntry => ({ id, name: id, content: "", role: "custom", section: "system-presets", alwaysSend: true, keywords: [], conditions: [], conditionLogic: "all", enabled: true, position: 0, ...extra });

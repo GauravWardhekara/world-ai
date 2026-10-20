@@ -1,4 +1,4 @@
-import { blockId, type Block } from "@yumina/engine";
+import { blockId, type Block } from "@world-ai/engine";
 
 
 export const STARTER_IDS = {

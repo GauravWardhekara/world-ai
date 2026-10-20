@@ -1,4 +1,4 @@
-import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGES, MAX_CHAT_IMAGE_BYTES, MAX_CHAT_IMAGE_TOTAL_BYTES, type ChatImageInput } from "@yumina/shared";
+import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGES, MAX_CHAT_IMAGE_BYTES, MAX_CHAT_IMAGE_TOTAL_BYTES, type ChatImageInput } from "@world-ai/shared";
 
 /** Only consume an image paste. Plain text/HTML pastes keep native behavior. */
 export function pastedImageFiles(items: ArrayLike<Pick<DataTransferItem, "kind" | "type" | "getAsFile">>): File[] {

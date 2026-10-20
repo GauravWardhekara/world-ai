@@ -1,5 +1,5 @@
-import { isVariableBoundEntry, UNPLACED_WORLDBOOK_ID } from "@yumina/engine";
-import type { LoreUiBinding, Worldbook, WorldEntry } from "@yumina/engine";
+import { isVariableBoundEntry, UNPLACED_WORLDBOOK_ID } from "@world-ai/engine";
+import type { LoreUiBinding, Worldbook, WorldEntry } from "@world-ai/engine";
 
 export type EntryDeliveryMode = "unplaced" | "disabled" | "always" | "keywords" | "conditions" | "keywords-and-conditions" | "frontend" | "unconfigured";
 

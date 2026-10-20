@@ -9,7 +9,7 @@
  * they live here with a test on them rather than inside a 2000-line section.
  */
 import { Bell, Eye, MessageSquare, Settings2, Volume2, Zap } from "lucide-react";
-import type { ReactionEffect } from "@yumina/engine";
+import type { ReactionEffect } from "@world-ai/engine";
 
 type TFn = (key: any) => string;
 

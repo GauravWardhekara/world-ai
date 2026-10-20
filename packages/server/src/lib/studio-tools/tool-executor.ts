@@ -18,11 +18,11 @@ import type {
   Condition,
   Worldbook,
   LoreUiBinding,
-} from "@yumina/engine";
-import type { EventPattern, EventMatchCondition, VariableActivation } from "@yumina/engine";
-import { AUTHOR_SAMPLING_LIMITS, STATION_MAX_TOKENS_LIMITS, STATION_TEMPERATURE_LIMITS, deriveSectionDefaults, deriveSectionDefaultsForEntry, isVariableBoundEntry, estimateTokens, moduleStationSchema, uiKnobGroupsSchema, withPreciseTrackingDefault, worldDefinitionSchema } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { EventPattern, EventMatchCondition, VariableActivation } from "@world-ai/engine";
+import { AUTHOR_SAMPLING_LIMITS, STATION_MAX_TOKENS_LIMITS, STATION_TEMPERATURE_LIMITS, deriveSectionDefaults, deriveSectionDefaultsForEntry, isVariableBoundEntry, estimateTokens, moduleStationSchema, uiKnobGroupsSchema, withPreciseTrackingDefault, worldDefinitionSchema } from "@world-ai/engine";
 import { BACKGROUND_FALLBACK_MODEL, catalogModelError, lookupCatalogModel, planDisplayName } from "./model-catalog.js";
-import { isValidTtsVoice } from "@yumina/shared";
+import { isValidTtsVoice } from "@world-ai/shared";
 import crypto from "crypto";
 import { posix } from "node:path";
 import { parseToolArgs } from "./parse-tool-args.js";

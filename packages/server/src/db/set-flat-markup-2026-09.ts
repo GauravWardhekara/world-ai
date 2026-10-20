@@ -6,7 +6,7 @@
  * Margin lives in mushies-per-dollar of each product, never in per-model
  * multipliers. `openrouter/free` stays at 1.0 (its cost is zero anyway).
  *
- * Run with: pnpm --filter @yumina/server exec tsx src/db/set-flat-markup-2026-09.ts
+ * Run with: pnpm --filter @world-ai/server exec tsx src/db/set-flat-markup-2026-09.ts
  * Env: DATABASE_URL must point at the target Postgres instance.
  * Apply to DEV first, then PROD (`railway run …`). Safe to re-run: only rows
  * whose multiplier differs are touched. Pass --dry-run to print without writing.

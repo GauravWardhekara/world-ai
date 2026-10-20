@@ -1,5 +1,5 @@
-import { extractVariableReadsFromFiles } from "@yumina/engine";
-import type { Variable, WorldDefinition } from "@yumina/engine";
+import { extractVariableReadsFromFiles } from "@world-ai/engine";
+import type { Variable, WorldDefinition } from "@world-ai/engine";
 
 export type VariableReferenceArea = "entry" | "variable" | "behavior" | "rule" | "module" | "interface" | "audio" | "scene" | "bundle" | "settings";
 export interface VariableIdReference {

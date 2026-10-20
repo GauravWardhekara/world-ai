@@ -23,7 +23,7 @@ import { isSceneImageAuto, useSceneImageMode, type SceneImageMode } from "./scen
 import { AssetPicker } from "../asset-picker";
 import { StyledCheckbox } from "../components/styled-checkbox";
 import { TwoTapDeleteButton } from "@/components/ui/two-tap-delete-button";
-import { sceneImageEmbed } from "@yumina/engine";
+import { sceneImageEmbed } from "@world-ai/engine";
 
 const SCENE_MAX = 200;
 const HINT_MAX = 80;

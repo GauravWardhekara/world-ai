@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { diffGraphs, toGraph, type CardGraph, type GraphDiff, type ToGraphOptions, type WorldDefinition } from "@yumina/engine";
+import { diffGraphs, toGraph, type CardGraph, type GraphDiff, type ToGraphOptions, type WorldDefinition } from "@world-ai/engine";
 import { feedback } from "@/lib/feedback";
 import i18n from "@/lib/i18n";
 import { draftFromStoredSchema, useEditorStore } from "@/stores/editor";

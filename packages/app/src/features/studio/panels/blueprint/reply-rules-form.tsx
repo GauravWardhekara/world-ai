@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Plus, X } from "lucide-react";
-import { replyRouteOps, type ReplyRule, type ReplyRuleRoute, type Variable } from "@yumina/engine";
+import { replyRouteOps, type ReplyRule, type ReplyRuleRoute, type Variable } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { Check, DraftInput, Group } from "./controls";

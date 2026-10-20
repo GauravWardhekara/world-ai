@@ -1,5 +1,5 @@
-import type { Condition, Variable, WorldEntry } from "@yumina/engine";
-import { isVariableBoundEntry } from "@yumina/engine";
+import type { Condition, Variable, WorldEntry } from "@world-ai/engine";
+import { isVariableBoundEntry } from "@world-ai/engine";
 
 export type ConditionOperator = Condition["operator"];
 

@@ -1,6 +1,6 @@
 import { worldAudienceCondition } from "./world-publication-access.js";
 import { eq, or, and, isNull, desc } from "drizzle-orm";
-import { getKrewPublicPath, KREW_PREVIEW_IMAGE, parseProfileAddress, parseWorldAddress, profileAddressPath } from "@yumina/shared";
+import { getKrewPublicPath, KREW_PREVIEW_IMAGE, parseProfileAddress, parseWorldAddress, profileAddressPath } from "@world-ai/shared";
 import { readPublic } from "../db/index.js";
 import { PUBLIC_ORIGIN } from "./env.js";
 import { resolveImageCdn } from "./cdn-url.js";

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { AlignCenter, AlignLeft, AlignRight, Bold, Italic, Minus, Plus, SlidersHorizontal } from "lucide-react";
-import { updateElements, type UiDoc, type UiElement } from "@yumina/engine";
+import { updateElements, type UiDoc, type UiElement } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { BAR_H, placeBar, type Box } from "./bar-place";
 import { applyTextPatch, coalesce, ColorField, textStyleOf, themeSwatches } from "./style-section";

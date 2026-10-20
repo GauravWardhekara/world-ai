@@ -13,7 +13,7 @@
 import { useEffect, useLayoutEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { Compass, Info, RotateCcw, ScrollText, ShieldAlert, Shuffle, SlidersHorizontal, X } from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import { PLAY_MODELS, formatModelId } from "@yumina/shared";
+import { PLAY_MODELS, formatModelId } from "@world-ai/shared";
 import { useYumina } from "../sandbox-context";
 import { SandboxPlatformOverlay } from "../platform-overlay-portal";
 import { makePromptsT, parseFailureCode } from "./i18n";

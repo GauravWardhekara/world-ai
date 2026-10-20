@@ -1,4 +1,4 @@
-import { ANY_MODULE, UNPLACED_WORLDBOOK_ID, blockId, isAlwaysSendEntry, isVariableBoundEntry, resolveStation, type ModuleStation, type WorldDefinition, type Worldbook } from "@yumina/engine";
+import { ANY_MODULE, UNPLACED_WORLDBOOK_ID, blockId, isAlwaysSendEntry, isVariableBoundEntry, resolveStation, type ModuleStation, type WorldDefinition, type Worldbook } from "@world-ai/engine";
 import { lensAis, type LensKind } from "./ai-lens";
 
 type Translate = (key: string, opts?: Record<string, unknown>) => string;

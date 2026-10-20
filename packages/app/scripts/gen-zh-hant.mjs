@@ -12,7 +12,7 @@
 // result reads natural to a Traditional audience rather than being a raw
 // character swap.
 //
-// Run after editing any zh/*.json:  pnpm --filter @yumina/app i18n:zh-hant
+// Run after editing any zh/*.json:  pnpm --filter @world-ai/app i18n:zh-hant
 //
 // STOP — the committed zh-Hant tree is no longer a pure product of this script.
 // As of 2026-09-13 about 200 of its strings differ from what a rerun produces,

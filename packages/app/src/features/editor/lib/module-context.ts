@@ -6,7 +6,7 @@ import {
   type WorldDefinition,
   type Worldbook,
   isAnyModule,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 
 /**
  * What one module's AI actually receives.

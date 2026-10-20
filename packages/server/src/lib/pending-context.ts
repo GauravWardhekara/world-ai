@@ -1,4 +1,4 @@
-import type { GameStateManager } from "@yumina/engine";
+import type { GameStateManager } from "@world-ai/engine";
 
 /** One-shot context ("tell the AI") waiting for the player's next message. */
 export type PendingContext = { message: string; role: string };

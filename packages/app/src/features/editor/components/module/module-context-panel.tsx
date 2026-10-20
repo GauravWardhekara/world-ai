@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowDownLeft, ArrowUpRight, Boxes, Layers, X } from "lucide-react";
-import { ANY_MODULE, isAnyModule, WILDCARD_INPUT_KINDS } from "@yumina/engine";
-import type { ModuleContextInput, Worldbook } from "@yumina/engine";
+import { ANY_MODULE, isAnyModule, WILDCARD_INPUT_KINDS } from "@world-ai/engine";
+import type { ModuleContextInput, Worldbook } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { cn } from "@/lib/utils";
 import { formatTokens } from "../../lib/context-budget";

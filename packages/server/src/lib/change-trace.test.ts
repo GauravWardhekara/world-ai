@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { buildChangeTrace, describeDroppedAiWrites } from "./change-trace.js";
 
 const world = {

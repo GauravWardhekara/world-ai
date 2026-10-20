@@ -1,5 +1,5 @@
 import { and, or, sql, type SQL } from "drizzle-orm";
-import { canonicalizeTag, TAG_VOCABULARY } from "@yumina/shared";
+import { canonicalizeTag, TAG_VOCABULARY } from "@world-ai/shared";
 import { resolveHubLanguageScope } from "./world-language.js";
 import { worldAudienceCondition } from "./world-publication-access.js";
 

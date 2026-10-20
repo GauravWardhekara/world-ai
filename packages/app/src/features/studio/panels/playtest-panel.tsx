@@ -38,7 +38,7 @@ import { PHONE_VIEW_MODE_STORAGE_KEY, VIEW_MODE_STORAGE_KEY, matchesPhone, readS
 import { prepareStudioEntry } from "@/features/editor/editor-entry";
 import { NoApiKeyNotice, isNoApiKeyError } from "../components/no-api-key-notice";
 import { playtestAffectingChange } from "./playtest-stale";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 

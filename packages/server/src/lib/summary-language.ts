@@ -34,7 +34,7 @@ import {
   SESSION_SUMMARY_LANGUAGE_PROMPT_NAMES,
   normalizeSessionSummaryLanguage,
   type SessionSummaryLanguage,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import type { ChatMessage } from "./llm/types.js";
 
 export { normalizeSessionSummaryLanguage };

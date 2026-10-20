@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import type { UiDoc, UiElement, UiPage } from "@yumina/engine";
+import type { UiDoc, UiElement, UiPage } from "@world-ai/engine";
 import { isDeadEnd } from "./page-strip";
 
 const page = (id: string, elements: unknown[] = [], extra: Partial<UiPage> = {}) =>

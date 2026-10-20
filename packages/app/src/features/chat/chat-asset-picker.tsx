@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Check, ChevronRight, Folder, Loader2, Search, Upload } from "lucide-react";
-import { chatImageCopy, type ChatImageAttachment } from "@yumina/shared";
+import { chatImageCopy, type ChatImageAttachment } from "@world-ai/shared";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { useUserAssetStore, type UserAsset, type AssetFolder } from "@/stores/user-assets";
 import { cardImageUrl, fallbackToOriginalOnError } from "@/lib/asset-url";
 import { assetFolderTrail, chatAssetQuery } from "./chat-asset-folders";
-import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGE_BYTES } from "@yumina/shared";
+import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGE_BYTES } from "@world-ai/shared";
 import { chatImageCopy as chatInputCopy } from "@/lib/chat-image-input";
 import { toast } from "sonner";
 

@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 /**
  * Whether an edit made since a playtest started changes how that playtest

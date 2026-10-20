@@ -12,7 +12,7 @@
  */
 
 import DOMPurify from "dompurify";
-import { parseImageEmbeds, renderImageEmbedHtml } from "@yumina/engine";
+import { parseImageEmbeds, renderImageEmbedHtml } from "@world-ai/engine";
 
 // ── HTML embed types ───────────────────────────────────────────────
 

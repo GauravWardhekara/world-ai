@@ -13,7 +13,7 @@
  * must stay out of search (adult-rated, private, unknown) get nothing.
  */
 import { and, desc, eq, inArray, or, isNull } from "drizzle-orm";
-import { getKrewPublicPath, parseProfileAddress, parseWorldAddress, profileAddressPath } from "@yumina/shared";
+import { getKrewPublicPath, parseProfileAddress, parseWorldAddress, profileAddressPath } from "@world-ai/shared";
 import { readPublic } from "../db/index.js";
 import { user, worlds } from "../db/schema.js";
 import { resolveImageCdn } from "./cdn-url.js";

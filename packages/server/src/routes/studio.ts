@@ -1,8 +1,8 @@
 import { validateImageUploadSize } from "../lib/image-upload-policy.js";
 import { Hono } from "hono";
 import { eq, and, desc, asc, inArray } from "drizzle-orm";
-import { diffWorldSchemas } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { diffWorldSchemas } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { db, readOwn } from "../db/index.js";
 import { worlds, studioConversations, worldSnapshots, playSessions } from "../db/schema.js";
 import { summarizeSnapshotTimeline } from "../lib/studio-tools/snapshot-summary.js";

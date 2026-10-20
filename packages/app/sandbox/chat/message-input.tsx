@@ -1,5 +1,5 @@
 import { readChatImages, pastedImageFiles, chatImageCopy } from "../../src/lib/chat-image-input";
-import { PLAY_MODELS, type ChatImageInput } from "@yumina/shared";
+import { PLAY_MODELS, type ChatImageInput } from "@world-ai/shared";
 import { useState, useRef, useCallback, useEffect, useMemo, type ReactNode } from "react";
 import {
   Send,
@@ -958,4 +958,4 @@ function BranchRow({
     </button>
   );
 }
-import { modelFallbackText } from "@yumina/shared";
+import { modelFallbackText } from "@world-ai/shared";

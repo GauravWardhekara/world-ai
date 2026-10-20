@@ -3,7 +3,7 @@ import { db } from "../db/index.js";
 import { agentRuns, studioConversations } from "../db/schema.js";
 import type { ChatMessage, ContentPart, MessageContent, ToolCall } from "./llm/types.js";
 import { readPersistedImageBatchProposal } from "./studio-tools/image-batch-proposal.js";
-import { isStudioBuildProposal, type StudioBuildProposal } from "@yumina/shared";
+import { isStudioBuildProposal, type StudioBuildProposal } from "@world-ai/shared";
 
 type StudioConversation = typeof studioConversations.$inferSelect;
 type StudioConversationUpdate = Partial<

@@ -25,14 +25,14 @@ import { isLocalModelId } from "@/features/local-model/enabled-flag";
 import {
   PLAY_MODELS, STUDIO_MODELS, STUDIO_MODEL_IDS, STUDIO_RECOMMENDED_MODEL, MODEL_POPULARITY_SEED, type ModelPopularitySnapshot,
   PLAN_HIERARCHY, MAX_PINNED_MODELS, formatAvgCost, formatModelId, groupPlayModels, type CostTier, type StudioModel,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import {
   fetchApiKeyModelProfiles,
   resolveOfficialSelectedModel,
   resolvePrivateSelectedModel,
 } from "@/lib/provider-model-selection";
 import { getPoolPercentages, MAX_POOL_SIZE } from "@/lib/model-mix";
-import { estimateReplyCost, formatCostEstimate } from "@yumina/shared";
+import { estimateReplyCost, formatCostEstimate } from "@world-ai/shared";
 import { CostEstimateInfo } from "./cost-estimate-info";
 import { orderOfficialModels, type OfficialModelSort } from "@/lib/official-model-order";
 import { ModelPickerDropdown } from "./model-picker-dropdown";

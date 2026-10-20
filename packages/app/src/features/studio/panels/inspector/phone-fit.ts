@@ -1,4 +1,4 @@
-import { UI_CANVAS_W } from "@yumina/engine";
+import { UI_CANVAS_W } from "@world-ai/engine";
 
 /** The phone canvas's height in design px. */
 const PHONE_H = 812;

@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { feedback } from "@/lib/feedback";
 import { Loader2, Trash2, RotateCcw } from "lucide-react";
-import type { ExtensionSummary } from "@yumina/shared";
+import type { ExtensionSummary } from "@world-ai/shared";
 import { useExtensionsStore } from "@/stores/extensions";
 import { useExtensionPreview } from "./extension-preview-store";
 import { notifyMemoryCost } from "./extension-preview-modal";

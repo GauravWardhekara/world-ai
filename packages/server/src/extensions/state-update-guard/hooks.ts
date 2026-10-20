@@ -1,4 +1,4 @@
-import { isAiWritable } from "@yumina/engine";
+import { isAiWritable } from "@world-ai/engine";
 import { registerExtensionHooks } from "../../lib/extension-hooks.js";
 import { guardTurnOutput, STATE_GUARD_INSTRUCTIONS } from "./validate.js";
 import { stateGuardDefaultApplies } from "./activation.js";

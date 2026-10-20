@@ -1,4 +1,4 @@
-import { ThinkingTagFilter, isAiReadable, type GameState, type WorldDefinition } from "@yumina/engine";
+import { ThinkingTagFilter, isAiReadable, type GameState, type WorldDefinition } from "@world-ai/engine";
 
 /** Correction-only exclusion of author-designated read-only variables. Call
  * only after strict parsing reports exclusively access errors, then revalidate

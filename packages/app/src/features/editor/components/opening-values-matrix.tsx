@@ -3,7 +3,7 @@ import type { TFunction } from "i18next";
 import { RotateCcw } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
-import type { Variable, WorldEntry } from "@yumina/engine";
+import type { Variable, WorldEntry } from "@world-ai/engine";
 
 /**
  * Opening-values matrix — the SINGLE editing entry point for per-greeting

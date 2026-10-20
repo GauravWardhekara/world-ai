@@ -5,10 +5,10 @@ import { authMiddleware } from "../middleware/auth.js";
 import { rateLimitMiddleware } from "../middleware/rate-limit.js";
 import { db, readOwn } from "../db/index.js";
 import { userPersonas, userWorldPersonas } from "../db/schema.js";
-import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, MAX_PERSONA_NOTE } from "@yumina/shared";
+import { MAX_PERSONA_NAME, MAX_PERSONA_APPEARANCE, MAX_PERSONA_PERSONALITY, MAX_PERSONA_BACKSTORY, MAX_PERSONA_NOTE } from "@world-ai/shared";
 
 import { setAccountPersona } from "../lib/resolve-persona.js";
-import { personaEntriesSchema } from "@yumina/shared";
+import { personaEntriesSchema } from "@world-ai/shared";
 
 export const personaRoutes = new Hono<AppEnv>();
 

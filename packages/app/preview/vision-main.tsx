@@ -7,7 +7,7 @@ import { YuminaContext, useYumina, COMPOSER_DRAFT_EVENT } from "../sandbox/sandb
 import { ModelBrowser } from "@/features/chat/model-browser";
 import { useModelsStore } from "@/stores/models";
 import { useCreditStore } from "@/stores/credits";
-import { PLAY_MODELS, type ChatImageInput } from "@yumina/shared";
+import { PLAY_MODELS, type ChatImageInput } from "@world-ai/shared";
 import type { SandboxMessage } from "../sandbox/chat/types";
 import i18n from "@/lib/i18n";
 import "./vision.css";

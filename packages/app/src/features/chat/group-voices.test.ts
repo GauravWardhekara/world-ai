@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { GameState, Worldbook } from "@yumina/engine";
+import type { GameState, Worldbook } from "@world-ai/engine";
 import { hasGroupVoices, nextGroupVoice } from "./group-voices";
 
 const books = [

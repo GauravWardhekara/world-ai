@@ -1,7 +1,7 @@
 import { effectiveMaxTokens } from "./openrouter.js";
 import { getCatalogContextWindow } from "./model-catalog.js";
 import { DEFAULT_LOCAL_CONTEXT, clampLocalMaxTokens } from "./local-bridge.js";
-import { YUMINA_MODELS } from "@yumina/shared";
+import { YUMINA_MODELS } from "@world-ai/shared";
 
 const REGISTERED_CONTEXT_WINDOWS = new Map(YUMINA_MODELS.filter(model => model.addedAt).map(model => [model.id, model.contextWindow]));
 

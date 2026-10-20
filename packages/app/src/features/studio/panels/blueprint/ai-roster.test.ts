@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import { blockId, type WorldDefinition, type Worldbook } from "@yumina/engine";
+import { blockId, type WorldDefinition, type Worldbook } from "@world-ai/engine";
 import { aiFrameLine, aiReceives, aiRoster, cardTakenOverBy, placeGivesTo, renameAiPatch, shadowedBy, stationName, workerReaders } from "./ai-roster";
 import { aiTableSections } from "./ai-table";
 

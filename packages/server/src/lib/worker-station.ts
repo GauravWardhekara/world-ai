@@ -11,7 +11,7 @@ import {
   type GameState,
   type WorldDefinition,
   type Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { messages, playSessions } from "../db/schema.js";
 import type { ChatMessage } from "./llm/types.js";

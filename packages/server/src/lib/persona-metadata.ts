@@ -19,8 +19,8 @@
  *  different subsets, producing inconsistent states across session creation
  *  vs message send vs regenerate. */
 
-import type { GameStateManager } from "@yumina/engine";
-import type { PersonaEntry } from "@yumina/shared";
+import type { GameStateManager } from "@world-ai/engine";
+import type { PersonaEntry } from "@world-ai/shared";
 import type { SessionPersona } from "./session-persona.js";
 
 /** The committed write carries everything needed to update chat identity. */

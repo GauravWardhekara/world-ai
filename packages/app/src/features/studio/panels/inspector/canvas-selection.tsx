@@ -7,8 +7,8 @@ import {
 } from "lucide-react";
 import {
   alignElements, distributeElements, paintOrder, reorderElements, unitsOf, UI_CANVAS_W, UI_DESKTOP_H, UI_DESKTOP_W,
-} from "@yumina/engine";
-import type { UiAlignMode, UiBox, UiDoc, UiElement, UiZOrderOp } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { UiAlignMode, UiBox, UiDoc, UiElement, UiZOrderOp } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { IGNORE_ATTR } from "./hit-test";

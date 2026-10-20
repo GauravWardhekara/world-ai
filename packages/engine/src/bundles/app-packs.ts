@@ -28,7 +28,7 @@ export type { AppPackLanguage } from "./app-pack-types.js";
  *
  * Definitions: `app-pack-defs/<id>.ts`. UI: `packages/engine/app-packs/<id>.tsx`
  * (real TSX), copied into app-pack-sources.generated.ts by
- * `pnpm --filter @yumina/engine gen:app-packs`. Words are fixed once, at
+ * `pnpm --filter @world-ai/engine gen:app-packs`. Words are fixed once, at
  * install, in the card's language — an installed pack is the card's own
  * content from then on.
  */

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename, isAssetImportActive, type AssetImportJob } from "@yumina/shared";
+import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename, isAssetImportActive, type AssetImportJob } from "@world-ai/shared";
 import { assetImportClient, AssetImportClientError, type AssetImportClient } from "@/lib/asset-import-client";
 
 export interface AssetImportItem {

@@ -56,11 +56,11 @@ import {
   type GraphLayout,
   type GraphNode,
   type GraphPatch,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { useAiFocus } from "../lib/ai-focus";
 import { describeFocus } from "../lib/ai-focus-describe";
-import { resolveBackground, UNPLACED_WORLDBOOK_ID } from "@yumina/engine";
-import type { Worldbook, WorldEntry } from "@yumina/engine";
+import { resolveBackground, UNPLACED_WORLDBOOK_ID } from "@world-ai/engine";
+import type { Worldbook, WorldEntry } from "@world-ai/engine";
 import { absoluteImageUrl } from "@/lib/asset-url";
 import {
   AlertTriangle,
@@ -138,7 +138,7 @@ import { arrangeSituations, type SituationGroupBox } from "./blueprint/situation
 import { livesSomewhere, placeAis, type PlaceAis } from "./blueprint/place-ais";
 import { OPEN_CODE_EVENT } from "./blueprint/customization-hints";
 import { frontendFilesStripHeight } from "./blueprint/frontend-files-strip";
-import type { FrontendFileFacts } from "@yumina/engine";
+import type { FrontendFileFacts } from "@world-ai/engine";
 import { addAiTo, removeAi } from "./blueprint/add-ai";
 import { SituationGroupNode } from "./blueprint/situation-group-node";
 import { memoryOf, poolColours } from "./blueprint/situation-describe";

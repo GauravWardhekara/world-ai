@@ -1,4 +1,4 @@
-import type { CostTier, PlayModel } from "@yumina/shared";
+import type { CostTier, PlayModel } from "@world-ai/shared";
 
 export type OfficialModelSort = "popular" | "recommended" | "costAsc" | "costDesc" | "newest" | "name" | "recent";
 

@@ -49,7 +49,7 @@ import {
   Keyboard,
   Pencil,
 } from "lucide-react";
-import { TTS_VOICES, TTS_VOICE_POOL_MAX, TTS_CUSTOM_VOICE_NAME_MAX, defaultTtsVoiceForLang, isTtsOptedIn, readTtsCustomVoices, readTtsVoicePool, ttsCustomVoiceLabel, type TtsCustomVoice } from "@yumina/shared";
+import { TTS_VOICES, TTS_VOICE_POOL_MAX, TTS_CUSTOM_VOICE_NAME_MAX, defaultTtsVoiceForLang, isTtsOptedIn, readTtsCustomVoices, readTtsVoicePool, ttsCustomVoiceLabel, type TtsCustomVoice } from "@world-ai/shared";
 import { useAudioStore } from "@/stores/audio";
 import { feedback } from "@/lib/feedback";
 import { FieldError } from "@/components/ui/field-error";
@@ -95,7 +95,7 @@ import {
   normalizeAudiencePreference,
   AUDIENCE_PREFERENCE_DEFAULT,
   type AudiencePreference,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { normalizeVisualStrength } from "@/lib/visual-settings";
 import { AiProviderTab } from "./ai-provider-tab";
 import { AiConfigTab } from "./ai-config-tab";
@@ -113,7 +113,7 @@ import {
 } from "./settings-search";
 import { SETTINGS_SEARCH_TRANSLATORS } from "./settings-search-translations";
 import { SUPPORTED_LANGUAGES } from "@/lib/language-clamp";
-import { modelFallbackText } from "@yumina/shared";
+import { modelFallbackText } from "@world-ai/shared";
 
 const apiBase = import.meta.env.VITE_API_URL || "";
 

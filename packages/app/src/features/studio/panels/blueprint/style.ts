@@ -1,4 +1,4 @@
-import type { GraphNode } from "@yumina/engine";
+import type { GraphNode } from "@world-ai/engine";
 import {
   BookOpen,
   Boxes,

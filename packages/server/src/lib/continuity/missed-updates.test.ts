@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { registerHooks } from "node:module";
-import { GameStateManager, ResponseParser, type JevQuestion, type WorldDefinition } from "@yumina/engine";
+import { GameStateManager, ResponseParser, type JevQuestion, type WorldDefinition } from "@world-ai/engine";
 import type { StreamChunk } from "../llm/types.js";
 import type { MissedUpdateDeps } from "./missed-updates.js";
 

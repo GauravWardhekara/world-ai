@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test, { before } from "node:test";
 import { eq } from "drizzle-orm";
 import { Hono } from "hono";
-import { migrateWorldDefinition, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, type WorldDefinition } from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { agentRuns, creditWallets, studioConversations, user, worlds } from "../db/schema.js";
 import type { GenerateParams, LLMProvider } from "../lib/llm/types.js";

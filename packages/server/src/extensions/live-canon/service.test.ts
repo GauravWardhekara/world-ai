@@ -2,7 +2,7 @@ import "../../test/database-fixture.js";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { randomUUID } from "node:crypto";
-import { GameStateManager, type Variable, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { GameStateManager, type Variable, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 import { eq } from "drizzle-orm";
 import { db } from "../../db/index.js";
 import { playSessions, user, worlds } from "../../db/schema.js";

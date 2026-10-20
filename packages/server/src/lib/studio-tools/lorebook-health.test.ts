@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition, WorldEntry } from "@yumina/engine";
+import type { WorldDefinition, WorldEntry } from "@world-ai/engine";
 import { computeLorebookHealth, LOREBOOK_BUDGETS, type ResolvedContext } from "./context-resolver.js";
 import { buildSystemPrompt } from "./system-prompt.js";
 import { executeApplyChanges } from "./tool-executor.js";

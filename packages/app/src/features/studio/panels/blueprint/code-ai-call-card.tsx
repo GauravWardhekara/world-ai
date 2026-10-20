@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import type { TFunction } from "i18next";
 import { Code2, FileCode2 } from "lucide-react";
-import type { FrontendAiCall, Worldbook } from "@yumina/engine";
+import type { FrontendAiCall, Worldbook } from "@world-ai/engine";
 
 /** What the scan read off a call, as label/value lines: the same facts on
  *  the AI block's row and in Context's 自定义 list. */

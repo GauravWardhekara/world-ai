@@ -4,7 +4,7 @@ import { act, createElement } from "react";
 import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { JSDOM } from "jsdom";
-import { toGraph, type Reaction, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { toGraph, type Reaction, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div>', { url: "http://localhost" });
 const globals = { window: dom.window, document: dom.window.document, location: dom.window.location, navigator: dom.window.navigator, HTMLElement: dom.window.HTMLElement, IS_REACT_ACT_ENVIRONMENT: true };

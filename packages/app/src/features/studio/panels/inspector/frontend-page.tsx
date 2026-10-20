@@ -7,8 +7,8 @@ import {
   addPage, boxOn, copyElements, findElementPage, fitTextOnPage, followResized, groupOf, nudgeElements, pasteElements, PromptBuilder,
   removeGroup, reorderElements, snapMove, snapResize, ungroupElements, unitsOf, updateElements,
   UI_CANVAS_W, UI_DESKTOP_H, UI_DESKTOP_W,
-} from "@yumina/engine";
-import type { UiDoc, UiElement, UiGuide, WorldDefinition } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { UiDoc, UiElement, UiGuide, WorldDefinition } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { feedback } from "@/lib/feedback";
@@ -393,7 +393,7 @@ export function FrontendPage({
     return () => window.removeEventListener(UI_EDITOR_REQUEST_EVENT, take);
   }, [choosePage]);
   const addPageTemplate = useAddPageTemplate();
-  const pickNewPage = useCallback((id: import("@yumina/engine").UiPageTemplateId | "blank") => {
+  const pickNewPage = useCallback((id: import("@world-ai/engine").UiPageTemplateId | "blank") => {
     setGalleryOpen(false);
     let pageId: string | null = null;
     if (id === "blank") {

@@ -13,7 +13,7 @@ import {
   type ChangelogEditable,
   type ChangelogLang,
   type ChangelogRevisionView,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { confirmAction } from "@/components/ui/global-confirm-dialog";
 import { formatDateTime } from "@/lib/locale-date";

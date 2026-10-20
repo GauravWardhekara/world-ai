@@ -1,7 +1,7 @@
 import { PUBLIC_ORIGIN } from "../env.js";
 import { createHash, randomUUID } from "node:crypto";
 import type { LLMProvider, GenerateParams, StreamChunk, Model, ChatMessage, ToolCall } from "./types.js";
-import type { ApiKeyMetadata } from "@yumina/shared";
+import type { ApiKeyMetadata } from "@world-ai/shared";
 import { validateCustomEndpointUrl } from "../ssrf.js";
 import { applyPromptPostProcessing } from "./post-process.js";
 import { parseUnsupportedParam, stripParamFromBody, looksLikeReasoningModel } from "./param-fallback.js";

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { ReactionEffect } from "@yumina/engine";
+import type { ReactionEffect } from "@world-ai/engine";
 import { extractFieldValues, getDoPresets, identifyPreset, parseSmartValue, switchableScenarios } from "./behavior-effect-presets";
 
 const presets = getDoPresets((key: string) => key);

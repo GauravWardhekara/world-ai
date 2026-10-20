@@ -6,7 +6,7 @@ import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { JSDOM } from "jsdom";
 import { createServer } from "vite";
-import { blockId, toGraph, type WorldDefinition, type WorldEntry } from "@yumina/engine";
+import { blockId, toGraph, type WorldDefinition, type WorldEntry } from "@world-ai/engine";
 import { resolveCanvasInspectorNode } from "./canvas-inspector-target";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div>', { pretendToBeVisual: true, url: "http://localhost" });
@@ -16,7 +16,7 @@ for (const [key, value] of Object.entries(globals)) Object.defineProperty(global
 const { createRoot } = await import("react-dom/client");
 const vite = await createServer({
   configFile: false, root: fileURLToPath(new URL("../../../../..", import.meta.url)), appType: "custom", logLevel: "silent",
-  resolve: { alias: { "@": fileURLToPath(new URL("../../../..", import.meta.url)), "@yumina/engine": fileURLToPath(new URL("../../../../../../engine/src/index.ts", import.meta.url)) } },
+  resolve: { alias: { "@": fileURLToPath(new URL("../../../..", import.meta.url)), "@world-ai/engine": fileURLToPath(new URL("../../../../../../engine/src/index.ts", import.meta.url)) } },
   esbuild: { jsx: "automatic" }, server: { middlewareMode: true },
 });
 const { BlueprintInspector } = await vite.ssrLoadModule("/src/features/studio/panels/blueprint/inspector.tsx") as typeof import("./inspector");

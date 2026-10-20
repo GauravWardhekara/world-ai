@@ -1,4 +1,4 @@
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 import { FRAME_GAP, type FrameBox } from "./board";
 import { WAY_IN_ORDER, wayInOf, type WayIn } from "./situation-describe";
 

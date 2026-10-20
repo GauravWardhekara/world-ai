@@ -3,14 +3,14 @@ import test, { before, beforeEach, after } from "node:test";
 import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { eq } from "drizzle-orm";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import type { RunMemories, RunRecord } from "./run-scopes.js";
 
 // Dependency initialization may construct the normal server pool, but no
 // operation below uses it. Explicitly prevent .env from selecting real services.
 Object.assign(process.env, { DATABASE_URL: "postgresql://test:test@127.0.0.1:1/test", DATABASE_READ_URL: "", REDIS_URL: "", POSTHOG_API_KEY: "", BETTER_AUTH_SECRET: "unit-test-only", NODE_ENV: "test" });
 const { runExtensionInvalidation, registerExtensionHooks } = await import("./extension-hooks.js");
-const { SESSION_MEMORY_EXTENSION_KEY } = await import("@yumina/shared");
+const { SESSION_MEMORY_EXTENSION_KEY } = await import("@world-ai/shared");
 const { attachRunSummary } = await import("./run-scopes.js");
 const { finishSlot } = await import("./worker-station.js");
 const { messages } = await import("../db/schema.js");

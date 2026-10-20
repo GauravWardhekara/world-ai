@@ -1,6 +1,6 @@
 import { getSmartImageCapabilities, SMART_IMAGE_MODEL, SMART_IMAGE_MODELS,
   SMART_IMAGE_ASPECTS, SMART_IMAGE_RESOLUTIONS, MAX_IMAGE_BATCH_ITEMS, IMAGE_ASPECTS,
-  platformStylePrice, TTS_VOICES, type PlatformStyleInfo } from "@yumina/shared";
+  platformStylePrice, TTS_VOICES, type PlatformStyleInfo } from "@world-ai/shared";
 import type { ToolDefinition } from "../llm/types.js";
 import { smartModelAvailable } from "../generation/smart-availability.js";
 

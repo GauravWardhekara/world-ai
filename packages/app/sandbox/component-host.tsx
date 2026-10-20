@@ -61,7 +61,7 @@ import { MessageInput } from "./chat/message-input";
 import { makeChatT } from "./chat/i18n";
 import { ModelPickerModal, ModelTrigger } from "./chat/model-picker-modal";
 import { SessionMemoryModal } from "./extensions/session-memory/session-memory-modal";
-import type { StateChannel } from "@yumina/engine";
+import type { StateChannel } from "@world-ai/engine";
 import type { SandboxState } from "./protocol";
 
 // ── Channel State ───────────────────────────────────────────────────

@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import type { Context, Next } from "hono";
 import { z } from "zod";
 import { and, asc, desc, eq, inArray, sql } from "drizzle-orm";
-import type { SessionMemoryPayload, SessionMemoryUsageSummary, SessionSummaryCompactionPayload, SessionSummaryMode, SessionSummaryPayload } from "@yumina/shared";
+import type { SessionMemoryPayload, SessionMemoryUsageSummary, SessionSummaryCompactionPayload, SessionSummaryMode, SessionSummaryPayload } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { messages, playSessions, usageLogs } from "../db/schema.js";
 import { authMiddleware } from "../middleware/auth.js";
@@ -44,7 +44,7 @@ import { resolveMemorySystemSettings, sessionWorldRequiresStorySummary } from ".
 import { isExtensionInstalled } from "../lib/extensions.js";
 import { summaryJobs, summaryJobKey } from "../lib/summary-job-store.js";
 import { isActiveSummaryJob } from "../lib/summary-job-core.js";
-import { SESSION_MEMORY_EXTENSION_KEY, SESSION_SUMMARY_LANGUAGES } from "@yumina/shared";
+import { SESSION_MEMORY_EXTENSION_KEY, SESSION_SUMMARY_LANGUAGES } from "@world-ai/shared";
 import { hasUncertainMemoryCoverage } from "../lib/session-memory-core.js";
 import { memoryCursorAfterSettingsChange } from "../lib/session-memory-guards.js";
 import { normalizeSessionSummaryLanguage } from "../lib/summary-language.js";

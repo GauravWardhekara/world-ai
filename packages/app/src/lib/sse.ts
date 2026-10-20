@@ -87,7 +87,7 @@ export interface SSEErrorMeta {
 }
 
 export interface SSECallbacks {
-  onStateValidation?: (audit: import("@yumina/shared").StateValidationAudit) => void;
+  onStateValidation?: (audit: import("@world-ai/shared").StateValidationAudit) => void;
   onText: (content: string) => void;
   onReasoning?: (content: string) => void;
   onSegment?: (data: { segment: Record<string, unknown> }) => void;

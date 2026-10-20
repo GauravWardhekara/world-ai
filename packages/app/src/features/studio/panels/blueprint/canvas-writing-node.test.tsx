@@ -6,7 +6,7 @@ import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { JSDOM } from "jsdom";
 import { createServer } from "vite";
-import { portHandleId, rowHandleId, type WorldEntry } from "@yumina/engine";
+import { portHandleId, rowHandleId, type WorldEntry } from "@world-ai/engine";
 import type { CanvasWritingNodeData } from "./canvas-writing-node";
 
 const dom = new JSDOM('<!doctype html><div id="root"></div>', { pretendToBeVisual: true, url: "http://localhost" });

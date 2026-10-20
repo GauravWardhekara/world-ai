@@ -26,7 +26,7 @@ import { DebouncedTextarea } from "../components/debounced-field";
 import { ImageInsertButton, useImageInsert } from "../components/image-insert";
 import { useTemplateContentPlaceholder } from "../template-placeholders";
 
-const EMPTY_WB: import("@yumina/engine").Worldbook[] = [];
+const EMPTY_WB: import("@world-ai/engine").Worldbook[] = [];
 
 export function FirstMessageSection({ compact, onOpenGuide }: { compact?: boolean; onOpenGuide?: () => void } = {}) {
   const { t } = useTranslation("editor");

@@ -1,7 +1,7 @@
 import { sql } from "drizzle-orm";
 import type { DrizzleDB } from "../db/index.js";
-import { CREATIVE_UPLOAD_FILES_PER_HOUR, creativeUploadBytesPerHour } from "@yumina/shared";
-export { creativeUploadPolicy, CREATIVE_UPLOAD_FILES_PER_HOUR, creativeUploadBytesPerHour } from "@yumina/shared";
+import { CREATIVE_UPLOAD_FILES_PER_HOUR, creativeUploadBytesPerHour } from "@world-ai/shared";
+export { creativeUploadPolicy, CREATIVE_UPLOAD_FILES_PER_HOUR, creativeUploadBytesPerHour } from "@world-ai/shared";
 import { mediaRows } from "./session-media-service.js";
 
 /** Caller must hold the same owner lock used by storage quota reservations.

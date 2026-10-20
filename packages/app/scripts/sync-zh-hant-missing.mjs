@@ -7,8 +7,8 @@
 // 2026-09-15: 已通過初審，並發放 → 已透過初審，併發放). Use this after adding new zh
 // keys; use gen-zh-hant.mjs only when you intend to re-derive everything.
 //
-//   pnpm --filter @yumina/app i18n:zh-hant:missing            # all namespaces
-//   pnpm --filter @yumina/app i18n:zh-hant:missing profile plans
+//   pnpm --filter @world-ai/app i18n:zh-hant:missing            # all namespaces
+//   pnpm --filter @world-ai/app i18n:zh-hant:missing profile plans
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";

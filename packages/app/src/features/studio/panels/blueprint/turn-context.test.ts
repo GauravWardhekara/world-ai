@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { LorebookMatcher, PromptBuilder, worldDefinitionSchema } from "@yumina/engine";
+import { LorebookMatcher, PromptBuilder, worldDefinitionSchema } from "@world-ai/engine";
 import { defaultStateFor, turnContextView } from "./turn-context";
 
 const entry = (id: string, extra = {}) => ({ id, name: id, content: `sentinel_${id}`, role: "lore", section: "system-presets", alwaysSend: true, ...extra });

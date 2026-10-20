@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { familyOf as serverFamilyOf } from "@yumina/engine";
+import { familyOf as serverFamilyOf } from "@world-ai/engine";
 import { familyOf } from "./model-families";
 
 // The chat's "this prompt applies on this model" line must match the prompt

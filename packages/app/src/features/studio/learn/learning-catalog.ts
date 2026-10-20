@@ -1,4 +1,4 @@
-import type { BlockKind } from "@yumina/engine";
+import type { BlockKind } from "@world-ai/engine";
 
 /** One tutorial. See docs/development/learning.md.
  *

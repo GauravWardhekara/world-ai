@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { and, desc, eq, or, sql } from "drizzle-orm";
-import { MAX_VERSION_NOTE_LENGTH } from "@yumina/shared";
+import { MAX_VERSION_NOTE_LENGTH } from "@world-ai/shared";
 import { db, flagWrite, readOwn } from "../db/index.js";
 import { user, worlds, worldPendingEdits } from "../db/schema.js";
 import { authMiddleware } from "../middleware/auth.js";

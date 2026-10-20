@@ -1,6 +1,6 @@
 import { overlayDiscoverArtwork } from "./admin-world-artwork.js";
 import { and, desc, eq, ilike, inArray, or, sql } from "drizzle-orm";
-import { DEFAULT_EDITORIAL_CATEGORIES, type DiscoverEditorialConfig, type EditorialWorld, type EditorialSlot, type EditorialLanguage } from "@yumina/shared";
+import { DEFAULT_EDITORIAL_CATEGORIES, type DiscoverEditorialConfig, type EditorialWorld, type EditorialSlot, type EditorialLanguage } from "@world-ai/shared";
 import type { Database } from "../db/index.js";
 import { adminActions, discoverEditorial, featuredCollections, featuredHeroWorlds, featuredWorlds, user, worlds } from "../db/schema.js";
 import { resolveImageCdn } from "./cdn-url.js";

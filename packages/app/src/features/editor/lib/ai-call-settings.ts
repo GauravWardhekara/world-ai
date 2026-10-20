@@ -1,5 +1,5 @@
-import { PLAN_HIERARCHY, PLAY_MODELS } from "@yumina/shared";
-import type { ModuleStation } from "@yumina/engine";
+import { PLAN_HIERARCHY, PLAY_MODELS } from "@world-ai/shared";
+import type { ModuleStation } from "@world-ai/engine";
 
 type Translate = (key: string, opts?: Record<string, unknown>) => string;
 

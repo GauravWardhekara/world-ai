@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
-import { RATE_LIMITS, TRUSTED_PUBLISHING_RATE_LIMIT, type RateLimitTier } from "@yumina/shared";
+import { RATE_LIMITS, TRUSTED_PUBLISHING_RATE_LIMIT, type RateLimitTier } from "@world-ai/shared";
 import { effectiveRateLimit } from "./rate-limit.js";
 
 // Regression for the 2026-08-25 report: a whitelisted (skip_review) creator

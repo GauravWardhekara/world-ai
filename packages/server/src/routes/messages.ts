@@ -8,7 +8,7 @@ import { usageObservation } from "../lib/usage-observation.js";
 import { edition } from "../edition/index.js";
 import { Hono } from "hono";
 import { guardPrompt, TurnOutputAttempt, appendTurnStateChanges } from "../lib/turn-output-validation.js";
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import { setImmediate as yieldForIO } from "node:timers/promises";
 import { streamSSE, type SSEStreamingApi } from "hono/streaming";
 import { eq, and, or, desc, gt, lt, sql } from "drizzle-orm";
@@ -83,9 +83,9 @@ import {
   resolveRequestedMaxContext,
   filterResumableAudioEffects,
   hasImageVariable,
-} from "@yumina/engine";
-import type { WorldDefinition, UserPrompt, GameEvent, Effect, Variable } from "@yumina/engine";
-import { applyReplyRules } from "@yumina/engine";
+} from "@world-ai/engine";
+import type { WorldDefinition, UserPrompt, GameEvent, Effect, Variable } from "@world-ai/engine";
+import { applyReplyRules } from "@world-ai/engine";
 import { applyJudgeSceneImages, continuityGloballyEnabled, runContinuityTurn } from "../lib/continuity/run.js";
 import { guardRebuiltBatch, repairMissedUpdates } from "../lib/continuity/missed-updates.js";
 import { buildChangeTrace, describeDroppedAiWrites } from "../lib/change-trace.js";
@@ -134,8 +134,8 @@ import { PLANS } from "../lib/plan-config.js";
 import { getAllModelPrices } from "../lib/model-price-cache.js";
 import { getModelPopularity } from "../lib/model-popularity.js";
 import { getModelCostStats } from "../lib/model-cost-stats.js";
-import type { ModelCostStats } from "@yumina/shared";
-import { DEFAULT_MODEL, MAX_USER_MESSAGE_CHARS, PLAY_MODELS, PLAY_MODEL_IDS, RETIRED_PLAY_MODEL_IDS, resolveStoryMemory, resolveLorebookBudget } from "@yumina/shared";
+import type { ModelCostStats } from "@world-ai/shared";
+import { DEFAULT_MODEL, MAX_USER_MESSAGE_CHARS, PLAY_MODELS, PLAY_MODEL_IDS, RETIRED_PLAY_MODEL_IDS, resolveStoryMemory, resolveLorebookBudget } from "@world-ai/shared";
 import { env } from "../lib/env.js";
 import {
   compactTurnOverflowIfNeeded,
@@ -242,7 +242,7 @@ async function resolveModel(requestedModel: string | undefined): Promise<string>
 type SwipeWithUsage = {
   variableAudit?: StoredVariableAudit;
   stateValidation?: StateValidationAudit;
-  modelFallback?: import("@yumina/shared").ModelFallbackRecord;
+  modelFallback?: import("@world-ai/shared").ModelFallbackRecord;
   content: string;
   rawContent?: string;
   stateChanges?: Record<string, unknown>;

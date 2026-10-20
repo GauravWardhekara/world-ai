@@ -4,7 +4,7 @@ import { Hono } from "hono";
 import { serve } from "@hono/node-server";
 import { once } from "node:events";
 import type { AddressInfo } from "node:net";
-import { MAX_REQUEST_BODY_BYTES, MAX_WORLD_SAVE_BODY_BYTES } from "@yumina/shared";
+import { MAX_REQUEST_BODY_BYTES, MAX_WORLD_SAVE_BODY_BYTES } from "@world-ai/shared";
 import { requestBodyLimit, requestBodyLimitBytes } from "./request-body-limit.js";
 
 const MiB = 1024 * 1024;

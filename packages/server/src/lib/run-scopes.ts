@@ -11,7 +11,7 @@ import {
   type ModuleContextInput,
   type Variable,
   type Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 
 /**
  * Run scopes — the infinite-flow wipe as an engine property.

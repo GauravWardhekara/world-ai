@@ -10,7 +10,7 @@
  *  just leftovers, so the editor can offer to clear them — offer, not do.
  */
 
-import { getUiTemplate, type UiDoc, type Variable, type WorldDefinition } from "@yumina/engine";
+import { getUiTemplate, type UiDoc, type Variable, type WorldDefinition } from "@world-ai/engine";
 import { getVariableIdUsage } from "@/features/editor/lib/variable-id-references";
 
 type TemplateNeed = NonNullable<ReturnType<typeof getUiTemplate>>["needs"][number];

@@ -19,7 +19,7 @@ import {
   NARRATOR_SPEAKER,
   parseLeadingSpeakerTag,
   isPartialLeadingSpeakerTag,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 
 export { displayCharacterName, isPartialLeadingSpeakerTag };
 

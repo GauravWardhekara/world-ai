@@ -1,4 +1,4 @@
-import type { Condition, Worldbook } from "@yumina/engine";
+import type { Condition, Worldbook } from "@world-ai/engine";
 
 /** How a module turns on, compressed to a chip. Pure: the caller translates
  *  the kind, and the detail is the creator's own data (names, words). */

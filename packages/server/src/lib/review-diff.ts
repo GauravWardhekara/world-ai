@@ -5,7 +5,7 @@ import {
   migrateWorldDefinition,
   type MaterialChangeReason,
   type WorldDiff,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { db } from "../db/index.js";
 import { worlds, worldPendingEdits, worldReviewSubmissions, worldVersions } from "../db/schema.js";
 import { resolveImageCdn } from "./cdn-url.js";

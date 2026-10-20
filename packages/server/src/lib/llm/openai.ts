@@ -1,4 +1,4 @@
-import { IMAGE_MODEL_CAPABILITIES } from "@yumina/shared";
+import { IMAGE_MODEL_CAPABILITIES } from "@world-ai/shared";
 import type { LLMProvider, GenerateParams, StreamChunk, Model, ChatMessage, ToolCall } from "./types.js";
 import { parseUnsupportedParam, stripParamFromBody } from "./param-fallback.js";
 import { toWireContent } from "./wire-content.js";

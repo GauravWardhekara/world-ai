@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 import { buildCreatedEntry, mapEntryUpdates } from "./entry-tool-helpers";
 
 function makeBaseEntry(): WorldEntry {

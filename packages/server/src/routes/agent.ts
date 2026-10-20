@@ -33,7 +33,7 @@ import type { AppEnv } from "../lib/types.js";
 import { type SchemaChange, type ToolResult } from "../lib/studio-tools/index.js";
 import { buildToolResultMessages } from "../lib/studio-tools/tool-results.js";
 import { STUDIO_TOOLS, READ_TOOL_NAMES, WRITE_TOOL_NAMES, CONTROL_TOOL_NAMES, withCustomImageTool } from "../lib/studio-tools/tools.js";
-import { STUDIO_MODEL_IDS, SMART_IMAGE_MODEL, type ImageBatchProposal } from "@yumina/shared";
+import { STUDIO_MODEL_IDS, SMART_IMAGE_MODEL, type ImageBatchProposal } from "@world-ai/shared";
 import { isSmartGenerationEnabled, smartImageEstimates, submitSmartGeneration, SmartSubmissionError } from "../lib/generation/smart.js";
 import { ALL_PLATFORM_STYLE_SLUGS, IMAGE_TOOL_NAME, customProposalPrice, customSubmissionFor, imageToolMessages, normalizeImageProposal, waitForGeneratedImage } from "../lib/studio-tools/image-proposal.js";
 import { CustomSubmissionError, customSubmissionSchema, isCustomGenerationEnabled, readyPlatformStyles, submitCustomGeneration } from "../lib/generation/custom.js";
@@ -46,7 +46,7 @@ import { executeReadEntities, executeApplyChanges, executeGrepWorld, executeVali
 import { executeReadUiDoc } from "../lib/studio-tools/ui-doc-tools.js";
 import { buildSystemPrompt, type SystemPromptParts } from "../lib/studio-tools/system-prompt.js";
 import { ADVISOR_READ_TOOLS, SAVE_BRIEF_TOOL, advisorTools, createBuildProposal, advisorPrompt, briefBlock, describeLanguage, loadBrief, referenceIndex, saveBrief } from "../lib/studio-advisor.js";
-import { isStudioBuildProposal, type StudioBuildProposal } from "@yumina/shared";
+import { isStudioBuildProposal, type StudioBuildProposal } from "@world-ai/shared";
 import { getSkillContent } from "../lib/studio-skills/index.js";
 import { parseToolArgs } from "../lib/studio-tools/parse-tool-args.js";
 import { generateStreamWithRetry } from "../lib/studio-tools/generate-stream-with-retry.js";
@@ -65,8 +65,8 @@ import { typicalRunCredits } from "../lib/studio-run-costs.js";
 import { executeSimulateBehaviors } from "../lib/studio-tools/simulate-behaviors.js";
 import { describeAgentWriteConflicts } from "../lib/studio-tools/rebase-agent-write.js";
 import { VARIANT_TOOL_NAMES, describeLanguageVariants, hasVariantArg, listLanguageVariants, loadVariantWorld, resolveVariant, variantArg, variantLabel, withVariantKey, withVariantParam, withoutVariant, type LanguageSibling, type LanguageVariants, type VariantTarget, type VariantWorld } from "../lib/studio-tools/language-variants.js";
-import { migrateWorldDefinition } from "@yumina/engine";
-import type { WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { resolveWorkingSchema, writeStudioWorldSchema } from "../lib/pending-edit.js";
 import { loadAgentHistoryForConversation, withStudioUserMessageContext } from "../lib/studio-conversations.js";
 // ── Request Routing ──

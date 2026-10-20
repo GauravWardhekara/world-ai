@@ -3,7 +3,7 @@ import { ImagePlus, Loader2, Sparkles, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { resolveImageUrl } from "@/lib/asset-url";
-import { IMAGE_ASPECTS, getPlatformStyle, getSmartImageCapabilities, getSmartImageModel, platformStylePrice } from "@yumina/shared";
+import { IMAGE_ASPECTS, getPlatformStyle, getSmartImageCapabilities, getSmartImageModel, platformStylePrice } from "@world-ai/shared";
 import type { StudioImageProposal } from "../lib/types";
 
 interface ImageProposalCardProps {

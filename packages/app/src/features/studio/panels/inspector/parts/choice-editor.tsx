@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowUp, ChevronDown, ChevronRight, Plus, X } from "lucide-react";
-import type { UiChoiceOption, UiElement, Variable } from "@yumina/engine";
+import type { UiChoiceOption, UiElement, Variable } from "@world-ai/engine";
 import { ActionListEditor, type ActionContext } from "../element-behavior";
 import { ImageField, NamedText, Section, Segmented, Toggle, VariableSelect, smallCls, useMakeVariable } from "./part-kit";
 

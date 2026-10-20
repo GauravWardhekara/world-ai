@@ -5,7 +5,7 @@ import { randomUUID } from "node:crypto";
 import { db } from "../db/index.js";
 import { user, worlds, worldPendingEdits } from "../db/schema.js";
 import { eq } from "drizzle-orm";
-import { migrateWorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
 import { mergeGameStatePatch } from "../lib/game-state.js";
 import { resolveSessionWorldSchema } from "../lib/pending-edit.js";
 

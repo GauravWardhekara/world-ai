@@ -2,7 +2,7 @@
  * Idempotent price correction — two official models are billed BELOW what
  * OpenRouter actually charges us, so every turn on them loses money.
  *
- * Run with: pnpm --filter @yumina/server exec tsx src/db/fix-underpriced-models.ts
+ * Run with: pnpm --filter @world-ai/server exec tsx src/db/fix-underpriced-models.ts
  * Env: DATABASE_URL must point at the target Postgres instance (dev first, then
  * prod via `railway run …`).
  *

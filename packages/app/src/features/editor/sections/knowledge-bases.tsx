@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Boxes, Monitor } from "lucide-react";
-import type { Worldbook } from "@yumina/engine";
-import { extractLoreSlotsFromFiles } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
+import { extractLoreSlotsFromFiles } from "@world-ai/engine";
 import { useEditorStore } from "@/stores/editor";
 import { EntriesSection } from "./entries";
 import { LoreBindingsPanel } from "../components/lore-bindings-panel";

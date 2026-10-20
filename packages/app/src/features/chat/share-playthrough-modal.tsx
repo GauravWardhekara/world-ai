@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { createPortal } from "react-dom";
 import { Loader2, X, Share2 } from "lucide-react";
-import { MAX_PLAYTHROUGH_TITLE, MAX_PLAYTHROUGH_NOTE } from "@yumina/shared";
+import { MAX_PLAYTHROUGH_TITLE, MAX_PLAYTHROUGH_NOTE } from "@world-ai/shared";
 import { createPlaythrough } from "@/lib/playthroughs";
 import { feedback } from "@/lib/feedback";
 import { FieldError } from "@/components/ui/field-error";

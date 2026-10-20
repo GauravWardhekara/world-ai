@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { explainTurn } from "./turn-explain";
 import type { RuntimeRecord } from "./runtime-records";
 

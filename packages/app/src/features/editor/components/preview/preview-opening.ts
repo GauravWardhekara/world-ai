@@ -1,4 +1,4 @@
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 
 const orderedOpenings = (entries: WorldEntry[]) =>
   entries.filter(entry => entry.role === "greeting").sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity));

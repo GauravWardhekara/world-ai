@@ -1,7 +1,7 @@
 import test, { afterEach, beforeEach } from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
-import { worldDefinitionSchema } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
+import { worldDefinitionSchema } from "@world-ai/engine";
 import { executeApplyChanges, type SchemaChange } from "./tool-executor.js";
 import { BACKGROUND_FALLBACK_MODEL, lookupCatalogModel, setModelCatalogForTests } from "./model-catalog.js";
 import { STUDIO_TOOLS } from "./tools.js";

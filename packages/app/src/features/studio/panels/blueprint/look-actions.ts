@@ -1,5 +1,5 @@
-import { detectUiTemplate, getUiTemplate } from "@yumina/engine";
-import type { UiDoc } from "@yumina/engine";
+import { detectUiTemplate, getUiTemplate } from "@world-ai/engine";
+import type { UiDoc } from "@world-ai/engine";
 
 type Translate = (key: string, options?: Record<string, unknown>) => string;
 

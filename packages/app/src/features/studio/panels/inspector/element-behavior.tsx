@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowDown, ArrowUp, Plus, X } from "lucide-react";
-import { UI_CHAT_STARTED } from "@yumina/engine";
-import type { AudioTrack, Condition, UiAction, UiPage, Variable } from "@yumina/engine";
+import { UI_CHAT_STARTED } from "@world-ai/engine";
+import type { AudioTrack, Condition, UiAction, UiPage, Variable } from "@world-ai/engine";
 import { templateFromDisplay, templateToDisplay } from "./template-names";
 
 /**

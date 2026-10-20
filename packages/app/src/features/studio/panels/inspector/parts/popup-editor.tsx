@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import type { UiElement, Variable } from "@yumina/engine";
-import { nameFromQuestion } from "@yumina/engine";
+import type { UiElement, Variable } from "@world-ai/engine";
+import { nameFromQuestion } from "@world-ai/engine";
 import { ImageField, NamedText, Section, Toggle, VariableSelect, useSyncAutoName, type InsertToken } from "./part-kit";
 
 type Popup = Extract<UiElement, { type: "popup" }>;

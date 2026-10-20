@@ -35,7 +35,7 @@ export interface YuminaAPI {
     canUseSessionApis: boolean;
     requiresAuth: boolean;
   };
-  sendMessage: (text: string, attachments?: import("@yumina/shared").ChatImageInput[]) => void;
+  sendMessage: (text: string, attachments?: import("@world-ai/shared").ChatImageInput[]) => void;
   setVariable: (id: string, value: number | string | boolean | Record<string, unknown> | unknown[], options?: { scope?: string; targetUserId?: string }) => void;
   executeAction: (actionId: string) => void;
   executeActionAndWait?: (actionId: string) => Promise<{ applied: true; variables: Record<string, unknown>; firedIds: string[] }>;

@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import sharp from "sharp";
 import { and, eq, inArray } from "drizzle-orm";
-import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGES, MAX_CHAT_IMAGE_BYTES, MAX_CHAT_IMAGE_TOTAL_BYTES, type ChatImageInput, type ImageCompletionMessage } from "@yumina/shared";
+import { CHAT_IMAGE_MIME_TYPES, MAX_CHAT_IMAGES, MAX_CHAT_IMAGE_BYTES, MAX_CHAT_IMAGE_TOTAL_BYTES, type ChatImageInput, type ImageCompletionMessage } from "@world-ai/shared";
 import type { ChatMessage, MessageContent, ContentPart } from "./llm/types.js";
 import { db } from "../db/index.js";
 import { messages } from "../db/schema.js";

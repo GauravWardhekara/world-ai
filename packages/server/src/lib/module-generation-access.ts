@@ -1,5 +1,5 @@
 import { and, eq } from "drizzle-orm";
-import { RETIRED_PLAY_MODEL_IDS } from "@yumina/shared";
+import { RETIRED_PLAY_MODEL_IDS } from "@world-ai/shared";
 import { db } from "../db/index.js";
 import { playSessions, user, worlds } from "../db/schema.js";
 import { acquireConcurrency, checkSideCallRateLimit, releaseConcurrency, SIDE_CALL_MAX_CONCURRENT } from "../middleware/rate-limit.js";

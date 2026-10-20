@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { edition } from "../../edition/index.js";
 import { getUninstalledExtensions, isExtensionInstalled } from "../../lib/extensions.js";
 

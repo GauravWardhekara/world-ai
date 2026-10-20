@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import { createInstance } from "i18next";
-import { getExtensionDefinition, type ExtensionDetail } from "@yumina/shared";
+import { getExtensionDefinition, type ExtensionDetail } from "@world-ai/shared";
 import { SUPPORTED_LANGUAGES } from "../../lib/language-clamp";
 import { localizeExtensionDetail } from "./localize-extension";
 

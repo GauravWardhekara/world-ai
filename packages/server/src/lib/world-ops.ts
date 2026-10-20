@@ -1,5 +1,5 @@
 import { and, eq } from "drizzle-orm";
-import { migrateWorldDefinition, resolveStation, type WorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition, resolveStation, type WorldDefinition } from "@world-ai/engine";
 import { readOwn } from "../db/index.js";
 import { worlds } from "../db/schema.js";
 import type { ToolDefinition } from "./llm/types.js";

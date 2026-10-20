@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import type { Variable, VariableActivation, WorldEntry } from "@yumina/engine";
+import type { Variable, VariableActivation, WorldEntry } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { ConditionEditor } from "./condition-editor";
 

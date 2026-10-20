@@ -1,4 +1,4 @@
-import type { GameState } from "@yumina/engine";
+import type { GameState } from "@world-ai/engine";
 import type { ChangeTrace } from "./change-trace.js";
 import type { ContinuityTurnOutcome } from "./continuity/run.js";
 import type { MissedUpdateOutcome } from "./continuity/missed-updates.js";

@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import type { AudioTrack, SceneImage, Variable } from "@yumina/engine";
+import type { AudioTrack, SceneImage, Variable } from "@world-ai/engine";
 import { cardMemoryRows, noteSnippet, rowFacts, type RowFactsDraft } from "./row-facts";
 
 const t = (key: string, options?: Record<string, unknown>) => (options?.count !== undefined ? `${key}:${options.count}` : key);

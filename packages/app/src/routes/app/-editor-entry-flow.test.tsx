@@ -65,7 +65,7 @@ test("creation, import, and reopening preserve content and choose the intended e
     "lucide-react": new Proxy({}, { get: () => () => null }),
     "react-i18next": { useTranslation: () => ({ t: translate }) },
     "@/stores/editor": { useEditorStore },
-    "@yumina/shared": { clampWorldTags: (value: unknown) => value },
+    "@world-ai/shared": { clampWorldTags: (value: unknown) => value },
     "@/hooks/use-auth-guard": { useAuthGuard: () => ({ isAuthenticated: authenticated, requireAuth: () => {} }) },
     "@/lib/world-templates": { WORLD_TEMPLATES: [], defaultOpening: () => ({ name: "Opening", content: "[first moment]" }) },
     "@/lib/import-world": { parseImportedFileFlexible: async () => ({ kind: "world", world: { id: "imported", name: "导入内容", entries: [{ id: "unique", content: "必须保留的正文" }], variables: [], rules: [], components: [] }, coverImage: importedCover }) },

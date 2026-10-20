@@ -11,7 +11,7 @@
  * files (validateChangelogFields).
  */
 import { desc, eq } from "drizzle-orm";
-import { CHANGELOG_LANGS, type ChangelogLang } from "@yumina/shared";
+import { CHANGELOG_LANGS, type ChangelogLang } from "@world-ai/shared";
 import { db as primaryDb, readPublic, type DrizzleDB } from "../db/index.js";
 import { changelogEntries, changelogEntryRevisions, user } from "../db/schema.js";
 import {

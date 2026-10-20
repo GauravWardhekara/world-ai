@@ -1,4 +1,4 @@
-import { estimateTokens } from "@yumina/engine";
+import { estimateTokens } from "@world-ai/engine";
 import { viewerSeesWorkingCopy } from "./working-copy.js";
 
 export type WorldCopyMaterial = {

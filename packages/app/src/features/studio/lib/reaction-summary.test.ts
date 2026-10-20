@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { Reaction, Variable } from "@yumina/engine";
+import type { Reaction, Variable } from "@world-ai/engine";
 import { reactionSummary } from "./reaction-summary.js";
 
 const VARS = new Map<string, Variable>([

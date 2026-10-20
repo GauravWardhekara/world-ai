@@ -2,7 +2,7 @@ import {
   MAX_IMAGE_BATCH_ITEMS, SMART_IMAGE_MODEL, SMART_IMAGE_MODEL_IDS,
   SMART_IMAGE_4K_COST_FACTOR, resolveSmartImageAspect, resolveSmartImageResolution,
   type ImageBatchProposal, type ImageBatchProposalItem, type ImageBatchTarget,
-} from "@yumina/shared";
+} from "@world-ai/shared";
 
 export const IMAGE_BATCH_TOOL_NAME = "generate_images";
 const identifier = /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,79}$/;

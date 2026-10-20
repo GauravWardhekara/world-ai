@@ -1,4 +1,4 @@
-import { isValidTtsVoice } from "@yumina/shared";
+import { isValidTtsVoice } from "@world-ai/shared";
 import { aiFrameIds, resolveSpeaker, type SpeakerEntry } from "@/../sandbox/chat/speaker";
 
 /**

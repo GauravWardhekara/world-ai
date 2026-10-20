@@ -1,5 +1,5 @@
 import DOMPurify from "dompurify";
-import { parseImageEmbeds, renderImageEmbedHtml } from "@yumina/engine";
+import { parseImageEmbeds, renderImageEmbedHtml } from "@world-ai/engine";
 import { resolveImageUrl } from "./asset-url";
 
 interface HtmlEmbedPayload {

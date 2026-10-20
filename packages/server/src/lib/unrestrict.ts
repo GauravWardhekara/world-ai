@@ -1,5 +1,5 @@
 import { eq, sql } from 'drizzle-orm';
-import { getAgeFromBirthYear } from '@yumina/shared';
+import { getAgeFromBirthYear } from '@world-ai/shared';
 import { db, type DrizzleDB } from '../db/index.js';
 import { user } from '../db/schema.js';
 

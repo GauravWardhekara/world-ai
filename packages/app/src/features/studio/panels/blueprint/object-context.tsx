@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ArrowDownLeft, ArrowUpRight, Boxes, ChevronRight, Globe2 } from 'lucide-react';
-import { toGraph, UNPLACED_WORLDBOOK_ID, type CardGraph, type GraphNode, type WorldDefinition } from '@yumina/engine';
+import { toGraph, UNPLACED_WORLDBOOK_ID, type CardGraph, type GraphNode, type WorldDefinition } from '@world-ai/engine';
 import { useEditorStore } from '@/stores/editor';
 
 const jump = (objId: string) => window.dispatchEvent(new CustomEvent('yumina:studio-canvas-focus', { detail: { objId } }));

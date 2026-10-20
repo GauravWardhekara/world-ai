@@ -1,4 +1,4 @@
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 /** Modern behaviors and interfaces do not live in the legacy rule/component
  * arrays. Report each representation explicitly without claiming zero import. */

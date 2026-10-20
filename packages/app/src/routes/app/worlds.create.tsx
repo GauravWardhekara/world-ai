@@ -11,11 +11,11 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useEditorStore } from "@/stores/editor";
-import { clampWorldTags } from "@yumina/shared";
+import { clampWorldTags } from "@world-ai/shared";
 import { useAuthGuard } from "@/hooks/use-auth-guard";
 import { WORLD_TEMPLATES, type WorldTemplate, defaultOpening } from "@/lib/world-templates";
 import { parseImportedFileFlexible } from "@/lib/import-world";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { ApplyChangesDialog } from "@/features/world-changes/apply-changes-dialog";
 import { findImportTargets, type ApplyTarget } from "@/features/world-changes/apply-world-changes";
 import { useCreatePageStore } from "@/stores/create-page";

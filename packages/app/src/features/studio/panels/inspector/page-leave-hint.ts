@@ -1,4 +1,4 @@
-import { UI_CHAT_STARTED, elementActions, type UiDoc, type UiPage } from "@yumina/engine";
+import { UI_CHAT_STARTED, elementActions, type UiDoc, type UiPage } from "@world-ai/engine";
 
 /**
  * What the page list says under a page that steps aside by itself.

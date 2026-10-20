@@ -14,7 +14,7 @@
  *    lazily as the user scrolls). Deferred tier handles the rest.
  */
 
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 
 /** Asset IDs are UUIDv4 or base64url of an S3 key. Tight enough to avoid matching
  *  accidental text like "@asset:TODO" but loose enough to handle both formats. */

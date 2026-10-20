@@ -7,7 +7,7 @@ import { createRoot } from "react-dom/client";
 import { create } from "zustand";
 import { JSDOM } from "jsdom";
 import ts from "typescript";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 
 /**
  * The activation control answers "when is this module open" — a question a

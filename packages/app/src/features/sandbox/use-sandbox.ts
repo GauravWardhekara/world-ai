@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { SandboxBridge, type ApiHandler, type StreamHandler } from "./bridge-parent";
 import type { ChannelDataMap, SandboxMode, VoiceEvent } from "../../../sandbox/protocol";
-import type { StateChannel } from "@yumina/engine";
+import type { StateChannel } from "@world-ai/engine";
 import { SANDBOX_DOC_URL } from "@/lib/sandbox-doc-url";
 import { SandboxBootTiming } from "@/lib/sandbox-boot-timing";
 

@@ -1,7 +1,7 @@
 import { eq } from "drizzle-orm";
 import { user, adminActions } from "../db/schema.js";
 import type { db } from "../db/index.js";
-import { muteExpiresAt, type MuteDuration } from "@yumina/shared";
+import { muteExpiresAt, type MuteDuration } from "@world-ai/shared";
 import { invalidateSessionUser } from "./session-user-cache.js";
 
 export async function setUserMute(database: Pick<typeof db, "transaction">, actorId: string, targetId: string, duration: MuteDuration | null, now = new Date()) {

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowUpRight, Check as CheckIcon, ChevronDown, Plus, Variable as VariableIcon, X } from "lucide-react";
-import type { AudioTrack, Condition, Reaction, ReactionEffect, Variable, WorldEntry } from "@yumina/engine";
+import type { AudioTrack, Condition, Reaction, ReactionEffect, Variable, WorldEntry } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { WhenEditor, RandomValueEditor, getWhenPresets } from "@/features/editor/sections/behaviors-section";

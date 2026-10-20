@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
-import { DEFAULT_STATE_GUARD_MODEL, FREE_STATE_GUARD_MODEL, parseStateGuardModel, stateGuardModelSelection, type StateGuardSettings } from "@yumina/shared";
+import { DEFAULT_STATE_GUARD_MODEL, FREE_STATE_GUARD_MODEL, parseStateGuardModel, stateGuardModelSelection, type StateGuardSettings } from "@world-ai/shared";
 import { clampLanguage as languageKey } from "../../../src/lib/language-clamp";
 
 const copy = {

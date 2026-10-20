@@ -2,7 +2,7 @@ import { prepareImportedImage } from "./image-upload-policy.js";
 import { HTTPException } from "hono/http-exception";
 import { randomUUID } from "node:crypto";
 import { sql } from "drizzle-orm";
-import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename, type AssetImportJob } from "@yumina/shared";
+import { ASSET_ARCHIVE_LIMITS, isAssetArchiveFilename, type AssetImportJob } from "@world-ai/shared";
 import type { DrizzleDB } from "../db/index.js";
 import { AssetImportError, visitAssetArchive, type ArchiveFile } from "./asset-archive.js";
 import { mediaRows } from "./session-media-service.js";

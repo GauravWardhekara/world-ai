@@ -1,5 +1,5 @@
 import type { ActivePersonaLike } from "./persona-metadata.js";
-import { personaEntriesSchema } from "@yumina/shared";
+import { personaEntriesSchema } from "@world-ai/shared";
 
 /** Stored outside game state so restoring a turn cannot change the player's identity. */
 export interface SessionPersona {

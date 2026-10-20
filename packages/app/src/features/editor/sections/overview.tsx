@@ -9,7 +9,7 @@ import { X, Plus, ImageIcon, Loader2, FolderOpen, Upload, Globe, Type, History, 
 import { FieldError } from "@/components/ui/field-error";
 import { WorldUpdateHistory } from "@/features/library/world-update-history";
 import { MediaGuidelinesNote } from "@/components/media-guidelines-note";
-import { MAX_WORLD_DESCRIPTION, MAX_WORLD_NAME } from "@yumina/shared";
+import { MAX_WORLD_DESCRIPTION, MAX_WORLD_NAME } from "@world-ai/shared";
 import { parseImportedFile } from "@/lib/import-world";
 import {
   getAssetUploadErrorMessage,

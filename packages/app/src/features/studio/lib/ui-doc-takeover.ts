@@ -1,4 +1,4 @@
-import { UI_CANVAS_W, type RootComponent, type UiDoc } from "@yumina/engine";
+import { UI_CANVAS_W, type RootComponent, type UiDoc } from "@world-ai/engine";
 
 /**
  * Who owns a card's interface, and what it costs to take it over.

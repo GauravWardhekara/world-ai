@@ -1,4 +1,4 @@
-import { computeActiveWorldbookIds, followingVoices, type GameState, type Worldbook } from "@yumina/engine";
+import { computeActiveWorldbookIds, followingVoices, type GameState, type Worldbook } from "@world-ai/engine";
 
 /**
  * The client's half of a group chat (server lib/group-reply.ts): whether a

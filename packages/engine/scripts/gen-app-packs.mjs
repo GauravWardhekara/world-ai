@@ -1,6 +1,6 @@
 // Copies the App pack UI sources (packages/engine/app-packs/*.tsx) into
 // src/bundles/app-pack-sources.generated.ts so the engine can ship them as
-// strings. Run after editing any app pack:  pnpm --filter @yumina/engine gen:app-packs
+// strings. Run after editing any app pack:  pnpm --filter @world-ai/engine gen:app-packs
 // `--check` exits non-zero when the generated file is stale (used by the test).
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -29,7 +29,7 @@ if (process.argv.includes("--check")) {
   // A Windows checkout may have turned the file's LF into CRLF.
   try { current = readFileSync(outFile, "utf8").replace(/\r\n?/g, "\n"); } catch {}
   if (current !== next) {
-    console.error("app-pack-sources.generated.ts is stale — run: pnpm --filter @yumina/engine gen:app-packs");
+    console.error("app-pack-sources.generated.ts is stale — run: pnpm --filter @world-ai/engine gen:app-packs");
     process.exit(1);
   }
 } else {

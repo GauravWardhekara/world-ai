@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRightLeft } from "lucide-react";
-import { DEFAULT_MODEL_FALLBACK_POLICY, formatModelId, modelFallbackText, type ModelFallbackMode } from "@yumina/shared";
+import { DEFAULT_MODEL_FALLBACK_POLICY, formatModelId, modelFallbackText, type ModelFallbackMode } from "@world-ai/shared";
 import { useConfigStore } from "@/stores/config";
 import { useCreditStore } from "@/edition/slots.state";
 import { useUserProfileStore } from "@/stores/user-profile";

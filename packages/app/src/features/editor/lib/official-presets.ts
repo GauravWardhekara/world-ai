@@ -6,7 +6,7 @@ import {
   officialPresetsFor,
   type OfficialPreset,
   type WorldEntry,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { clampLanguage } from "@/lib/language-clamp";
 
 /**

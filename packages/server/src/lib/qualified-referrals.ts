@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { bonusRewardGroup, qualifiesReferral, type ReferralCampaignView, type ReferralQualificationView } from '@yumina/shared';
+import { bonusRewardGroup, qualifiesReferral, type ReferralCampaignView, type ReferralQualificationView } from '@world-ai/shared';
 import { db } from '../db/index.js';
 import { attachBonus, bonusCompatibilityEnabled } from './free-credit-policy.js';
 import { insertHashedTransaction, type LedgerDatabase } from './transaction-hash.js';

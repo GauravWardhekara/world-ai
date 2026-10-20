@@ -4,7 +4,7 @@ import {
   resolveStation,
   type GameState,
   type WorldDefinition,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { checkBalance, validateModelAccess } from "./credit-service.js";
 import { resolveProviderForModel } from "./resolve-provider.js";
 

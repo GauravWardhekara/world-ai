@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition, UiDoc } from "@yumina/engine";
-import { compileUiDoc, worldDefinitionSchema } from "@yumina/engine";
+import type { WorldDefinition, UiDoc } from "@world-ai/engine";
+import { compileUiDoc, worldDefinitionSchema } from "@world-ai/engine";
 import { executeApplyChanges, toolCallsToSchemaChanges } from "./tool-executor.js";
 import { compileUiDocInto, executeReadUiDoc } from "./ui-doc-tools.js";
 import { READ_TOOL_NAMES, WRITE_TOOL_NAMES } from "./tools.js";

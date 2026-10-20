@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import type { Variable } from "@yumina/engine";
+import type { Variable } from "@world-ai/engine";
 import { Section } from "./part-kit";
 
 /**

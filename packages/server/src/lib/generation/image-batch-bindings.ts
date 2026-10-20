@@ -1,4 +1,4 @@
-import type { ImageBatchTarget } from '@yumina/shared';
+import type { ImageBatchTarget } from '@world-ai/shared';
 
 export type ImageBatchBindingState = { ok: true; existingImage: string | null } | { ok: false; code: string; error: string };
 export function getImageBatchBindingState(_schema: Record<string, unknown>, _target: ImageBatchTarget): ImageBatchBindingState {

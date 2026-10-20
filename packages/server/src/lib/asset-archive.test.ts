@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { ASSET_ARCHIVE_LIMITS } from "@yumina/shared";
+import { ASSET_ARCHIVE_LIMITS } from "@world-ai/shared";
 import { normalizeArchivePath, visitAssetArchive } from "./asset-archive.js";
 import { tarFixture, zipFixture } from "./asset-archive-fixtures.js";
 

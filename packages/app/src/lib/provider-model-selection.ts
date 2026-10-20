@@ -1,4 +1,4 @@
-import { DEFAULT_MODEL, PLAY_MODELS, PLAN_HIERARCHY } from "@yumina/shared";
+import { DEFAULT_MODEL, PLAY_MODELS, PLAN_HIERARCHY } from "@world-ai/shared";
 import { composeSelectedModelId } from "./model-id";
 import { isLocalModelId } from "@/features/local-model/enabled-flag";
 

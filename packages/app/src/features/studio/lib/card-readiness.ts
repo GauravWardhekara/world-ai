@@ -1,5 +1,5 @@
-import type { WorldDefinition } from "@yumina/engine";
-import { isDefaultWorldName } from "@yumina/shared";
+import type { WorldDefinition } from "@world-ai/engine";
+import { isDefaultWorldName } from "@world-ai/shared";
 
 /**
  * How finished a card is, as a list the author can act on.

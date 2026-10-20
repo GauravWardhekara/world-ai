@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createInstance } from "i18next";
-import { createWorldSchema, MAX_WORLD_SAVE_BODY_BYTES } from "@yumina/shared";
+import { createWorldSchema, MAX_WORLD_SAVE_BODY_BYTES } from "@world-ai/shared";
 import {
   serializeWorldSavePayload,
   WorldSavePayloadTooLargeError,

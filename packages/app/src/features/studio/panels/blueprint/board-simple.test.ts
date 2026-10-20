@@ -1,6 +1,6 @@
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
-import type { Block, GraphNode } from "@yumina/engine";
+import type { Block, GraphNode } from "@world-ai/engine";
 import { BLOCK_HEAD_H, OPEN_ROW_EDITOR_H, PREVIEW_DESKTOP_W, PREVIEW_PHONE_W, blockHeight, listColumns, previewScale } from "./board";
 import { tileSections } from "./tile-board";
 

@@ -22,7 +22,7 @@ test("one tutorial: three required lessons stage the canvas a block at a time, t
     plugins: [{ name: "learning-analytics-test", enforce: "pre", resolveId(id) { if (id === "posthog-js") return "\0learning-posthog"; },
       load(id) { if (id === "\0learning-posthog") return 'export default { capture(name, props) { if (name === "creator_learning") window.__learningEvents.push(props); } };'; } }],
     server: { middlewareMode: true, watch: null }, esbuild: { jsx: "automatic" },
-    resolve: { alias: { "@": `${appRoot}/src`, "@yumina/engine": `${appRoot}/../engine/src/index.ts` } } });
+    resolve: { alias: { "@": `${appRoot}/src`, "@world-ai/engine": `${appRoot}/../engine/src/index.ts` } } });
   let stopEditorAutosave: (() => void) | undefined;
   const root = createRoot(document.getElementById("root")!);
   try {

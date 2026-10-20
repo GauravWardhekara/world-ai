@@ -2,8 +2,8 @@ import { create } from "zustand";
 import { useCreditStore } from "@/edition/slots.state";
 import { useUserProfileStore } from "./user-profile";
 import { composeSelectedModelId } from "@/lib/model-id";
-import { PLAY_MODELS, IMAGE_MODEL_CAPABILITIES, type CostTier, type TimeBasedAvgCostMushies } from "@yumina/shared";
-import type { ModelCostStats } from "@yumina/shared";
+import { PLAY_MODELS, IMAGE_MODEL_CAPABILITIES, type CostTier, type TimeBasedAvgCostMushies } from "@world-ai/shared";
+import type { ModelCostStats } from "@world-ai/shared";
 
 export interface ModelInfo {
   supportsImages?: boolean;

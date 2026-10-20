@@ -1,5 +1,5 @@
-import { isOnCanvas, presenceOf } from "@yumina/engine";
-import type { UiElement, UiPage } from "@yumina/engine";
+import { isOnCanvas, presenceOf } from "@world-ai/engine";
+import type { UiElement, UiPage } from "@world-ai/engine";
 
 /** Chat, transcript and composer are the card, never "a part" to pick. */
 const loadBearing = (el: UiElement) => el.type === "chat" || el.type === "messages" || el.type === "composer";

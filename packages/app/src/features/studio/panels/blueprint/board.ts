@@ -1,4 +1,4 @@
-import type { Block } from "@yumina/engine";
+import type { Block } from "@world-ai/engine";
 
 // Pixels and formation — the half of the board model that only means anything
 // on screen. The grouping itself lives in the engine (graph/board.ts).

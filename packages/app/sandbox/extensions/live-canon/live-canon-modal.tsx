@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AlertTriangle, BookOpenCheck, Check, Loader2, Plus, RotateCcw, Save, SlidersHorizontal, Trash2, X } from "lucide-react";
-import type { LiveCanonApiResult, LiveCanonEntryInput, LiveCanonPayload, LiveCanonSessionEntryDTO } from "@yumina/shared";
+import type { LiveCanonApiResult, LiveCanonEntryInput, LiveCanonPayload, LiveCanonSessionEntryDTO } from "@world-ai/shared";
 import { useYumina } from "../../sandbox-context";
 import { pickLang } from "../../chat/i18n";
 import { SandboxPlatformOverlay } from "../../platform-overlay-portal";

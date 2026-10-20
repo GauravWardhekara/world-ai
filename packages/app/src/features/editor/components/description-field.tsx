@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ClipboardEvent, type Compone
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { Loader2, X } from "lucide-react";
-import { MAX_WORLD_DESCRIPTION } from "@yumina/shared";
+import { MAX_WORLD_DESCRIPTION } from "@world-ai/shared";
 import { FieldError } from "@/components/ui/field-error";
 import { ImageSourceMenu } from "@/components/image-source-menu";
 import { resolveImageUrl } from "@/lib/asset-url";

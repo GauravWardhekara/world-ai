@@ -1,7 +1,7 @@
 import { Check, ExternalLink, Trash2, X } from "lucide-react";
 import { useEffect, useRef, useState, type ComponentPropsWithoutRef, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import type { Condition, Variable } from "@yumina/engine";
+import type { Condition, Variable } from "@world-ai/engine";
 import {
   defaultConditionForVariable,
   normalizeConditionForVariable,

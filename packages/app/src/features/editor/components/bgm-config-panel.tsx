@@ -8,7 +8,7 @@ import { StyledCheckbox } from "./styled-checkbox";
 import { NumberInput } from "@/components/ui/number-input";
 import { DebouncedInput } from "./debounced-field";
 import { DraftNumberInput } from "./condition-editor";
-import type { BGMTriggerType } from "@yumina/engine";
+import type { BGMTriggerType } from "@world-ai/engine";
 import { TwoTapDeleteButton } from "@/components/ui/two-tap-delete-button";
 
 const TRIGGER_TYPE_OPTIONS: { value: BGMTriggerType; labelKey: string }[] = [

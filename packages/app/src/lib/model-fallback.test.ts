@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { aiConfigSchema, DEFAULT_MODEL_FALLBACK_POLICY, modelFallbackText, PLAY_MODELS } from "@yumina/shared";
+import { aiConfigSchema, DEFAULT_MODEL_FALLBACK_POLICY, modelFallbackText, PLAY_MODELS } from "@world-ai/shared";
 import { fallbackDecision, fallbackRecord, parseFallbackError } from "./model-fallback";
 
 test("existing users ask by default; automatic retries stop after one backup", () => {

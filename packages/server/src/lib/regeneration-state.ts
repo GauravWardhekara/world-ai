@@ -1,5 +1,5 @@
-import { deepEqual } from "@yumina/engine";
-import type { GameState, WorldDefinition } from "@yumina/engine";
+import { deepEqual } from "@world-ai/engine";
+import type { GameState, WorldDefinition } from "@world-ai/engine";
 import { normalizeGameState, reconcileTurnState } from "./game-state.js";
 
 /** A reply's starting state is immutable, even if UI writes arrive while it

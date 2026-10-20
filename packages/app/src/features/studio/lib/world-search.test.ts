@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { toGraph, worldDefinitionSchema } from "@yumina/engine";
+import { toGraph, worldDefinitionSchema } from "@world-ai/engine";
 import { getUnmappedSearchPanel, getWorldSearchNode, indexWorldContent, searchWorldContent } from "./world-search";
 
 const world = worldDefinitionSchema.parse({

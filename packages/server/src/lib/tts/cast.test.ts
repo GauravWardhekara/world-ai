@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { castingChoices, detectSpeakerNames, mergeSegments, poolFor, resolveAssignments, splitRuns } from "./cast.js";
-import { TTS_VOICES, readTtsVoicePool, sanitizeTtsVoicePool } from "@yumina/shared";
+import { TTS_VOICES, readTtsVoicePool, sanitizeTtsVoicePool } from "@world-ai/shared";
 
 test("splitRuns separates narration from quoted dialogue and reassembles exactly", () => {
   const text = "天亮了。法官：「现在从 5 号开始发言。」老猎户拍桌子：「3 号得说清楚！」\n绣娘低着头。";

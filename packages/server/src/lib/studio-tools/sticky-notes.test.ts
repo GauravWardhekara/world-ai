@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { stickyNotes } from "./sticky-notes.js";
 
 test("sticky notes reach the AI with what each is stuck to", () => {

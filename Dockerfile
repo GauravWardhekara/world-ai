@@ -1,14 +1,14 @@
-# Yumina open-source edition - container image
+# World AI open-source edition - container image
 #
 # Build:
-#   docker build -t yumina .
+#   docker build -t world-ai .
 #
 # Run (data in a named volume, port only on this machine):
-#   docker run -d --name yumina \
+#   docker run -d --name world-ai \
 #     -p 127.0.0.1:3000:3000 \
-#     -v yumina-data:/data \
+#     -v world-ai-data:/data \
 #     -e BETTER_AUTH_SECRET=$(openssl rand -hex 32) \
-#     yumina
+#     world-ai
 #
 # About HOST=0.0.0.0: inside a container the server has to listen on the
 # container's own network interface, or Docker's port mapping cannot reach it.
@@ -16,7 +16,7 @@
 # binds 0.0.0.0. Single-user mode has no login, which means the image relies on
 # YOU not publishing the port to an untrusted network. Bind the published port
 # to localhost (-p 127.0.0.1:3000:3000), put a reverse proxy with its own login
-# in front, or run with -e YUMINA_AUTH_MODE=multi-user.
+# in front, or run with -e WORLD_AI_AUTH_MODE=multi-user (or YUMINA_AUTH_MODE=multi-user).
 
 # ---- Base: Node 22 + pnpm via corepack ------------------------------------
 FROM node:22-slim AS base
@@ -68,10 +68,12 @@ COPY --from=build /app/packages/server/skills packages/server/skills
 
 # Everything the install persists lives in /data: the embedded PGlite
 # database and uploaded images and audio. Mount a volume there.
-ENV YUMINA_EDITION=local \
+ENV WORLD_AI_EDITION=local \
+    YUMINA_EDITION=local \
     NODE_ENV=production \
     HOST=0.0.0.0 \
     PORT=3000 \
+    WORLD_AI_DATA_DIR=/data \
     YUMINA_DATA_DIR=/data \
     PGLITE_DATA_DIR=/data/pglite
 VOLUME /data

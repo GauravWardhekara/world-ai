@@ -17,13 +17,13 @@ import type {
   YuminaBundle,
   LoreUiBinding,
   Worldbook,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { nextBundleColorKey } from "@/lib/entry-constants";
-import { syncMessageRulesEntry, nextBackgroundId, COVER_BACKGROUND_URL, migrateWorldDefinition, deriveSectionDefaults, deriveSectionDefaultsForEntry, officialPresetsFor, customUIToRootFiles, normalizeFolders, mergeWorldDefinition, remapReactionReferences, applyGraphEdit, compileUiDoc, buildUiTheme, getUiTemplate, getUiPageTemplate, insertPageTemplate, fitTextBox, refreshConfirmSummary, carryOpeningChain, detectUiTemplate, withPreciseTrackingDefault, suggestedContinuityDelta, USER_ROOT_PATH, COMPOSED_MARKER, BUNDLE_NS_RE, generateComposedIndex, syncGreetingActions, PromptBuilder, UNPLACED_WORLDBOOK_ID, revertTurn } from "@yumina/engine";
+import { syncMessageRulesEntry, nextBackgroundId, COVER_BACKGROUND_URL, migrateWorldDefinition, deriveSectionDefaults, deriveSectionDefaultsForEntry, officialPresetsFor, customUIToRootFiles, normalizeFolders, mergeWorldDefinition, remapReactionReferences, applyGraphEdit, compileUiDoc, buildUiTheme, getUiTemplate, getUiPageTemplate, insertPageTemplate, fitTextBox, refreshConfirmSummary, carryOpeningChain, detectUiTemplate, withPreciseTrackingDefault, suggestedContinuityDelta, USER_ROOT_PATH, COMPOSED_MARKER, BUNDLE_NS_RE, generateComposedIndex, syncGreetingActions, PromptBuilder, UNPLACED_WORLDBOOK_ID, revertTurn } from "@world-ai/engine";
 import { materializeBehaviors } from "@/features/editor/lib/editable-behaviors";
-import type { OfficialPreset } from "@yumina/engine";
+import type { OfficialPreset } from "@world-ai/engine";
 import { classifyInterface, startingUiDoc } from "@/features/studio/lib/ui-doc-takeover";
-import type { WorldPendingEditSummary } from "@yumina/shared";
+import type { WorldPendingEditSummary } from "@world-ai/shared";
 import type { WorldTemplate } from "@/lib/world-templates";
 import i18n, { contentLanguage } from "@/lib/i18n";
 import { clampLanguage } from "@/lib/language-clamp";
@@ -644,10 +644,10 @@ interface EditorState {
   addBackground: (url?: string) => string;
   updateBackground: (id: string, updates: Partial<BackgroundImage>) => void;
   removeBackground: (id: string) => void;
-  setBgmPlaylist: (playlist: import("@yumina/engine").BGMPlaylist | undefined) => void;
-  updateBgmPlaylist: (updates: Partial<import("@yumina/engine").BGMPlaylist>) => void;
+  setBgmPlaylist: (playlist: import("@world-ai/engine").BGMPlaylist | undefined) => void;
+  updateBgmPlaylist: (updates: Partial<import("@world-ai/engine").BGMPlaylist>) => void;
   /** Continuity judge switches (world-level). Missing = enabled, pools off. */
-  updateContinuity: (updates: Partial<import("@yumina/engine").ContinuityConfig>) => void;
+  updateContinuity: (updates: Partial<import("@world-ai/engine").ContinuityConfig>) => void;
   addConditionalBGM: () => void;
   updateConditionalBGM: (id: string, updates: Record<string, unknown>) => void;
   removeConditionalBGM: (id: string) => void;
@@ -661,12 +661,12 @@ interface EditorState {
   updateRootComponent: (updates: { name?: string; entryFile?: string; files?: Record<string, string> }) => void;
 
   // Blueprint canvas — layout persistence (not undo-tracked) + graph edits
-  setGraphLayout: (layout: import("@yumina/engine").GraphLayout) => void;
-  applyGraphPatch: (patch: import("@yumina/engine").GraphPatch) => void;
+  setGraphLayout: (layout: import("@world-ai/engine").GraphLayout) => void;
+  applyGraphPatch: (patch: import("@world-ai/engine").GraphPatch) => void;
 
   // Interface document — the visual builder's single source of truth. Save-time
   // compiles it into rootComponent; the runtime never sees it.
-  setUiDoc: (doc: import("@yumina/engine").UiDoc | undefined, opts?: { keepAutoVariables?: boolean }) => void;
+  setUiDoc: (doc: import("@world-ai/engine").UiDoc | undefined, opts?: { keepAutoVariables?: boolean }) => void;
   /**
    * A variable made FOR a part (a form question's answer, a popup's message):
    * a unique name, the given extras (an AI-facing rule), and a note that the
@@ -687,19 +687,19 @@ interface EditorState {
   /** Start editing this card's interface visually. A hand-written frontend is
    *  preserved as the document's base layer; a template, when given, is the
    *  starting layout for cards with nothing to preserve. */
-  adoptUiDoc: (template?: import("@yumina/engine").UiDoc) => void;
+  adoptUiDoc: (template?: import("@world-ai/engine").UiDoc) => void;
   /** The one-way exit: keep the generated code, drop the document, hand the
    *  card back to its creator to maintain by hand. */
   exportUiDocToCode: () => void;
   /** Pick an official look. A card with no interface of its own gets a document
    *  whose only content is the theme, over the platform's own chat. */
-  applyUiTheme: (choice: import("@yumina/engine").UiThemeChoice | null) => void;
+  applyUiTheme: (choice: import("@world-ai/engine").UiThemeChoice | null) => void;
   /** Pick an official ARRANGEMENT. Creates the variables the layout is bound to
    *  if the card has none and puts on the layout's own colours; passing null
    *  puts the card back to the platform's chat, in the platform's look. */
   applyUiTemplate: (
     templateId: string | null,
-    strings: import("@yumina/engine").UiTemplateStrings,
+    strings: import("@world-ai/engine").UiTemplateStrings,
     /** One display name per `need.key` the layout declares. */
     variableNames: Record<string, string>,
     /** Starting values that only the caller's language knows — a time of day
@@ -2927,7 +2927,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
       // document's BASE layer: rendered unscaled underneath, imported by the
       // generated entry, and restored exactly by "export to code". Nothing is
       // lost, nothing needs a scary confirmation.
-      let doc: import("@yumina/engine").UiDoc;
+      let doc: import("@world-ai/engine").UiDoc;
       if (classifyInterface(previous) === "handwritten" && previous) {
         let baseFile = previous.entryFile || "index.tsx";
         if (baseFile === "index.tsx") {
@@ -2988,7 +2988,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
       const current = s.worldDraft.uiDoc;
       if (!current) {
         if (!theme) return {};
-        const doc: import("@yumina/engine").UiDoc = {
+        const doc: import("@world-ai/engine").UiDoc = {
           version: 1,
           entryPageId: "page-1",
           // An empty page: the arrangement is the stock chat underneath, and
@@ -3018,7 +3018,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
       // Keep the creator's own additions: free CSS and uploaded fonts belong to
       // the card, not to whichever theme is on it this minute.
       const kept = { fonts: current.theme?.fonts, css: current.theme?.css };
-      const nextTheme: import("@yumina/engine").UiTheme | undefined = theme
+      const nextTheme: import("@world-ai/engine").UiTheme | undefined = theme
         ? { ...theme, ...(kept.fonts ? { fonts: kept.fonts } : {}), ...(kept.css ? { css: kept.css } : {}) }
         : (kept.fonts || kept.css ? { ...(kept.fonts ? { fonts: kept.fonts } : {}), ...(kept.css ? { css: kept.css } : {}) } : undefined);
       const doc = { ...current, ...(nextTheme ? { theme: nextTheme } : {}) };
@@ -3042,7 +3042,7 @@ export const useEditorStore = create<EditorState>((set, get) => ({
         // showed below an opening page and a player could type past 填名字.
         set((s) => {
           const base = startingUiDoc();
-          const doc: import("@yumina/engine").UiDoc = {
+          const doc: import("@world-ai/engine").UiDoc = {
             ...base,
             pages: base.pages.map((p) => ({ ...p, name: words.strings.chatPageName ?? p.name, background: undefined })),
           };

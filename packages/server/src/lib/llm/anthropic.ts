@@ -1,4 +1,4 @@
-import { IMAGE_MODEL_CAPABILITIES } from "@yumina/shared";
+import { IMAGE_MODEL_CAPABILITIES } from "@world-ai/shared";
 import type { LLMProvider, GenerateParams, StreamChunk, Model, MessageContent } from "./types.js";
 import { LLM_CONNECTION_TIMEOUT_MS, LLM_REQUEST_TIMEOUT_MS, LLM_STREAM_INACTIVITY_TIMEOUT_MS } from "./constants.js";
 import { clampTemperatureForModel } from "./sampling-limits.js";

@@ -2,7 +2,7 @@ import { Suspense, createContext, lazy, useContext, useState, type ReactNode } f
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { ImagePlus, X } from "lucide-react";
-import type { UiImageSrc, Variable } from "@yumina/engine";
+import type { UiImageSrc, Variable } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { resolveImageUrl } from "@/lib/asset-url";
 

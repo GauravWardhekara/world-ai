@@ -13,7 +13,7 @@ import {
   getEntryBoundSlotId,
   type EntryTriggerCategory,
   type WorldEntry,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import {

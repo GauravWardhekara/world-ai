@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { WorldEntry } from "@yumina/engine";
+import type { WorldEntry } from "@world-ai/engine";
 import { entryTokens, summarizeLoreTokens } from "./lore-tokens";
 
 const entry = (id: string, over: Partial<WorldEntry>): WorldEntry => ({

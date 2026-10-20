@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import type { UiDoc } from "@yumina/engine";
+import type { UiDoc } from "@world-ai/engine";
 import { changeReviewTitle, summarizeUiDocChange, themeTokenLabel } from "./change-review";
 
 /** A stand-in translator that shows which key and values were used. */

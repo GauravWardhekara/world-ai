@@ -5,7 +5,7 @@ import { Plus, Loader2 } from "lucide-react";
 import { useExtensionsStore } from "@/stores/extensions";
 import { useExtensionPreview } from "@/features/extensions/extension-preview-store";
 import { ExtensionIcon } from "@/features/extensions/extension-icon";
-import type { ExtensionSummary } from "@yumina/shared";
+import type { ExtensionSummary } from "@world-ai/shared";
 import { useLocalizedExtension } from "@/features/extensions/use-localized-extension";
 
 // Profile "Extensions" section — a visual sibling of the Personas carousel

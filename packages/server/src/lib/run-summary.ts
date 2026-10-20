@@ -1,7 +1,7 @@
 import { and, asc, eq, gte, lte, sql } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { messages, playSessions } from "../db/schema.js";
-import { resolveStation, type Worldbook } from "@yumina/engine";
+import { resolveStation, type Worldbook } from "@world-ai/engine";
 import type { ChatMessage } from "./llm/types.js";
 import { applyModelRedirect } from "./llm/model-redirects.js";
 import { DEFAULT_STORY_SUMMARY_MODEL, generateStorySummaryText } from "./session-compaction.js";

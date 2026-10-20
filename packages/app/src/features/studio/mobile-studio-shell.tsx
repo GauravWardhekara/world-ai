@@ -65,7 +65,7 @@ import {
 import { generatedInterfaceUnsaved, useEditorStore } from "@/stores/editor";
 import { useWorldsStore } from "@/stores/worlds";
 import { useStudioStore } from "@/stores/studio";
-import type { YuminaBundle } from "@yumina/engine";
+import type { YuminaBundle } from "@world-ai/engine";
 import { BundleCreator, BundleImporter, ImportBundleModal, WorldPublishModal } from "@/edition/slots";
 import { useEdition } from "@/edition/edition";
 import { ExportCardMenu } from "../editor/export-card-menu";

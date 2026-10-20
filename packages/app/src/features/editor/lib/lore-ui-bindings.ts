@@ -1,5 +1,5 @@
-import type { Condition, LoreUiBinding, Variable } from "@yumina/engine";
-import { getEntryBoundSlotId as engineGetEntryBoundSlotId } from "@yumina/engine";
+import type { Condition, LoreUiBinding, Variable } from "@world-ai/engine";
+import { getEntryBoundSlotId as engineGetEntryBoundSlotId } from "@world-ai/engine";
 
 const OP_LABEL: Record<Condition["operator"], string> = {
   eq: "=",

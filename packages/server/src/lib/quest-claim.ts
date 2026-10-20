@@ -1,5 +1,5 @@
 import { eq, sql } from "drizzle-orm";
-import { bonusRewardGroup } from "@yumina/shared";
+import { bonusRewardGroup } from "@world-ai/shared";
 import { db, flagWrite } from "../db/index.js";
 import { creditWallets, questClaims } from "../db/schema.js";
 import { getCheckInWindow, type CheckInWindow } from "./check-ins.js";

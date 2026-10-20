@@ -1,8 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { buildInventory, extractKeywords, resolveContext, toStringArray } from "./context-resolver.js";
-import { migrateWorldDefinition } from "@yumina/engine";
+import { migrateWorldDefinition } from "@world-ai/engine";
 
 // ── toStringArray ──
 // Regression: a lorebook entry whose `keywords`/`tags` were persisted as a

@@ -1,4 +1,4 @@
-import { bonusRewardGroup } from "@yumina/shared";
+import { bonusRewardGroup } from "@world-ai/shared";
 // ─── Referral Service ────────────────────────────────────────────────
 // Referral code generation, milestone tracking, and reward grants.
 // Pure ladder definitions + decision logic live in referral-rewards.ts.

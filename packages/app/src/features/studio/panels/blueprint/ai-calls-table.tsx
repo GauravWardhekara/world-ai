@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { AlertTriangle, ChevronRight, FileCode2, X } from "lucide-react";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { aiCallRows, type AiCallRow, type AiCallSetting } from "./ai-calls";
 

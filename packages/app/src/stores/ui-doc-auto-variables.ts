@@ -1,5 +1,5 @@
-import { nameFromQuestion, uiDocVariableRefs, withAutoVariable, withoutAutoVariables } from "@yumina/engine";
-import type { UiDoc, Variable, WorldDefinition } from "@yumina/engine";
+import { nameFromQuestion, uiDocVariableRefs, withAutoVariable, withoutAutoVariables } from "@world-ai/engine";
+import type { UiDoc, Variable, WorldDefinition } from "@world-ai/engine";
 import { getVariableIdUsage } from "@/features/editor/lib/variable-id-references";
 
 /**

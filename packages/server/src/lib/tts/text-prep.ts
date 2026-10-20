@@ -11,7 +11,7 @@
  * writes them gets expressive readouts for free.
  */
 
-import { TTS_MAX_TEXT_CHARS, extractDialogueTexts, type TtsReadingMode } from "@yumina/shared";
+import { TTS_MAX_TEXT_CHARS, extractDialogueTexts, type TtsReadingMode } from "@world-ai/shared";
 
 /** Strip presentation markup, keep the words. */
 export function stripMarkupForTts(raw: string): string {
@@ -55,7 +55,7 @@ export function stripMarkupForTts(raw: string): string {
 }
 
 /** Extract quoted dialogue, in original order of appearance.
- *  Shared scanner (see @yumina/shared tts-dialogue): outermost quotes only,
+ *  Shared scanner (see @world-ai/shared tts-dialogue): outermost quotes only,
  *  CJK/curly/guillemet/straight pairs, Spanish raya lines, and salvage of
  *  unterminated quotes. Runs on stripped text, where paragraphs are single
  *  newlines. */

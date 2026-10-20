@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { playtestAffectingChange } from "./playtest-stale";
 
 const world = (over: Partial<WorldDefinition> = {}): WorldDefinition => ({

@@ -8,7 +8,7 @@ import { user, worlds, playSessions, userPersonas, messages } from "../db/schema
 import { setAccountPersona, setSessionPersona, setSessionPersonaLock, resolvePersonaForSession } from "./resolve-persona.js";
 import { normalizeImageCompletion, validateChatImages, storeChatImages, restoreChatImages, imagePromptChars } from "./chat-images.js";
 import { deleteObject } from "./s3.js";
-import { PromptBuilder } from "@yumina/engine";
+import { PromptBuilder } from "@world-ai/engine";
 
 async function fixture() {
   const uid = crypto.randomUUID();

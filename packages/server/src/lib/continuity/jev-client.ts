@@ -11,7 +11,7 @@
  * access to the alpha endpoint, out of balance — retries on the platform key
  * inside the same deadline; a timeout is just a timeout (the caller skips).
  */
-import type { JevAnswer, JevQuestion } from "@yumina/engine";
+import type { JevAnswer, JevQuestion } from "@world-ai/engine";
 import { env } from "../env.js";
 import {
   isKeyRefusalStatus,

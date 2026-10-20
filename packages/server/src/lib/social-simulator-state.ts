@@ -1,7 +1,7 @@
 import { eq, sql } from "drizzle-orm";
 import { db } from "../db/index.js";
 import { playSessions } from "../db/schema.js";
-import type { SocialState } from "@yumina/engine";
+import type { SocialState } from "@world-ai/engine";
 /** Actions and generation claims share the same lock; no last-writer-wins snapshots. */
 export async function mutateSocialSession(sessionId: string, userId: string, initial: SocialState, fn: (state: SocialState) => SocialState) {
     return db.transaction(async (tx) => {

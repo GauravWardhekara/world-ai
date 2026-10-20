@@ -1,4 +1,4 @@
-import type { EventPattern } from "@yumina/engine";
+import type { EventPattern } from "@world-ai/engine";
 
 /**
  * Structural subset of the behaviors editor's WhenPreset that the pure

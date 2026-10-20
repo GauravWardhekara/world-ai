@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowDownLeft, ArrowUpRight, Boxes, CheckSquare, ChevronRight, Network, Plus, Search, Settings2, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { getObjectRelationships, type ObjectRelationship, type RelationshipObject } from "./object-relationships";
 
 type RelationshipGraph = Parameters<typeof getObjectRelationships>[1];

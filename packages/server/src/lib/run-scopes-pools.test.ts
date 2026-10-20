@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { GameState, Worldbook } from "@yumina/engine";
+import type { GameState, Worldbook } from "@world-ai/engine";
 import { detectRunTransitions, promptHistory, scopeRowsToRuns, type RunMemories } from "./run-scopes.js";
 
 // ── memory pools ──

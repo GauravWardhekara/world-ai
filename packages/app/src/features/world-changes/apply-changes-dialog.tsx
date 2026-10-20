@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { AlertTriangle, Check, History, Loader2 } from "lucide-react";
-import type { WorldChange, WorldDefinition, WorldDiff } from "@yumina/engine";
+import type { WorldChange, WorldDefinition, WorldDiff } from "@world-ai/engine";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { FieldError } from "@/components/ui/field-error";
 import { cn } from "@/lib/utils";

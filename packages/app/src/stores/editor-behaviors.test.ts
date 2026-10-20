@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test, { after, afterEach } from "node:test";
 import { fileURLToPath } from "node:url";
 import { createServer } from "vite";
-import { reactionSchema, ReactionEvaluator, remapReactionReferences, type Rule, type Reaction } from "@yumina/engine";
+import { reactionSchema, ReactionEvaluator, remapReactionReferences, type Rule, type Reaction } from "@world-ai/engine";
 
 const memory = new Map<string, string>();
 globalThis.localStorage = { getItem: k => memory.get(k) ?? null, setItem: (k, v) => void memory.set(k, String(v)), removeItem: k => void memory.delete(k), clear: () => memory.clear(), key: () => null, length: 0 };

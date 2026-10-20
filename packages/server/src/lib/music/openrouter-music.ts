@@ -1,4 +1,4 @@
-import { MUSIC_MODELS, type MusicLength } from "@yumina/shared";
+import { MUSIC_MODELS, type MusicLength } from "@world-ai/shared";
 
 /**
  * OpenRouter music generation — a thin client for Lyria 3.

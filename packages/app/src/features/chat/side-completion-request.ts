@@ -1,4 +1,4 @@
-import type { AiGenerationConfig, CompletionResponseFormat, ImageCompletionMessage, SideCompletionWorldbookIds } from "@yumina/shared";
+import type { AiGenerationConfig, CompletionResponseFormat, ImageCompletionMessage, SideCompletionWorldbookIds } from "@world-ai/shared";
 import { kimiRepetitionOverride } from "@/lib/kimi-repetition";
 
 export interface SideCompletionParams {

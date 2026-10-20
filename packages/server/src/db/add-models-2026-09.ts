@@ -1,7 +1,7 @@
 /**
  * Idempotent migration — add the 2026-09 official model intake to `model_prices`.
  *
- * Run with: pnpm --filter @yumina/server exec tsx src/db/add-models-2026-09.ts
+ * Run with: pnpm --filter @world-ai/server exec tsx src/db/add-models-2026-09.ts
  * Env: DATABASE_URL must point at the target Postgres instance.
  * Apply to DEV first, then PROD (`railway run …`), BEFORE deploying the code that
  * lists these models — `isOfficialModel()` reads this table, so the rows must exist

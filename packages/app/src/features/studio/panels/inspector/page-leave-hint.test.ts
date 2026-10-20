@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { getUiStarter, setEntryPage, type UiDoc } from "@yumina/engine";
+import { getUiStarter, setEntryPage, type UiDoc } from "@world-ai/engine";
 import { pageLeaveHint } from "./page-leave-hint";
 
 const openings = (): UiDoc => getUiStarter("openings")!.build({ strings: {} });

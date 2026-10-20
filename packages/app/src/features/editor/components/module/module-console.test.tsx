@@ -7,7 +7,7 @@ import { createRoot } from "react-dom/client";
 import { create } from "zustand";
 import { JSDOM } from "jsdom";
 import ts from "typescript";
-import type { Worldbook } from "@yumina/engine";
+import type { Worldbook } from "@world-ai/engine";
 
 /**
  * A worker's "when a condition holds" trigger carries its own conditions —

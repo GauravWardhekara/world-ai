@@ -1,5 +1,5 @@
 import type { Context, MiddlewareHandler, Next } from "hono";
-import { RATE_LIMITS, TRUSTED_PUBLISHING_RATE_LIMIT, type RateLimitTier, type RateLimitConfig } from "@yumina/shared";
+import { RATE_LIMITS, TRUSTED_PUBLISHING_RATE_LIMIT, type RateLimitTier, type RateLimitConfig } from "@world-ai/shared";
 import { redis } from "../lib/redis.js";
 import { posthog, captureServerError } from "../lib/posthog.js";
 

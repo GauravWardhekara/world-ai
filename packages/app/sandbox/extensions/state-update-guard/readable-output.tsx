@@ -1,4 +1,4 @@
-import type { StateValidationAudit } from "@yumina/shared";
+import type { StateValidationAudit } from "@world-ai/shared";
 import { clampLanguage as languageKey } from "../../../src/lib/language-clamp";
 
 const copy = {

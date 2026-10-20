@@ -57,14 +57,14 @@ import {
   type Block,
   type BlockSlot,
   type GraphNode,
-} from "@yumina/engine";
+} from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { DebouncedInput, DebouncedTextarea } from "@/features/editor/components/debounced-field";
 import { stripMarkdownForPreview } from "@/lib/markdown";
 import { DescriptionField } from "@/features/editor/components/description-field";
 import { KIND_STYLE, ROW_TONE } from "./style";
 import { FrontendFilesStrip } from "./frontend-files-strip";
-import type { FrontendFileFacts } from "@yumina/engine";
+import type { FrontendFileFacts } from "@world-ai/engine";
 import { PieceSeams } from "./piece-seam";
 import {
   AI_RECEIVES_H,

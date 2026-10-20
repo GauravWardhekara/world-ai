@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import type { WorldDefinition } from "@yumina/engine";
+import type { WorldDefinition } from "@world-ai/engine";
 import { storySamplingParams } from "./station-sampling.js";
 import { resolveSessionCompletionSettings } from "./completion-session-context.js";
 

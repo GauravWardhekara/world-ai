@@ -2,7 +2,7 @@ import test, { after } from "node:test";
 import assert from "node:assert/strict";
 import { act, createContext, createElement, useContext, useState, type ComponentType } from "react";
 import { JSDOM } from "jsdom";
-import { compileUiDoc, type UiDoc, type UiElement } from "@yumina/engine";
+import { compileUiDoc, type UiDoc, type UiElement } from "@world-ai/engine";
 import { bundleAndCompile } from "@/lib/tsx/tsx-bundler";
 
 /**

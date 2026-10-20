@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { createInstance } from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { JSDOM } from "jsdom";
-import type { Variable, WorldEntry } from "@yumina/engine";
+import type { Variable, WorldEntry } from "@world-ai/engine";
 import { VariableActivationEditor } from "./variable-activation-editor";
 
 const i18n = createInstance();

@@ -20,7 +20,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "@yumina/engine": path.resolve(__dirname, "../engine/src/index.ts"),
+      "@world-ai/engine": path.resolve(__dirname, "../engine/src/index.ts"),
     },
   },
   css: {

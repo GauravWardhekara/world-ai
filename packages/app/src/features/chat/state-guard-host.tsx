@@ -4,7 +4,7 @@ import { ShieldCheck } from "lucide-react";
 import { useChatStore } from "@/stores/chat";
 import { useExtensionsStore } from "@/stores/extensions";
 import { fetchPrivateModelCatalog } from "@/stores/models";
-import { PLAY_MODELS, stateGuardModelSelection } from "@yumina/shared";
+import { PLAY_MODELS, stateGuardModelSelection } from "@world-ai/shared";
 import { requestStateGuardSettings } from "@/lib/state-guard-settings";
 import { StateGuardSettingsPanel } from "../../../sandbox/extensions/state-update-guard/settings";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";

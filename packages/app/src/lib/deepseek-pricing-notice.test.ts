@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { PLAY_MODELS } from "@yumina/shared";
+import { PLAY_MODELS } from "@world-ai/shared";
 import { usesDeepSeekLatestPricing } from "./deepseek-pricing-notice.js";
 
 test("shows the latest-pricing notice for DeepSeek V4 Flash and Pro", () => {

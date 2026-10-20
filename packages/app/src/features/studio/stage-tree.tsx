@@ -13,7 +13,7 @@ import {
   Variable as VariableIcon,
   Zap,
 } from "lucide-react";
-import { entryTrigger } from "@yumina/engine";
+import { entryTrigger } from "@world-ai/engine";
 import { cn } from "@/lib/utils";
 import { useEditorStore } from "@/stores/editor";
 import { indexWorldContent, searchWorldContent } from "./lib/world-search";
